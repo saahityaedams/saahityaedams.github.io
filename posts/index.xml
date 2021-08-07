@@ -6,7 +6,26 @@
     <description>Recent content in Posts on Kamikaze chicken</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hampta Pass Journal Entries</title>
+      <link>https://saahitya.github.io/posts/hampta-journal/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/hampta-journal/</guid>
+      <description>11 July ⁃	Making everyone hurry in the morning to get to the airport ⁃	But my phone had no charge, iphone cable doesn&#39;t work with power bank ⁃	TIL - 2 rupee lounge ⁃	Is Turbulence just driving in clouds =&amp;gt; like going over potholes ⁃	Walk out of Delhi Airport - damn hot ⁃	Terrible terrible coffee ⁃	Bus ride - 500 kms - loud Dhaba with randos signing in Haryanvi  12 July ⁃	Raining and hair pin bendy roads all the way to Manali ⁃	Get ready fast, submit all docs ⁃	Goto start point of trek in sumo, at top ⁃	Crows seems to be there at the top of the mountains for some reason unlike pigeons in Manali.</description>
+    </item>
+    
+    <item>
+      <title>Logging in Drupal</title>
+      <link>https://saahitya.github.io/posts/drupal-logging/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/drupal-logging/</guid>
+      <description>Setting up logging today prevents the headache tommorow
+Components  syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space.  Steps  We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
+    </item>
+    
     <item>
       <title>The Most Important Design Guideline</title>
       <link>https://saahitya.github.io/posts/solid-grasp/</link>
