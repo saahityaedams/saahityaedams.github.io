@@ -6,11 +6,11 @@
     <description>Recent content in Posts on Kamikaze chicken</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL GROUP_CONCATE truncates to 1024</title>
       <link>https://saahitya.github.io/posts/20-08-21-til/</link>
-      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/20-08-21-til/</guid>
       <description>https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat
