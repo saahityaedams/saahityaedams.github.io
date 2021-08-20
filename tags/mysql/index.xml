@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MySQL GROUP_CONCATE truncates to 1024</title>
+      <title>TIL MySQL GROUP_CONCATE truncates to 1024</title>
       <link>https://saahitya.github.io/posts/20-08-21-til/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
