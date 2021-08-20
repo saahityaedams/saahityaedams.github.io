@@ -18,6 +18,16 @@ In another case of the being burned due to not looking at the documentation prop
     </item>
     
     <item>
+      <title>TIL Clipboard manager</title>
+      <link>https://saahitya.github.io/posts/18-08-21-til/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/18-08-21-til/</guid>
+      <description>Recently saw someone looking at the history of their all the cut-copy text when presenting their screen in a call. One day later after installing https://maccy.app/, how the heck did I not know something like this(clipboard managers) ever existed before.
+ Very usefull for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
+    </item>
+    
+    <item>
       <title>Hampta Pass Journal Entries</title>
       <link>https://saahitya.github.io/posts/hampta-journal/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>

@@ -17,5 +17,15 @@
 In another case of the being burned due to not looking at the documentation properly and blindly copying a query,the root cause of a field issue turned out to be MySQL function GROUP_CONCATE truncating the result of the query to 1024 by default unless group_concat_max_len is set explicitly. Plus depending on the way of processing this query results in your program, it is unlikely to figure out the results were ever truncated.</description>
     </item>
     
+    <item>
+      <title>TIL Clipboard manager</title>
+      <link>https://saahitya.github.io/posts/18-08-21-til/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/18-08-21-til/</guid>
+      <description>Recently saw someone looking at the history of their all the cut-copy text when presenting their screen in a call. One day later after installing https://maccy.app/, how the heck did I not know something like this(clipboard managers) ever existed before.
+ Very usefull for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
+    </item>
+    
   </channel>
 </rss>
