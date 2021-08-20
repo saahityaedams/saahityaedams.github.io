@@ -6,7 +6,17 @@
     <description>Recent content on Kamikaze chicken</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL GROUP_CONCATE truncates to 1024</title>
+      <link>https://saahitya.github.io/posts/20-08-21-til/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/20-08-21-til/</guid>
+      <description>https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat
+In another case of the being burned due to not looking at the documentation properly and blindly copying a query,the root cause of a field issue turned out to be MySQL function GROUP_CONCATE truncating the result of the query to 1024 by default unless group_concat_max_len is set explicitly. Plus depending on the way of processing this query results in your program, it is unlikely to figure out the results were ever truncated.</description>
+    </item>
+    
     <item>
       <title>Hampta Pass Journal Entries</title>
       <link>https://saahitya.github.io/posts/hampta-journal/</link>
@@ -22,7 +32,7 @@
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/drupal-logging/</guid>
-      <description>Setting up logging today prevents the headache tommorow
+      <description>Setting up proper logging today prevents the big headache tommorow
 Components  syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space.  Steps  We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
     </item>
     

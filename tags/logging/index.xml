@@ -13,7 +13,7 @@
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/drupal-logging/</guid>
-      <description>Setting up logging today prevents the headache tommorow
+      <description>Setting up proper logging today prevents the big headache tommorow
 Components  syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space.  Steps  We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
     </item>
     
