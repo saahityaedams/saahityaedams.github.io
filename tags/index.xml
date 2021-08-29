@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Kamikaze chicken</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>drupal</title>
+      <link>https://saahitya.github.io/tags/drupal/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/tags/drupal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://saahitya.github.io/tags/shell/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>bangalore</title>
       <link>https://saahitya.github.io/tags/bangalore/</link>
@@ -31,6 +49,15 @@
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/tags/lalbagh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pretty-map</title>
+      <link>https://saahitya.github.io/tags/pretty-map/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/tags/pretty-map/</guid>
       <description></description>
     </item>
     
@@ -67,15 +94,6 @@
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/tags/thundering-herd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>drupal</title>
-      <link>https://saahitya.github.io/tags/drupal/</link>
-      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahitya.github.io/tags/drupal/</guid>
       <description></description>
     </item>
     
