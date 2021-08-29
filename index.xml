@@ -6,11 +6,11 @@
     <description>Recent content on Kamikaze chicken</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple Drupal 7 Shell</title>
       <link>https://saahitya.github.io/posts/drupal-shell/</link>
-      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/drupal-shell/</guid>
       <description>Problem For debugging drupal 7 code, there is no packaged shell like django or ROR and we must start a normal PHP interactive shell and then initialize and bootstrap the DRUPAL installation in the shell. This involves searching and copying the 4 lines of drupal initialization and bootstrapping code from the project and pasting it in the PHP shell before doing any Drupal debugging work.
