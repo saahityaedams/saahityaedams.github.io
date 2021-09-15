@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Kamikaze chicken</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>game-theory</title>
+      <link>https://saahitya.github.io/tags/game-theory/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/tags/game-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>infographic</title>
+      <link>https://saahitya.github.io/tags/infographic/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/tags/infographic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stock-options</title>
+      <link>https://saahitya.github.io/tags/stock-options/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/tags/stock-options/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>review</title>
       <link>https://saahitya.github.io/tags/review/</link>
@@ -71,20 +98,29 @@
     </item>
     
     <item>
-      <title>mysql</title>
-      <link>https://saahitya.github.io/tags/mysql/</link>
-      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      <title>postgresql</title>
+      <link>https://saahitya.github.io/tags/postgresql/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahitya.github.io/tags/mysql/</guid>
+      <guid>https://saahitya.github.io/tags/postgresql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TIL</title>
       <link>https://saahitya.github.io/tags/til/</link>
-      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/tags/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://saahitya.github.io/tags/mysql/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     

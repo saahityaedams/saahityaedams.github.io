@@ -6,7 +6,16 @@
     <description>Recent content on Kamikaze chicken</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stock Options</title>
+      <link>https://saahitya.github.io/posts/stock-options/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/stock-options/</guid>
+      <description>Case for shorting stocks when you want to lock in gains today and can&amp;rsquo;t exercise stock options Ref: http://www.weidai.com/stock-options.txt</description>
+    </item>
+    
     <item>
       <title>Crossing Bridges(2013) Review</title>
       <link>https://saahitya.github.io/posts/crossing-bridges/</link>
@@ -35,6 +44,15 @@ Solution PHP CLI has an settings option auto_prepend_file which can be used to r
       
       <guid>https://saahitya.github.io/posts/lalbagh-and-cubbon-park/</guid>
       <description>Cubbon Park Lalbagh Made with Pretty maps</description>
+    </item>
+    
+    <item>
+      <title>TIL PGMiner</title>
+      <link>https://saahitya.github.io/posts/22-08-21-til/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/22-08-21-til/</guid>
+      <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by postgres user)  Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine crypto. What an Idea, Sirji!   https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
     </item>
     
     <item>
@@ -140,7 +158,7 @@ The course through cubbon park was generally very cool and the air there was ver
       
       <guid>https://saahitya.github.io/about/</guid>
       <description>You-Know-Who Name inspired from this scene in Curb your Enthusiasm Kamakaze Pilot1
-Personal brain dump. Get paid to translate and type computer languages.
+Personal brain dump. Get paid to translate and type computer code.
 Resume
   Here&amp;rsquo;s some other &amp;ldquo;Kamakaze Chicken&amp;rdquo; material I found online
  Kamakaze Chicken Recipe Kamakaze Chicken 1 Kamakaze Chicken 2  &amp;#160;&amp;#x21a9;&amp;#xfe0e;   </description>
