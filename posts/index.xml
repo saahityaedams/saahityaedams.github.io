@@ -52,7 +52,7 @@ Solution PHP CLI has an settings option auto_prepend_file which can be used to r
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/22-08-21-til/</guid>
-      <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by postgres user)  Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine crypto. What an Idea, Sirji!   https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
+      <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by the postgres user)  Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency.   https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
     </item>
     
     <item>
@@ -71,8 +71,8 @@ In another case of the being burned due to not looking at the documentation prop
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/18-08-21-til/</guid>
-      <description>Recently saw someone looking at the history of their all the cut-copy text when presenting their screen in a call. One day later after installing https://maccy.app/, how the heck did I not know something like this(clipboard managers) ever existed before.
- Very usefull for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
+      <description>Recently saw someone looking at the history of their all the cut-copy text when presenting their screen in a call. One day later after installing https://maccy.app/, I&amp;rsquo;m wondering how the heck did I not know something like this(clipboard managers) ever existed before. Psst&amp;hellip; It&amp;rsquo;s probably because I&amp;rsquo;ve worked completely remote after completing college.
+ Very useful for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
     </item>
     
     <item>
@@ -124,22 +124,12 @@ Aspects to Endurance - Cardio &amp;amp; Muscular  How to develop cardio  Steady 
     </item>
     
     <item>
-      <title>ESG Stocks</title>
-      <link>https://saahitya.github.io/posts/esg/</link>
-      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahitya.github.io/posts/esg/</guid>
-      <description>I have a definitely-not-well-thought-out theory about ESG(Environmental, Social and Goverance) stocks.
-Hunch: ESG stocks will perform better in the broader sense(Higher profits, Higher earnings).    In 10th grade I remember our English teacher asking whether it is moral for a person to own a luxury car since it is so polluting and one of my classmates made the point that people buy luxury cars more of a status symbol than for its characteristics.</description>
-    </item>
-    
-    <item>
       <title>Nightcrawler</title>
       <link>https://saahitya.github.io/posts/running-at-night/</link>
       <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/running-at-night/</guid>
-      <description>For the first time ever, I ran a 4k in the night at 11:30 PM around my apartment, that too after staying up for a software release. People talk about starting your day fresh after a run inconveniantly missing out the part about waking up early in the morning, and hustling after the run to get to work on time. In contrast when you run at night, you really don&amp;#39;t have anything to get back to except your bed and when you do get back you obviously will sleep like a log cause you are tired after running.</description>
+      <description>For the first time ever, I ran a 4k in the night at 11:30 PM around my apartment after a late night software release. People talk about starting your day fresh after a run inconveniently missing out the part about waking up early in the morning, and hustling after the run to get to work on time. In contrast when you run at night, you really don&amp;#39;t have anything to get back to except your comfy bed and when you do get back you obviously will sleep like a log cause you are exhausted after running.</description>
     </item>
     
     <item>
@@ -148,8 +138,8 @@ Hunch: ESG stocks will perform better in the broader sense(Higher profits, Highe
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/bm-race-report/</guid>
-      <description>Overall my memory of the race is very hazy and I remeber very specific parts of the race with not much long term context to it The beginning parts of the race involved a lot of shifting between lanes as some people were running slow and it was still relatively crowded approx for atleast 5-7 kms.
-The course through cubbon park was generally very cool and the air there was very fresh.</description>
+      <description>Overall my memory of the race is very hazy and I only remember very specific parts of the race. The beginning part(5-6 kms) of the race involved a lot of shuffling and moving around slow runners.
+The course through Cubbon park had a chilly weather and the air was very fresh. I remember while running through Cubbon park at a later part of the race I saw this one park filled with tons of dogs running around playfully and some even cheering for me :)</description>
     </item>
     
   </channel>
