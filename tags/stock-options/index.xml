@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>stock-options on Kamikaze chicken</title>
+    <title>stock-options on saahityaedams</title>
     <link>https://saahitya.github.io/tags/stock-options/</link>
-    <description>Recent content in stock-options on Kamikaze chicken</description>
+    <description>Recent content in stock-options on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/tags/stock-options/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://saahitya.github.io/tags/stock-options/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Shorting Stock Options</title>
       <link>https://saahitya.github.io/posts/shorting-stock-options/</link>
