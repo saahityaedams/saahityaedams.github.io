@@ -6,10 +6,46 @@
     <description>Recent content on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saahitya.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Analytics Report</title>
+      <link>https://saahitya.github.io/posts/data-analytics-report/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/data-analytics-report/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Final Year Dissertation  Report &#43; Presentation</title>
+      <link>https://saahitya.github.io/posts/finalyear-report/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/finalyear-report/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Summer 2018 Internship Report</title>
+      <link>https://saahitya.github.io/posts/summer-2018-internship-report/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/summer-2018-internship-report/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Word Error Correction Paper</title>
+      <link>https://saahitya.github.io/posts/shrodinger/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahitya.github.io/posts/shrodinger/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Crossing Bridges(2013) Review</title>
@@ -126,42 +162,6 @@ Components  syslog - inbuilt drupal module to log drupal errors(no particular re
     </item>
     
     <item>
-      <title>Data Analytics Report</title>
-      <link>https://saahitya.github.io/posts/data-analytics-report/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahitya.github.io/posts/data-analytics-report/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Final Year Project Report &#43; Presentation</title>
-      <link>https://saahitya.github.io/posts/finalyear-report/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahitya.github.io/posts/finalyear-report/</guid>
-      <description> </description>
-    </item>
-    
-    <item>
-      <title>Summer 2018 Internship Report</title>
-      <link>https://saahitya.github.io/posts/summer-2018-internship-report/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahitya.github.io/posts/summer-2018-internship-report/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Word Error Correction Paper</title>
-      <link>https://saahitya.github.io/posts/shrodinger/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahitya.github.io/posts/shrodinger/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bangalore Half Marathon 2019 Race Report</title>
       <link>https://saahitya.github.io/posts/bm-race-report/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
@@ -177,7 +177,9 @@ The course through Cubbon park had a chilly weather and the air was very fresh. 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/about/</guid>
-      <description>Saahitya E Personal brain dump. Get paid to translate and type computer code.</description>
+      <description>Saahitya E Personal brain dump
+Get paid to translate and type computer code
+Mumbling fool</description>
     </item>
     
   </channel>
