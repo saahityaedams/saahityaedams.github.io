@@ -6,11 +6,7 @@
     <description>Recent content in Posts on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://saahitya.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crossing Bridges(2013) Review</title>
       <link>https://saahitya.github.io/posts/crossing-bridges/</link>
@@ -47,7 +43,7 @@ Solution PHP CLI has an settings option auto_prepend_file which can be used to r
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/22-08-21-til/</guid>
-      <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by the postgres user)  Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency.   https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
+      <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by the postgres user) Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency. https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
     </item>
     
     <item>
@@ -67,7 +63,7 @@ In another case of the being burned due to not looking at the documentation prop
       
       <guid>https://saahitya.github.io/posts/18-08-21-til/</guid>
       <description>Recently saw someone looking at the history of their all the cut-copy text when presenting their screen in a call. One day later after installing https://maccy.app/, I&amp;rsquo;m wondering how the heck did I not know something like this(clipboard managers) ever existed before. Psst&amp;hellip; It&amp;rsquo;s probably because I&amp;rsquo;ve worked completely remote after completing college.
- Very useful for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
+Very useful for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
     </item>
     
     <item>
@@ -85,7 +81,7 @@ In another case of the being burned due to not looking at the documentation prop
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/hampta-journal/</guid>
-      <description>11 July ⁃	Making everyone hurry in the morning to get to the airport ⁃	But my phone had no charge, iphone cable doesn&#39;t work with power bank ⁃	TIL - 2 rupee lounge ⁃	Is Turbulence just driving in clouds =&amp;gt; like going over potholes ⁃	Walk out of Delhi Airport - damn hot ⁃	Terrible terrible coffee ⁃	Bus ride - 500 kms - loud Dhaba with randos signing in Haryanvi  12 July ⁃	Raining and hair pin bendy roads all the way to Manali ⁃	Get ready fast, submit all docs ⁃	Goto start point of trek in sumo, at top ⁃	Crows seems to be there at the top of the mountains for some reason unlike pigeons in Manali.</description>
+      <description>11 July ⁃	Making everyone hurry in the morning to get to the airport ⁃	But my phone had no charge, iphone cable doesn&#39;t work with power bank ⁃	TIL - 2 rupee lounge ⁃	Is Turbulence just driving in clouds =&amp;gt; like going over potholes ⁃	Walk out of Delhi Airport - damn hot ⁃	Terrible terrible coffee ⁃	Bus ride - 500 kms - loud Dhaba with randos signing in Haryanvi 12 July ⁃	Raining and hair pin bendy roads all the way to Manali ⁃	Get ready fast, submit all docs ⁃	Goto start point of trek in sumo, at top ⁃	Crows seems to be there at the top of the mountains for some reason unlike pigeons in Manali.</description>
     </item>
     
     <item>
@@ -95,7 +91,7 @@ In another case of the being burned due to not looking at the documentation prop
       
       <guid>https://saahitya.github.io/posts/drupal-logging/</guid>
       <description>Setting up proper logging today prevents the big headache tommorow
-Components  syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space.  Steps  We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
+Components syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space. Steps We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
     </item>
     
     <item>
@@ -113,7 +109,8 @@ Components  syslog - inbuilt drupal module to log drupal errors(no particular re
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/endurance-notes/</guid>
-      <description>  Notes taken while listening to Building Endurance the Right Way Aspects to Endurance - Cardio &amp;amp; Muscular  How to develop cardio  Steady state exercise - run at particular speed not too fast     Cause: Heart stretches when you increase heart rate upto a certain point which increases stroke volume(means a bigger heart)    Running at increased heart rate (90% +), heart is twitching and not effective    Run at pace where you can have a sustained conversation   Interval Training     Based on Inertia    Run at 80-90% and then start jogging or walking, heart is still beating hard, extra volume of blood is moving which stretches the heart    Interval found usefull after period of steady state training    Easy to go wrong    Walk till you can talk   How to Develop Muscular  Need/Develop mitochondria in muscle cells     Easy to do in slow fibers and harder to do in fast fibers    Make muscle oxidative, enduring not polluting   3 main energy systems     creatine phosphate    clean burning and for short durations      aerobic    less powerfull    longer lasting      glyocalytic    inbetween     Train in a way to produce less acid  For slow fibers     moving right below anerobic threshold    Anaerobic is intensity where acid is accumulating at rate where the body can dispose at the same rate    above anaerobic threshold when you are failing the talk test   For fast fibers     N/A :) because I had stopped watching the video by this point of time   </description>
+      <description>Notes taken while listening to Building Endurance the Right Way
+Aspects to Endurance - Cardio &amp;amp; Muscular How to develop cardio Steady state exercise - run at particular speed not too fast Cause: Heart stretches when you increase heart rate upto a certain point which increases stroke volume(means a bigger heart) Running at increased heart rate (90% +), heart is twitching and not effective Run at pace where you can have a sustained conversation Interval Training Based on Inertia Run at 80-90% and then start jogging or walking, heart is still beating hard, extra volume of blood is moving which stretches the heart Interval found usefull after period of steady state training Easy to go wrong Walk till you can talk How to Develop Muscular Need/Develop mitochondria in muscle cells Easy to do in slow fibers and harder to do in fast fibers Make muscle oxidative, enduring not polluting 3 main energy systems creatine phosphate</description>
     </item>
     
     <item>
@@ -140,7 +137,7 @@ Components  syslog - inbuilt drupal module to log drupal errors(no particular re
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://saahitya.github.io/posts/finalyear-report/</guid>
-      <description> </description>
+      <description></description>
     </item>
     
     <item>
