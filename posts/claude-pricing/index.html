@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Claude Pricing (Application vs API) - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Claude Pricing (Application vs API)">
+<meta itemprop="description" content="People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.
+Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage."><meta itemprop="datePublished" content="2024-09-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-09-10T00:00:00+00:00" />
+<meta itemprop="wordCount" content="620">
+<meta itemprop="keywords" content="claude," /><meta property="og:title" content="Claude Pricing (Application vs API)" />
+<meta property="og:description" content="People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.
+Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://saahityaedams.github.io/posts/claude-pricing/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-09-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-09-10T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Claude Pricing (Application vs API)"/>
+<meta name="twitter:description" content="People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.
+Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://saahityaedams.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://saahityaedams.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://saahityaedams.github.io/">saahityaedams</a></h1>
+	<div class="site-description"><p></p><nav class="nav social">
+			<ul class="flat"><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">10</span>
+							<span class="rest">Sep 2024</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Claude Pricing (Application vs API)</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.</p>
+<p>Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage.</p>
+<p>On the other hand, API pricing is driven by usage (based on number of input and output token used) and is model specific. Claude Sonnet 3.5 (advertised as “Our most intelligent model to date” ) costs $3 for a million input tokens and $15 for a million output tokens. You can add a credit balance (with a minimum of $5), which is then used as you utilize the API.</p>
+<hr>
+<p>The difference in pricing screams market inefficiency. For a segment of end users (slightly technical, moderate and infrequent usage) the API pricing is clearly cheaper and makes more sense especially considering that the API can just be used with an API client. The low pricing of the API makes less sense considering that the secret sauce is the model and the chat interface is of marginal value even though it is essential. To be fair, I think I partly understand why the API pricing is cheaper (devs need high-volume usage at a lower price so that a broader range of AI apps are feasible, etc), but there could other business strategy reasons and there is no guarantee that this arbitrage will remain in the future.</p>
+<p>Using the Workbench in the Anthropic Console (meant for testing the API) as an API client is perfectly good enough for me. You can add the model’s response back to input and then prompt again to make it seem like a chat interface. The flexibility gets you additional benefits - choosing models (the Haiku is much cheaper and works just as well for simpler tasks like looking up a synonym to a word), adjusting max tokens to sample (get shorter answers) and temperature (get more creative responses).</p>
+<p>The workbench has a slight learning curve since the UX is not optimised for end users(different terminology like prompts instead of chats, information overload)), but the core functionality exists (history of a chat, multiple chats, uploading images in input)). A browser extension to beautify the Workbench for end users to use like Claude application I think would be very useful.</p>
+<p>Additional features could make it a powerful tool for niche users. A simple idea is to make the system prompt configurable to make the output more appropriate and domain specific.</p>
+<hr>
+<p>Another interesting thing about API based pricing is the scope for BYOK (Bring Your Own Key) applications. In theory, there could a Substack feature to proof read your posts where you can configure which provider &amp; model to use and provide an API key as well. Zed, the code editor already provides a similar feature. To be fair, providing API keys to a 3P is a downside. There are security implications, but these can be mitigated by controls like rate limits.</p>
+<p>A big advantage with BYOK is that pricing of just the software to end users is more transparent and more competitive. No more costly AI features from SaaS products.</p>
+<p>A huge breadth of open source BYOK browser extensions that extend core functionality of existing applications would be glorious. These would tightly integrate AI with existing software and could be completely client side to erase the security implication of sending an API key to a 3P. This tight integration with software is likely to enable prompt caching, further decreasing token usage.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/claude">claude</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2024  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+<script>feather.replace()</script>
+</body>
+</html>

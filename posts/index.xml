@@ -6,7 +6,57 @@
     <description>Recent content in Posts on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Pricing (Application vs API)</title>
+      <link>https://saahityaedams.github.io/posts/claude-pricing/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/claude-pricing/</guid>
+      <description>People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.
+Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage.</description>
+    </item>
+    
+    <item>
+      <title>re:kindle</title>
+      <link>https://saahityaedams.github.io/posts/kindle/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/kindle/</guid>
+      <description>I recently read a Wall Street Journal1 article about kindles having a resurgence amongst young readers, which resonated with me since I love my kindle too.
+I have a 5+ yr old kindle paperwhite and it is easily the most well built techy thing I own. It is solid in your hands, and even though it&amp;rsquo;s been dropped countless times, everything seems to work perfectly. It always amazed me that I can pick it up after a month and see that the battery percentage has barely shifted.</description>
+    </item>
+    
+    <item>
+      <title>Indiranagar vs Subramanyapura</title>
+      <link>https://saahityaedams.github.io/posts/indiranagar-subramanyapura/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/indiranagar-subramanyapura/</guid>
+      <description>There&amp;rsquo;s a lot to unpack just from saying &amp;lsquo;Indira-nagar&amp;rsquo; versus &amp;lsquo;Subramanya-pura&amp;rsquo;— one gives off a cool-and-hip vibe, while the other feels more like traditional Indian family vibe. I rented a room in the first for the past year to be closer to work, while the latter has been my home (technically my parents&amp;rsquo;) for more than 10 years through school and college before that.
+Indiranagar seems like an unusual island isolated from the rest of India - in demeanor and culturally.</description>
+    </item>
+    
+    <item>
+      <title>Driving 30 min to run in the woods</title>
+      <link>https://saahityaedams.github.io/posts/running-in-the-woods/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/running-in-the-woods/</guid>
+      <description>People look at me strangely when I mention that I drive like 30 mins one way just to jog awkwardly on a stretch of road in the middle-of-nowhere on weekends.
+The first time I encountered this place was in February 2020. I was training for a half marathon (I am older and tireder now) and set off early in the morning for a slow long run. Feeling adventurous, I ran further than usual.</description>
+    </item>
+    
+    <item>
+      <title>Vipassana Experience</title>
+      <link>https://saahityaedams.github.io/posts/vipassana-experience/</link>
+      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/vipassana-experience/</guid>
+      <description>Just writing up my experience1 attending a 10-day Vipassana course from the 15th to the 25th of July at Dhamma Ketana in Chengannur.
+Starting off with the location. Kerala, what a beauty. The center is basically a plot of tropical rainforest with a few one-story buildings and the main Dhamma center connected by a path. Plus, there are two ponds. Behind the property, there’s a panoramic view of flooded green paddy fields with groves of trees behind them.</description>
+    </item>
+    
     <item>
       <title>Crossing Bridges(2013) Review</title>
       <link>https://saahityaedams.github.io/posts/crossing-bridges/</link>
