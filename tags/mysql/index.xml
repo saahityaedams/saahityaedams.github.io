@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mysql on saahityaedams</title>
-    <link>https://saahitya.github.io/tags/mysql/</link>
+    <link>https://saahityaedams.github.io/tags/mysql/</link>
     <description>Recent content in mysql on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahitya.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL MySQL GROUP_CONCATE truncates to 1024</title>
-      <link>https://saahitya.github.io/posts/20-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/20-08-21-til/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahitya.github.io/posts/20-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/20-08-21-til/</guid>
       <description>https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat
 In another case of the being burned due to not looking at the documentation properly and blindly copying a query,the root cause of a field issue turned out to be MySQL function GROUP_CONCATE truncating the result of the query to 1024 by default unless group_concat_max_len is set explicitly. Plus depending on the way of processing this query results in your program, it is unlikely to figure out the results were ever truncated.</description>
     </item>
