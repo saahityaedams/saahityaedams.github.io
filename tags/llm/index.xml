@@ -6,7 +6,16 @@
     <description>Recent content in llm on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My LLM usage pattern</title>
+      <link>https://saahityaedams.github.io/posts/ai_ui_ux/</link>
+      <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/ai_ui_ux/</guid>
+      <description>So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&amp;rsquo;ve been using is Zed (absolutely love this code editor who &amp;rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided.</description>
+    </item>
+    
     <item>
       <title>llm.c rough notes</title>
       <link>https://saahityaedams.github.io/posts/llm_c/</link>
