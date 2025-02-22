@@ -6,7 +6,17 @@
     <description>Recent content on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Good software: re:Zed</title>
+      <link>https://saahityaedams.github.io/posts/zed_is_good_software/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/zed_is_good_software/</guid>
+      <description>I&amp;rsquo;ve travelled all across the editor-lands from vim to emacs to vscode and then intellij. Now I think I&amp;rsquo;ve settled for Zed (My screen time says I&amp;rsquo;ve used Zed an average of approx. 3 hours over the past work week plus I wrote this post in Zed).
+You intuitively get a sense for good software. Over the last few years I&amp;rsquo;ve had the pleasure of using some good software. Some notable entries in this list are uv (yes, the package manager), Tailscale &amp;amp; Zed.</description>
+    </item>
+    
     <item>
       <title>My LLM usage pattern</title>
       <link>https://saahityaedams.github.io/posts/ai_ui_ux/</link>
