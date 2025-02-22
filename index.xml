@@ -8,29 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Favourite Comedy TV Shows</title>
-      <link>https://saahityaedams.github.io/posts/fav_comedy_shows/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahityaedams.github.io/posts/fav_comedy_shows/</guid>
-      <description>Patriot Depressed spy goes to Luxemborg undercover to bribe Iranians, messes it up and tries fixing it. He also has to be handle his BS undercover job.
-Curb your Enthusiasm Cynical Larry David is irritated by the world, sticks to his weird rules and offends people by accident.
-Nathan for You Nathan Fielder gives baffling and hilarious advice to small businesses.
-James May: Our Man in Japan English man tours Japan while engaging in british humour.</description>
-    </item>
-    
-    <item>
-      <title>Favourite Drama TV Shows</title>
-      <link>https://saahityaedams.github.io/posts/fav_drama_shows/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahityaedams.github.io/posts/fav_drama_shows/</guid>
-      <description>Bosch Old school Los Angeles cop keeps solving a lot of cases with good old detective work.
-Justified US Marshal gets transfered back home to Kentucky. Emaculate old western movie vibes and a different side of American culture, ie Applachia.
-Succession Corporate family drama. Each of 3 incompetent kids want to run evil dad&amp;rsquo;s megacorp.</description>
-    </item>
-    
-    <item>
       <title>Good software: re:Zed</title>
       <link>https://saahityaedams.github.io/posts/zed_is_good_software/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
@@ -47,6 +24,29 @@ You intuitively get a sense for good software. Over the last few years I&amp;rsq
       
       <guid>https://saahityaedams.github.io/posts/ai_ui_ux/</guid>
       <description>So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&amp;rsquo;ve been using is Zed (absolutely love this code editor who &amp;rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided.</description>
+    </item>
+    
+    <item>
+      <title>Favourite Comedy TV Shows</title>
+      <link>https://saahityaedams.github.io/posts/fav_comedy_shows/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/fav_comedy_shows/</guid>
+      <description>Patriot Depressed spy goes to Luxemborg undercover to bribe Iranians, messes it up and tries fixing it. He also has to be handle his BS undercover job.
+Curb your Enthusiasm Cynical Larry David is irritated by the world, sticks to his weird rules and offends people by accident.
+Nathan for You Nathan Fielder gives baffling and hilarious advice to small businesses.
+James May: Our Man in Japan English man tours Japan while engaging in british humour.</description>
+    </item>
+    
+    <item>
+      <title>Favourite Drama TV Shows</title>
+      <link>https://saahityaedams.github.io/posts/fav_drama_shows/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/fav_drama_shows/</guid>
+      <description>Bosch Old school Los Angeles cop keeps solving a lot of cases with good old detective work.
+Justified US Marshal gets transfered back home to Kentucky. Emaculate old western movie vibes and a different side of American culture, ie Applachia.
+Succession Corporate family drama. Each of 3 incompetent kids want to run evil dad&amp;rsquo;s megacorp.</description>
     </item>
     
     <item>
