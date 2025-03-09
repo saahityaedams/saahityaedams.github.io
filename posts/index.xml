@@ -6,7 +6,20 @@
     <description>Recent content in Posts on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DPI Enshittification?</title>
+      <link>https://saahityaedams.github.io/posts/dpi_enshittification/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/dpi_enshittification/</guid>
+      <description>DRAFT
+Recently came across the term ‘enshittification’ (or politically correct version: platform decay) coined by Cory Doctrow: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
+Are we likely to see similar trends in some of the DPI platforms: Aadhaar, UPI, Digiyatra, etc.? True, the controlling shareholder isn&amp;rsquo;t maximizing for profits but may want to extract a different kind of &amp;lsquo;value&amp;rsquo;.
+https://opentakshashila.net/posts/80874543
+OP asks an interesting question, are DPIs likely to enshittify in the future ? Your&amp;rsquo;s truly noted down his meandering &amp;amp; biased thoughts below.</description>
+    </item>
+    
     <item>
       <title>Good software: re:Zed</title>
       <link>https://saahityaedams.github.io/posts/zed_is_good_software/</link>
@@ -15,15 +28,6 @@
       <guid>https://saahityaedams.github.io/posts/zed_is_good_software/</guid>
       <description>I&amp;rsquo;ve travelled all across the editor-lands from vim to emacs to vscode and then intellij. Now I think I&amp;rsquo;ve settled for Zed (My screen time says I&amp;rsquo;ve used Zed an average of approx. 3 hours over the past work week plus I wrote this post in Zed).
 You intuitively get a sense for good software. Over the last few years I&amp;rsquo;ve had the pleasure of using some good software. Some notable entries in this list are uv (yes, the package manager), Tailscale &amp;amp; Zed.</description>
-    </item>
-    
-    <item>
-      <title>Short note about Clint Eastwood</title>
-      <link>https://saahityaedams.github.io/posts/clint-eastwood-note/</link>
-      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahityaedams.github.io/posts/clint-eastwood-note/</guid>
-      <description>Clint Eastwood has been an absolute inspiration and hero to me (and for the longest time). When I try explaining my reasoning to suprised people, i&#39;m never able to frame it properly. Do I like his acting in spaghetti westerns ? Yes I do, but that&#39;s not exactly it. Do I like his elegant narrative directorials ? I love them, but that&#39;s not it too. Both of these reasons are simplistic and don&#39;t hit the nail exactly about why I revere Mr Clint Eastwood.</description>
     </item>
     
     <item>
