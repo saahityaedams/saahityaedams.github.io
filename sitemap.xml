@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://saahityaedams.github.io/posts/dpi_enshittification/</loc>
+    <loc>https://saahityaedams.github.io/tags/gcpp/</loc>
+    <lastmod>2025-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/posts/</loc>
+    <lastmod>2025-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/tags/review/</loc>
+    <lastmod>2025-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/</loc>
+    <lastmod>2025-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/tags/</loc>
+    <lastmod>2025-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/posts/gcpp_artifacts/the_scaling_era_book_review/</loc>
+    <lastmod>2025-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/posts/gcpp_artifacts/dpi_enshittification/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/tags/enshittification/</loc>
-    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/tags/gcpp/</loc>
-    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/posts/</loc>
-    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/</loc>
-    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/tags/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/zed_is_good_software/</loc>
@@ -47,10 +53,7 @@
     <loc>https://saahityaedams.github.io/posts/dont-tell-me-i-cant-review/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://saahityaedams.github.io/tags/review/</loc>
-    <lastmod>2025-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/posts/gov-market-role/</loc>
+    <loc>https://saahityaedams.github.io/posts/gcpp_artifacts/gov-market-role/</loc>
     <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/are-tech-stocks-overvalued/</loc>

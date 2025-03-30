@@ -6,15 +6,24 @@
     <description>Recent content in gcpp on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/gcpp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/gcpp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Scaling Era Book Review</title>
+      <link>https://saahityaedams.github.io/posts/gcpp_artifacts/the_scaling_era_book_review/</link>
+      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/the_scaling_era_book_review/</guid>
+      <description>Dwarkesh&amp;rsquo;s book - &amp;ldquo;The Scaling Era&amp;rdquo; (25th March 2025, Stripe Press) is a delightful oddity. It&amp;rsquo;s uniquely formatted - mostly as snippets of his podcast episodes related to AI categorized across crucial aspects of LLMs like Safety and Scaling. The book is a superb highlight reel of Dwarkesh&amp;rsquo;s podcast, reflecting the excellent quality of his show (superb guest quality, discourse quality, intellectual topics, etc.).
+The book excels at discussing the not-strictly technical &amp;amp; under-discussed aspects of LLMs like inference scaling, cluster sizes, and impacts of AGI.</description>
+    </item>
+    
     <item>
       <title>DPI Enshittification?</title>
-      <link>https://saahityaedams.github.io/posts/dpi_enshittification/</link>
+      <link>https://saahityaedams.github.io/posts/gcpp_artifacts/dpi_enshittification/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/dpi_enshittification/</guid>
-      <description>DRAFT
-Recently came across the term ‘enshittification’ (or politically correct version: platform decay) coined by Cory Doctrow: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
+      <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/dpi_enshittification/</guid>
+      <description>Recently came across the term ‘enshittification’ (or politically correct version: platform decay) coined by Cory Doctrow: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
 Are we likely to see similar trends in some of the DPI platforms: Aadhaar, UPI, Digiyatra, etc.? True, the controlling shareholder isn&amp;rsquo;t maximizing for profits but may want to extract a different kind of &amp;lsquo;value&amp;rsquo;.
 https://opentakshashila.net/posts/80874543
 OP asks an interesting question, are DPIs likely to enshittify in the future ? Your&amp;rsquo;s truly noted down his meandering &amp;amp; biased thoughts below.</description>
@@ -22,10 +31,10 @@ OP asks an interesting question, are DPIs likely to enshittify in the future ? Y
     
     <item>
       <title>Government&#39;s Role in the Market?</title>
-      <link>https://saahityaedams.github.io/posts/gov-market-role/</link>
+      <link>https://saahityaedams.github.io/posts/gcpp_artifacts/gov-market-role/</link>
       <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/gov-market-role/</guid>
+      <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/gov-market-role/</guid>
       <description>Market economics: role of gov offering goods and services
 For many essential goods and services, the government becomes a player in the market and offers these goods and services at a controlled price e.g., transport, hospitals etc. Alternative is that the government lets the market provide these goods and services but incentivises them in different ways. How do you assess the two different approaches keeping in mind that any government intervention in general leads to inefficiencies in the market.</description>
     </item>
