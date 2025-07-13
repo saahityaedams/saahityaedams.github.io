@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Troubleshooting Linux Notes - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Troubleshooting Linux Notes">
+<meta itemprop="description" content="One thing I&rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting."><meta itemprop="datePublished" content="2025-07-08T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2025-07-08T00:00:00+00:00" />
+<meta itemprop="wordCount" content="359">
+<meta itemprop="keywords" content="linux,htop," /><meta property="og:title" content="Troubleshooting Linux Notes" />
+<meta property="og:description" content="One thing I&rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://saahityaedams.github.io/posts/htop_linux/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-07-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-07-08T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Troubleshooting Linux Notes"/>
+<meta name="twitter:description" content="One thing I&rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://saahityaedams.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://saahityaedams.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://saahityaedams.github.io/">saahityaedams</a></h1>
+	<div class="site-description"><p></p><nav class="nav social">
+			<ul class="flat"><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">08</span>
+							<span class="rest">Jul 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Troubleshooting Linux Notes</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>One thing I&rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting.</p>
+<p>I first start by looking at running this great tool <a href="https://htop.dev/">htop</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. At a first glance I&rsquo;m just looking at CPU utilization percents for the different cores, the Memory usage, the Swap usage. The good thing is that in htop, anomalies stick out painfully. You see all the cores at 100% utilization, you have too many processes consuming too much CPU. You see high Memory usage and Swap usage, you have multiple processes using too much RAM, the OS is swapping the memory to your hard disk and back.</p>
+<p>I also look at Load Average in htop which indicates how many processes are running or waiting to run over the last 1 min, 5 mins, 15 mins. If you have 8 cores and have load average of 20 for 15 mins, it indicates that you have 20 processes running or waiting to run (terrible scenario, ideally this shouldn&rsquo;t be more than 8).</p>
+<p>Htop also lets you filter processes by (CPU, memory utilization, etc), filter by process name and kill processes which I find useful.</p>
+<p>Sometimes software on linux boxes stop due to insufficient disk space. I find it useful to run <code>df -h</code> to confirm this by checking capacity of the primary volume. I then tend to go some directories where I think could be the culprits of this (like log or upload folders) and run <code>du -h -d 1  . | sort -hr</code> to further dig into which folder or file is taking too much space.</p>
+<p>I use this less frequently, but I&rsquo;ve run different versions of <code>sudo journalctl</code> (referencing chatgpt) to troubleshoot harder and more core issues on linux boxes.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Good resource regd htop - <a href="https://peteris.rocks/blog/htop/">https://peteris.rocks/blog/htop/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/linux">linux</a></li>
+							
+							<li><a href="/tags/htop">htop</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+<script>feather.replace()</script>
+</body>
+</html>
