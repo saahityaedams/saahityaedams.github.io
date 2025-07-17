@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Claude Code Usage Cost - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Claude Code Usage Cost">
+<meta itemprop="description" content="Poking around in the ~/.claude folder and looking at the files that claude code is saving to the local machine.
+➜ .claude pwd /Users/saahityae/.claude ➜ .claude ls config projects statsig local shell-snapshots todos There&rsquo;s
+config -&gt; holds the config related file (eg. which tools are allowed, mcps configured, etc) local -&gt; the actual node CLI app. shell-snapshots -&gt; ? statsig -&gt; something related to https://statsig.com/ . I&rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality) todos - Basically a bunch of files with the structured text of TODOs that the claude code uses when you&rsquo;re using it like { &#34;content&#34;: &#34;Modify Dockerfile to use UV instead of Poetry&#34;, &#34;status&#34;: &#34;in_progress&#34;, &#34;priority&#34;: &#34;high&#34;, &#34;id&#34;: &#34;1&#34; }, { &#34;content&#34;: &#34;Update file copy instructions to handle uv."><meta itemprop="datePublished" content="2025-07-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2025-07-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="637">
+<meta itemprop="keywords" content="claude," /><meta property="og:title" content="Claude Code Usage Cost" />
+<meta property="og:description" content="Poking around in the ~/.claude folder and looking at the files that claude code is saving to the local machine.
+➜ .claude pwd /Users/saahityae/.claude ➜ .claude ls config projects statsig local shell-snapshots todos There&rsquo;s
+config -&gt; holds the config related file (eg. which tools are allowed, mcps configured, etc) local -&gt; the actual node CLI app. shell-snapshots -&gt; ? statsig -&gt; something related to https://statsig.com/ . I&rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality) todos - Basically a bunch of files with the structured text of TODOs that the claude code uses when you&rsquo;re using it like { &#34;content&#34;: &#34;Modify Dockerfile to use UV instead of Poetry&#34;, &#34;status&#34;: &#34;in_progress&#34;, &#34;priority&#34;: &#34;high&#34;, &#34;id&#34;: &#34;1&#34; }, { &#34;content&#34;: &#34;Update file copy instructions to handle uv." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://saahityaedams.github.io/posts/claude_code_usage_cost/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-07-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-07-17T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Claude Code Usage Cost"/>
+<meta name="twitter:description" content="Poking around in the ~/.claude folder and looking at the files that claude code is saving to the local machine.
+➜ .claude pwd /Users/saahityae/.claude ➜ .claude ls config projects statsig local shell-snapshots todos There&rsquo;s
+config -&gt; holds the config related file (eg. which tools are allowed, mcps configured, etc) local -&gt; the actual node CLI app. shell-snapshots -&gt; ? statsig -&gt; something related to https://statsig.com/ . I&rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality) todos - Basically a bunch of files with the structured text of TODOs that the claude code uses when you&rsquo;re using it like { &#34;content&#34;: &#34;Modify Dockerfile to use UV instead of Poetry&#34;, &#34;status&#34;: &#34;in_progress&#34;, &#34;priority&#34;: &#34;high&#34;, &#34;id&#34;: &#34;1&#34; }, { &#34;content&#34;: &#34;Update file copy instructions to handle uv."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://saahityaedams.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://saahityaedams.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://saahityaedams.github.io/">saahityaedams</a></h1>
+	<div class="site-description"><p></p><nav class="nav social">
+			<ul class="flat"><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">17</span>
+							<span class="rest">Jul 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Claude Code Usage Cost</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Poking around in the <code>~/.claude</code> folder and looking at the files that claude code is saving to the local machine.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>➜  .claude pwd
+</span></span><span style="display:flex;"><span>/Users/saahityae/.claude
+</span></span><span style="display:flex;"><span>➜  .claude ls
+</span></span><span style="display:flex;"><span>config          projects        statsig
+</span></span><span style="display:flex;"><span>local           shell-snapshots todos
+</span></span></code></pre></div><p>There&rsquo;s</p>
+<ul>
+<li><code>config</code> -&gt; holds the config related file (eg. which tools are allowed, mcps configured, etc)</li>
+<li><code>local</code> -&gt; the actual node CLI app.</li>
+<li><code>shell-snapshots</code> -&gt; ?</li>
+<li><code>statsig</code> -&gt; something related to <a href="https://statsig.com/">https://statsig.com/</a> . I&rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality)</li>
+<li><code>todos</code> - Basically a bunch of files with the structured text of TODOs that the claude code  uses when you&rsquo;re using it like</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;content&#34;</span>: <span style="color:#b44">&#34;Modify Dockerfile to use UV instead of Poetry&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;status&#34;</span>: <span style="color:#b44">&#34;in_progress&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;priority&#34;</span>: <span style="color:#b44">&#34;high&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;1&#34;</span>
+</span></span><span style="display:flex;"><span>}<span style="">,</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;content&#34;</span>: <span style="color:#b44">&#34;Update file copy instructions to handle uv.lock instead of poetry.lock&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;status&#34;</span>: <span style="color:#b44">&#34;pending&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;priority&#34;</span>: <span style="color:#b44">&#34;medium&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;2&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li><code>projects</code> -&gt; the most important of these that holds the sessions and interactions with claude code. There&rsquo;s a bunch of <code>.jsonl</code> each with a session (I think).</li>
+</ul>
+<hr>
+<p>In the <code>projects</code> folder, there&rsquo;s a folder for each project (repo ?) you&rsquo;re using claude code . There&rsquo;s a bunch of <code>.jsonl</code> each with a session (I think) in each of these folder. Each line of these <code>.jsonl</code> is something like the below</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;parentUuid&#34;</span>: <span style="color:#b44">&#34;2c94d170-7792-4cdd-804c-1fb50ee88a01&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;isSidechain&#34;</span>: <span style="color:#a2f;font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;userType&#34;</span>: <span style="color:#b44">&#34;external&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;cwd&#34;</span>: <span style="color:#b44">&#34;/Users/saahityae/babbage-insights/service-pmo&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;sessionId&#34;</span>: <span style="color:#b44">&#34;d036f5cc-ad9d-4eb6-909f-f9b59d453745&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;version&#34;</span>: <span style="color:#b44">&#34;1.0.51&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;message&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;msg_bdrk_01M4KmU61E3CNFcMXzF9injN&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;type&#34;</span>: <span style="color:#b44">&#34;message&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;role&#34;</span>: <span style="color:#b44">&#34;assistant&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;model&#34;</span>: <span style="color:#b44">&#34;claude-3-7-sonnet-20250219&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;content&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&#34;type&#34;</span>: <span style="color:#b44">&#34;tool_use&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;toolu_bdrk_01KeXKgCbMy54Qp75KV8dMGy&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&#34;name&#34;</span>: <span style="color:#b44">&#34;TodoWrite&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&#34;input&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#008000;font-weight:bold">&#34;todos&#34;</span>: [
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;content&#34;</span>: <span style="color:#b44">&#34;Review changes to metric_tracker_repo.py&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;status&#34;</span>: <span style="color:#b44">&#34;completed&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;priority&#34;</span>: <span style="color:#b44">&#34;high&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;1&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;content&#34;</span>: <span style="color:#b44">&#34;Review changes to metric_tracker_router.py&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;status&#34;</span>: <span style="color:#b44">&#34;completed&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;priority&#34;</span>: <span style="color:#b44">&#34;high&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;2&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;content&#34;</span>: <span style="color:#b44">&#34;Review changes to metric_tracker_service.py&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;status&#34;</span>: <span style="color:#b44">&#34;completed&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;priority&#34;</span>: <span style="color:#b44">&#34;high&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;3&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;content&#34;</span>: <span style="color:#b44">&#34;Check for syntax errors&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;status&#34;</span>: <span style="color:#b44">&#34;completed&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;priority&#34;</span>: <span style="color:#b44">&#34;medium&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;4&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;content&#34;</span>: <span style="color:#b44">&#34;Provide summary of changes&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;status&#34;</span>: <span style="color:#b44">&#34;completed&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;priority&#34;</span>: <span style="color:#b44">&#34;medium&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&#34;id&#34;</span>: <span style="color:#b44">&#34;5&#34;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;stop_reason&#34;</span>: <span style="color:#a2f;font-weight:bold">null</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;stop_sequence&#34;</span>: <span style="color:#a2f;font-weight:bold">null</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;usage&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&#34;input_tokens&#34;</span>: <span style="color:#666">0</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&#34;cache_creation_input_tokens&#34;</span>: <span style="color:#666">427</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&#34;cache_read_input_tokens&#34;</span>: <span style="color:#666">27223</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&#34;output_tokens&#34;</span>: <span style="color:#666">24</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;type&#34;</span>: <span style="color:#b44">&#34;assistant&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;uuid&#34;</span>: <span style="color:#b44">&#34;ae19f2df-2d88-4160-8b27-cf45aba2a865&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;timestamp&#34;</span>: <span style="color:#b44">&#34;2025-07-14T05:02:55.334Z&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<p>The important fields I am interested in is <code>usage</code> and <code>model</code> and <code>timestamp</code> to understand my usage.
+I ran the following (Thank you ChatGPT - o4-mini).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jq -r <span style="color:#b44">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">  { model: .message.model, usage: .message.usage }
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">  | select(.usage != null)
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">  | &#34;\(.model)\t\(.usage | @json)&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">&#39;</span> /Users/saahityae/.claude/projects/*/*.jsonl &gt; usage.txt
+</span></span></code></pre></div><p>I then ran (after confirming that all the logged usage is for <code>claude-3-7-sonnet-20250219</code> model).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cut -f2 usage.txt <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>  | jq -s <span style="color:#b44">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">      {
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">        input_tokens:                     map(.input_tokens                // 0) | add,
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">        cache_creation_input_tokens:     map(.cache_creation_input_tokens // 0) | add,
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">        cache_read_input_tokens:         map(.cache_read_input_tokens     // 0) | add,
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">        output_tokens:                   map(.output_tokens               // 0) | add
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">      }
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">    &#39;</span>
+</span></span></code></pre></div><p>To get</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;input_tokens&#34;</span>: <span style="color:#666">62882</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;cache_creation_input_tokens&#34;</span>: <span style="color:#666">4194930</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;cache_read_input_tokens&#34;</span>: <span style="color:#666">27910727</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;output_tokens&#34;</span>: <span style="color:#666">69397</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I ran the following to get the min and max timestamps</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jq -s <span style="color:#b44">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">  [ .[]
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">    | select(.message.usage != null)
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">    | .timestamp
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">  ]
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">  | {
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">      min_timestamp: min,
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">      max_timestamp: max
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">    }
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">&#39;</span> /Users/saahityae/.claude/projects/*/*.jsonl
+</span></span></code></pre></div><p>To get</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;min_timestamp&#34;</span>: <span style="color:#b44">&#34;2025-06-17T04:23:53.757Z&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&#34;max_timestamp&#34;</span>: <span style="color:#b44">&#34;2025-07-16T06:31:16.330Z&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Which seems like a month of usage data is being retained.</p>
+<p>Refering to bedrock pricing (my claude code is pointed at my workplace&rsquo;s AWS account) at <a href="https://aws.amazon.com/bedrock/pricing/">https://aws.amazon.com/bedrock/pricing/</a> .</p>
+<p>Claude 3.7 Sonnet</p>
+<ul>
+<li>Price per 1,000 input tokens: $0.003</li>
+<li>Price per 1,000 output tokens: $0.015</li>
+<li>Price per 1,000 input tokens (cache write): $0.00375</li>
+<li>Price per 1,000 input tokens (cache read): $0.0003</li>
+</ul>
+<p>Which gets us to a grand total of</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#666">&gt;</span> <span style="color:#666">0.003</span> <span style="color:#666">*</span> <span style="color:#666">62882</span> <span style="color:#666">/</span> <span style="color:#666">1000</span>
+</span></span><span style="display:flex;"><span>[1] <span style="color:#666">0.188646</span> <span style="color:#080;font-style:italic"># total read tokens cost</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;</span> <span style="color:#666">0.015</span> <span style="color:#666">*</span> <span style="color:#666">69397</span> <span style="color:#666">/</span> <span style="color:#666">1000</span>
+</span></span><span style="display:flex;"><span>[1] <span style="color:#666">1.040955</span> <span style="color:#080;font-style:italic"># total write tokens cost</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;</span> <span style="color:#666">0.00375</span> <span style="color:#666">*</span> <span style="color:#666">4194930</span> <span style="color:#666">/</span> <span style="color:#666">1000</span>
+</span></span><span style="display:flex;"><span>[1] <span style="color:#666">15.73099</span> <span style="color:#080;font-style:italic"># total cache write tokens cost</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;</span> <span style="color:#666">0.0003</span> <span style="color:#666">*</span> <span style="color:#666">27910727</span> <span style="color:#666">/</span> <span style="color:#666">1000</span>
+</span></span><span style="display:flex;"><span>[1] <span style="color:#666">8.373218</span> <span style="color:#080;font-style:italic"># total cache read tokens cost</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;</span> <span style="color:#666">0.188646</span> <span style="color:#666">+</span> <span style="color:#666">1.040955</span> <span style="color:#666">+</span> <span style="color:#666">15.73099</span> <span style="color:#666">+</span> <span style="color:#666">8.373218</span>
+</span></span><span style="display:flex;"><span>[1] <span style="color:#666">25.33381</span> <span style="color:#080;font-style:italic"># grand total USD</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;</span> <span style="color:#666">25.33381</span> <span style="color:#666">*</span> <span style="color:#666">86</span>
+</span></span><span style="display:flex;"><span>[1] <span style="color:#666">2178.708</span> <span style="color:#080;font-style:italic"># grand total INR</span>
+</span></span></code></pre></div><h3 id="inr-2178708-or-usd-2533381">INR 2178.708 OR USD 25.33381</h3>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/claude">claude</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+<script>feather.replace()</script>
+</body>
+</html>

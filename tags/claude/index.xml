@@ -6,7 +6,18 @@
     <description>Recent content in claude on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/claude/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/claude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code Usage Cost</title>
+      <link>https://saahityaedams.github.io/posts/claude_code_usage_cost/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/claude_code_usage_cost/</guid>
+      <description>Poking around in the ~/.claude folder and looking at the files that claude code is saving to the local machine.
+➜ .claude pwd /Users/saahityae/.claude ➜ .claude ls config projects statsig local shell-snapshots todos There&amp;rsquo;s
+config -&amp;gt; holds the config related file (eg. which tools are allowed, mcps configured, etc) local -&amp;gt; the actual node CLI app. shell-snapshots -&amp;gt; ? statsig -&amp;gt; something related to https://statsig.com/ . I&amp;rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality) todos - Basically a bunch of files with the structured text of TODOs that the claude code uses when you&amp;rsquo;re using it like { &amp;#34;content&amp;#34;: &amp;#34;Modify Dockerfile to use UV instead of Poetry&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;in_progress&amp;#34;, &amp;#34;priority&amp;#34;: &amp;#34;high&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;1&amp;#34; }, { &amp;#34;content&amp;#34;: &amp;#34;Update file copy instructions to handle uv.</description>
+    </item>
+    
     <item>
       <title>My LLM usage pattern</title>
       <link>https://saahityaedams.github.io/posts/ai_ui_ux/</link>
