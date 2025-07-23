@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple Drupal 7 Shell</title>
-      <link>https://saahityaedams.github.io/posts/drupal-shell/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/drupal-shell/</link>
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/drupal-shell/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/drupal-shell/</guid>
       <description>Problem For debugging drupal 7 code, there is no packaged shell like django or ROR and we must start a normal PHP interactive shell and then initialize and bootstrap the DRUPAL installation in the shell. This involves searching and copying the 4 lines of drupal initialization and bootstrapping code from the project and pasting it in the PHP shell before doing any Drupal debugging work.
 Solution PHP CLI has an settings option auto_prepend_file which can be used to run some initialization code before running the PHP interactive shell with php -a.</description>
     </item>

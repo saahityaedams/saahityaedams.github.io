@@ -9,39 +9,39 @@
     <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL PGMiner</title>
-      <link>https://saahityaedams.github.io/posts/22-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/22-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</guid>
       <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by the postgres user) Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency. https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
     </item>
     
     <item>
       <title>TIL MySQL GROUP_CONCATE truncates to 1024</title>
-      <link>https://saahityaedams.github.io/posts/20-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/20-08-21-til/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/20-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/20-08-21-til/</guid>
       <description>https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat
 In another case of the being burned due to not looking at the documentation properly and blindly copying a query,the root cause of a field issue turned out to be MySQL function GROUP_CONCATE truncating the result of the query to 1024 by default unless group_concat_max_len is set explicitly. Plus depending on the way of processing this query results in your program, it is unlikely to figure out the results were ever truncated.</description>
     </item>
     
     <item>
       <title>TIL Clipboard manager</title>
-      <link>https://saahityaedams.github.io/posts/18-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/18-08-21-til/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/18-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/18-08-21-til/</guid>
       <description>Recently saw someone looking at the history of their all the cut-copy text when presenting their screen in a call. One day later after installing https://maccy.app/, I&amp;rsquo;m wondering how the heck did I not know something like this(clipboard managers) ever existed before. Psst&amp;hellip; It&amp;rsquo;s probably because I&amp;rsquo;ve worked completely remote after completing college.
 Very useful for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
     </item>
     
     <item>
       <title>TIL Thundering herd problem</title>
-      <link>https://saahityaedams.github.io/posts/17-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/17-08-21-til/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/17-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/17-08-21-til/</guid>
       <description>https://en.wikipedia.org/wiki/Thundering_herd_problem http://www.catb.org/jargon/html/T/thundering-herd-problem.html https://instagram-engineering.com/thundering-herds-promises-82191c8af57d https://www.reddit.com/r/RedditEng/comments/obqtfm/solving_the_three_stooges_problem/</description>
     </item>
     

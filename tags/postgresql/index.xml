@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL PGMiner</title>
-      <link>https://saahityaedams.github.io/posts/22-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/22-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</guid>
       <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by the postgres user) Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency. https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
     </item>
     

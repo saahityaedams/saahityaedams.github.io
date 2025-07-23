@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Most Important Design Guideline</title>
-      <link>https://saahityaedams.github.io/posts/solid-grasp/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/solid-grasp/</link>
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/solid-grasp/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/solid-grasp/</guid>
       <description>In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&amp;#39;t know whether applying them helps as I never could remember it and I definitely wasn&amp;#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C++ with the interface being written in the header file and the implementation being written in the library source file.</description>
     </item>
     

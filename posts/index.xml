@@ -265,10 +265,10 @@ Starting off with the location. Kerala, what a beauty. The center is basically a
     
     <item>
       <title>Crossing Bridges(2013) Review</title>
-      <link>https://saahityaedams.github.io/posts/crossing-bridges/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/crossing-bridges/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/crossing-bridges/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/crossing-bridges/</guid>
       <description>Crossing Bridges(2013) is an unusual movie. Unlike a typical Bollywood movie, it does not have drama, nor is it like the recent Biopicy style movies that show the protagonist overcoming an obstacle, yet the movie was engrossing and my connection with the protagonist so strong that I did not pick up my phone more than twice while watching it.
 – SPOILERS AHEAD –
 The movie starts by showing a man called Tashi who has returned to his village in Arunachal Pradesh from Mumbai after being laid off.</description>
@@ -276,10 +276,10 @@ The movie starts by showing a man called Tashi who has returned to his village i
     
     <item>
       <title>Simple Drupal 7 Shell</title>
-      <link>https://saahityaedams.github.io/posts/drupal-shell/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/drupal-shell/</link>
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/drupal-shell/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/drupal-shell/</guid>
       <description>Problem For debugging drupal 7 code, there is no packaged shell like django or ROR and we must start a normal PHP interactive shell and then initialize and bootstrap the DRUPAL installation in the shell. This involves searching and copying the 4 lines of drupal initialization and bootstrapping code from the project and pasting it in the PHP shell before doing any Drupal debugging work.
 Solution PHP CLI has an settings option auto_prepend_file which can be used to run some initialization code before running the PHP interactive shell with php -a.</description>
     </item>
@@ -295,76 +295,76 @@ Solution PHP CLI has an settings option auto_prepend_file which can be used to r
     
     <item>
       <title>TIL PGMiner</title>
-      <link>https://saahityaedams.github.io/posts/22-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/22-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</guid>
       <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by the postgres user) Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency. https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
     </item>
     
     <item>
       <title>TIL MySQL GROUP_CONCATE truncates to 1024</title>
-      <link>https://saahityaedams.github.io/posts/20-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/20-08-21-til/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/20-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/20-08-21-til/</guid>
       <description>https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat
 In another case of the being burned due to not looking at the documentation properly and blindly copying a query,the root cause of a field issue turned out to be MySQL function GROUP_CONCATE truncating the result of the query to 1024 by default unless group_concat_max_len is set explicitly. Plus depending on the way of processing this query results in your program, it is unlikely to figure out the results were ever truncated.</description>
     </item>
     
     <item>
       <title>TIL Clipboard manager</title>
-      <link>https://saahityaedams.github.io/posts/18-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/18-08-21-til/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/18-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/18-08-21-til/</guid>
       <description>Recently saw someone looking at the history of their all the cut-copy text when presenting their screen in a call. One day later after installing https://maccy.app/, I&amp;rsquo;m wondering how the heck did I not know something like this(clipboard managers) ever existed before. Psst&amp;hellip; It&amp;rsquo;s probably because I&amp;rsquo;ve worked completely remote after completing college.
 Very useful for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
     </item>
     
     <item>
       <title>TIL Thundering herd problem</title>
-      <link>https://saahityaedams.github.io/posts/17-08-21-til/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/17-08-21-til/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/17-08-21-til/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/17-08-21-til/</guid>
       <description>https://en.wikipedia.org/wiki/Thundering_herd_problem http://www.catb.org/jargon/html/T/thundering-herd-problem.html https://instagram-engineering.com/thundering-herds-promises-82191c8af57d https://www.reddit.com/r/RedditEng/comments/obqtfm/solving_the_three_stooges_problem/</description>
     </item>
     
     <item>
       <title>Hampta Pass Journal Entries</title>
-      <link>https://saahityaedams.github.io/posts/hampta-journal/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/hampta-journal/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/hampta-journal/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/hampta-journal/</guid>
       <description>11 July ⁃	Making everyone hurry in the morning to get to the airport ⁃	But my phone had no charge, iphone cable doesn&#39;t work with power bank ⁃	TIL - 2 rupee lounge ⁃	Is Turbulence just driving in clouds =&amp;gt; like going over potholes ⁃	Walk out of Delhi Airport - damn hot ⁃	Terrible terrible coffee ⁃	Bus ride - 500 kms - loud Dhaba with randos signing in Haryanvi 12 July ⁃	Raining and hair pin bendy roads all the way to Manali ⁃	Get ready fast, submit all docs ⁃	Goto start point of trek in sumo, at top ⁃	Crows seems to be there at the top of the mountains for some reason unlike pigeons in Manali.</description>
     </item>
     
     <item>
       <title>Logging in Drupal</title>
-      <link>https://saahityaedams.github.io/posts/drupal-logging/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/drupal-logging/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/drupal-logging/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/drupal-logging/</guid>
       <description>Setting up proper logging today prevents the big headache tommorow
 Components syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space. Steps We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
     </item>
     
     <item>
       <title>The Most Important Design Guideline</title>
-      <link>https://saahityaedams.github.io/posts/solid-grasp/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/solid-grasp/</link>
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/solid-grasp/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/solid-grasp/</guid>
       <description>In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&amp;#39;t know whether applying them helps as I never could remember it and I definitely wasn&amp;#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C++ with the interface being written in the header file and the implementation being written in the library source file.</description>
     </item>
     
     <item>
       <title>Building Endurance the Right Way</title>
-      <link>https://saahityaedams.github.io/posts/endurance-notes/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/endurance-notes/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/endurance-notes/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/endurance-notes/</guid>
       <description>Notes taken while listening to Building Endurance the Right Way
 Aspects to Endurance - Cardio &amp;amp; Muscular How to develop cardio Steady state exercise - run at particular speed not too fast Cause: Heart stretches when you increase heart rate upto a certain point which increases stroke volume(means a bigger heart) Running at increased heart rate (90% +), heart is twitching and not effective Run at pace where you can have a sustained conversation Interval Training Based on Inertia Run at 80-90% and then start jogging or walking, heart is still beating hard, extra volume of blood is moving which stretches the heart Interval found usefull after period of steady state training Easy to go wrong Walk till you can talk How to Develop Muscular Need/Develop mitochondria in muscle cells Easy to do in slow fibers and harder to do in fast fibers Make muscle oxidative, enduring not polluting 3 main energy systems creatine phosphate</description>
     </item>
@@ -380,46 +380,46 @@ Aspects to Endurance - Cardio &amp;amp; Muscular How to develop cardio Steady st
     
     <item>
       <title>Data Analytics Report</title>
-      <link>https://saahityaedams.github.io/posts/data-analytics-report/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/data-analytics-report/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/data-analytics-report/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/data-analytics-report/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Final Year Dissertation  Report &#43; Presentation</title>
-      <link>https://saahityaedams.github.io/posts/finalyear-report/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/finalyear-report/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/finalyear-report/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/finalyear-report/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Summer 2018 Internship Report</title>
-      <link>https://saahityaedams.github.io/posts/summer-2018-internship-report/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/summer-2018-internship-report/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/summer-2018-internship-report/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/summer-2018-internship-report/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Word Error Correction Paper</title>
-      <link>https://saahityaedams.github.io/posts/shrodinger/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/shrodinger/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/shrodinger/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/shrodinger/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bangalore Half Marathon 2019 Race Report</title>
-      <link>https://saahityaedams.github.io/posts/bm-race-report/</link>
+      <link>https://saahityaedams.github.io/posts/ancient/bm-race-report/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/bm-race-report/</guid>
+      <guid>https://saahityaedams.github.io/posts/ancient/bm-race-report/</guid>
       <description>Overall my memory of the race is very hazy and I only remember very specific parts of the race. The beginning part(5-6 kms) of the race involved a lot of shuffling and moving around slow runners.
 The course through Cubbon park had a chilly weather and the air was very fresh. I remember while running through Cubbon park at a later part of the race I saw this one park filled with tons of dogs running around playfully and some even cheering for me :)</description>
     </item>
