@@ -6,7 +6,7 @@
 	<meta itemprop="name" content="Troubleshooting Linux Notes">
 <meta itemprop="description" content="One thing I&rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting."><meta itemprop="datePublished" content="2025-07-08T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2025-07-08T00:00:00+00:00" />
-<meta itemprop="wordCount" content="359">
+<meta itemprop="wordCount" content="364">
 <meta itemprop="keywords" content="linux,htop," /><meta property="og:title" content="Troubleshooting Linux Notes" />
 <meta property="og:description" content="One thing I&rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting." />
 <meta property="og:type" content="article" />
@@ -87,6 +87,7 @@
 <p>Htop also lets you filter processes by (CPU, memory utilization, etc), filter by process name and kill processes which I find useful.</p>
 <p>Sometimes software on linux boxes stop due to insufficient disk space. I find it useful to run <code>df -h</code> to confirm this by checking capacity of the primary volume. I then tend to go some directories where I think could be the culprits of this (like log or upload folders) and run <code>du -h -d 1  . | sort -hr</code> to further dig into which folder or file is taking too much space.</p>
 <p>I use this less frequently, but I&rsquo;ve run different versions of <code>sudo journalctl</code> (referencing chatgpt) to troubleshoot harder and more core issues on linux boxes.</p>
+<p>TODO: Add details about dstat</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
