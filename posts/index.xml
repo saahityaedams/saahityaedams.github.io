@@ -6,7 +6,18 @@
     <description>Recent content in Posts on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Tampermonkey</title>
+      <link>https://saahityaedams.github.io/posts/ai_tampermonkey/</link>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/ai_tampermonkey/</guid>
+      <description>The below document is a quick 1 pager I wrote for BoomiAI Weekend Hacks.
+AI Tampermonkeying - 11th August 2025 Purpose This documents details a specific AI product idea to &amp;ldquo;home-cook&amp;rdquo;1 enhancements to existing web applications. I request BoomiAI approval to implement this on 30th August at Boomi AI Weekend Hacks BLR :)
+Background Tampermonkey Tampermonkey2 is a cross-platform browser extension with a large userbase (&amp;gt; 10 million folks) that people use to enhance the functionality of their most frequently used webpage.</description>
+    </item>
+    
     <item>
       <title>Coffee Delivery Mechanisms</title>
       <link>https://saahityaedams.github.io/posts/coffee_delivery_mechanisms/</link>

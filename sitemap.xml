@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://saahityaedams.github.io/tags/ai/</loc>
+    <lastmod>2025-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/posts/ai_tampermonkey/</loc>
+    <lastmod>2025-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/tags/llm/</loc>
+    <lastmod>2025-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/posts/</loc>
+    <lastmod>2025-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/</loc>
+    <lastmod>2025-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/tags/</loc>
+    <lastmod>2025-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/tags/tampermonkey/</loc>
+    <lastmod>2025-08-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://saahityaedams.github.io/tags/coffee/</loc>
     <lastmod>2025-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/coffee_delivery_mechanisms/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/posts/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/tags/</loc>
     <lastmod>2025-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/tags/aws/</loc>
@@ -76,9 +88,6 @@
   </url><url>
     <loc>https://saahityaedams.github.io/tags/zed/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/tags/llm/</loc>
-    <lastmod>2025-02-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/ai_ui_ux/</loc>
     <lastmod>2025-02-17T00:00:00+00:00</lastmod>
