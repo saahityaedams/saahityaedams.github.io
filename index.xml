@@ -6,7 +6,18 @@
     <description>Recent content on saahityaedams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>S3 is good software</title>
+      <link>https://saahityaedams.github.io/posts/drafts/s3_is_so_good/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://saahityaedams.github.io/posts/drafts/s3_is_so_good/</guid>
+      <description>Continuing from this previous post (see zed_is_good_software.md), I wanted to riff/write/think about why I like S3 so much.
+Similar to the previous post, I&amp;rsquo;ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.
+What is &amp;ldquo;performance&amp;rdquo; in this context ? I would say that &amp;ldquo;operational quality&amp;rdquo; is a more accurate word that I&amp;rsquo;m looking for. S3 for me is the fundamental service for storing/querying files 12 when building distributed systems, so the primary expectation is durability (property that data doesn&amp;rsquo;t get lost or corrupted) and then availability (property that you can access your data when you need it).</description>
+    </item>
+    
     <item>
       <title>AI Tampermonkey</title>
       <link>https://saahityaedams.github.io/posts/ai_tampermonkey/</link>
@@ -460,7 +471,7 @@ The course through Cubbon park had a chilly weather and the air was very fresh. 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://saahityaedams.github.io/about/</guid>
-      <description>Saahitya E Personal Heap Dump</description>
+      <description>Saahitya Edamadaka Personal Heap Dump</description>
     </item>
     
   </channel>

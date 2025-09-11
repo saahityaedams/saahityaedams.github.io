@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>S3 is good software - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="S3 is good software">
+<meta itemprop="description" content="Continuing from this previous post (see zed_is_good_software.md), I wanted to riff/write/think about why I like S3 so much.
+Similar to the previous post, I&rsquo;ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.
+What is &ldquo;performance&rdquo; in this context ? I would say that &ldquo;operational quality&rdquo; is a more accurate word that I&rsquo;m looking for. S3 for me is the fundamental service for storing/querying files 12 when building distributed systems, so the primary expectation is durability (property that data doesn&rsquo;t get lost or corrupted) and then availability (property that you can access your data when you need it)."><meta itemprop="datePublished" content="2025-09-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2025-09-10T00:00:00+00:00" />
+<meta itemprop="wordCount" content="788">
+<meta itemprop="keywords" content="tech,s3," /><meta property="og:title" content="S3 is good software" />
+<meta property="og:description" content="Continuing from this previous post (see zed_is_good_software.md), I wanted to riff/write/think about why I like S3 so much.
+Similar to the previous post, I&rsquo;ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.
+What is &ldquo;performance&rdquo; in this context ? I would say that &ldquo;operational quality&rdquo; is a more accurate word that I&rsquo;m looking for. S3 for me is the fundamental service for storing/querying files 12 when building distributed systems, so the primary expectation is durability (property that data doesn&rsquo;t get lost or corrupted) and then availability (property that you can access your data when you need it)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://saahityaedams.github.io/posts/drafts/s3_is_so_good/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-09-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-09-10T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="S3 is good software"/>
+<meta name="twitter:description" content="Continuing from this previous post (see zed_is_good_software.md), I wanted to riff/write/think about why I like S3 so much.
+Similar to the previous post, I&rsquo;ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.
+What is &ldquo;performance&rdquo; in this context ? I would say that &ldquo;operational quality&rdquo; is a more accurate word that I&rsquo;m looking for. S3 for me is the fundamental service for storing/querying files 12 when building distributed systems, so the primary expectation is durability (property that data doesn&rsquo;t get lost or corrupted) and then availability (property that you can access your data when you need it)."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://saahityaedams.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://saahityaedams.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://saahityaedams.github.io/">saahityaedams</a></h1>
+	<div class="site-description"><p></p><nav class="nav social">
+			<ul class="flat"><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/driftlog">Driftlog</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">10</span>
+							<span class="rest">Sep 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">S3 is good software</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Continuing from this previous post (see <code>zed_is_good_software.md</code>), I wanted to riff/write/think about why I like S3 so much.</p>
+<p>Similar to the previous post, I&rsquo;ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.</p>
+<p>What is &ldquo;performance&rdquo; in this context ? I would say that &ldquo;operational quality&rdquo; is a more accurate word that I&rsquo;m looking for. S3 for me is the fundamental service for storing/querying files <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> when building distributed systems, so the primary expectation is durability (property that data doesn&rsquo;t get lost or corrupted) and then availability (property that you can access your data when you need it). In terms of these parameters S3 is boringly stable and reliable, your data is never getting lost and you&rsquo;ll almost always be able to access you data (unless there&rsquo;s an AWS outage, then most of the internet is down anyway). There&rsquo;s also consistency, where S3 is strongly read-after-write consistent <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> since Dec 2020.</p>
+<p>In terms of API, S3 is incredibly flexible and simple unlike certain other AWS services and the Console UX <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> ? I&rsquo;ve personally found it incredibly easy to use it in weird ways like plugging it into my ETL workflow as a scratch space to do some parquet transformations, to dump file state in a stateful program, backup RDS snapshots, copy files between two servers and query parquets in bucket with duckdb. Apart from the standard API operations like listing, putting, getting, you have the higher level data movement functionality in the AWS cli (aws s3 cp, aws s3 mv, aws s3 sync). You can go one abstraction higher and just mount a S3 bucket to your server<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>, call it a day and run certain workloads on the files in the buckets.</p>
+<p>S3 has other good qualities too - reasonable pricing for most use cases, solid versioning - but I&rsquo;ll skip those for now.</p>
+<p>Ok, now after what must seem like lots of convoluted AWS shpiel, I&rsquo;m finally getting at my point, which is, I speculate that when you have a very good service like S3 with these characteristics (great operational quality &amp; great interface quality ) some emergent behaviours emerge. It becomes Lindy in a sense, everyone just uses it for anything and everything ( appropriate and inappropriate ). It becomes foundational infrastructure duct tape for very important systems in the world.</p>
+<p>I really like using S3 as an ideal to aim for when building platform systems. I further more really like Jassy&rsquo;s views on this Primitives (aka Platforms) in the AMZN 2023 Letter to Shareholders<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> where he talks about motivations for building good Primitives amongst other things.</p>
+<p>Jassy describes primitives as building blocks that do one thing really well with maximum developer flexibility. S3 fits this perfectly - it has exceptional operational quality for object storage and a simple API that hides complexity while enabling composition.</p>
+<p>S3 is good software.</p>
+<h4 id="appendix-1">Appendix 1</h4>
+<p>I spent some time collecting how different enterprises are using S3 as primary data stores in systems (I found these two to be interesting usecases ).</p>
+<p><strong>1. Turbopuffer</strong></p>
+<ul>
+<li>marketing copy: search every byte ( serverless vector and full-text search built from first principles on object storage: fast, 10x cheaper, and extremely scalable )</li>
+<li>usecase: vector database</li>
+<li>simple system architecture of a binary using a EC2 instance (Memory / SSD Cache) as a hot cache and S3 is source of truth.</li>
+<li>links:
+<ul>
+<li><a href="https://turbopuffer.com/blog/turbopuffer">https://turbopuffer.com/blog/turbopuffer</a></li>
+<li><a href="https://www.youtube.com/watch?v=_yb6Nw21QxA&amp;t=22s&amp;ab_channel=DataCouncil">https://www.youtube.com/watch?v=_yb6Nw21QxA&amp;t=22s&amp;ab_channel=DataCouncil</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Parseable</strong></p>
+<ul>
+<li>marketing copy: Fast Observability on S3 (Parseable is built for fast observability on object storage systems like S3: deploy anywhere in minutes, 10x cheaper, extremely scalable and built with open standards.)</li>
+<li>usecase: observability (and time series) database</li>
+<li>links:
+<ul>
+<li><a href="https://www.parseable.com/docs/architecture">https://www.parseable.com/docs/architecture</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="appendix-2">Appendix 2</h4>
+<p>Another pattern I&rsquo;ve observed is that people are using s3 (object storage service in general) as lakehouses. I guess that kind of makes sense, considering how easy I&rsquo;ve found it to dump parquets into s3 buckets and query them in duckdb or do more detailed operations with pyarrow (I&rsquo;m guessing the metadata management is simpler and more standard with Apache Iceberg).</p>
+<p>links:</p>
+<ul>
+<li><a href="https://tobilg.com/the-age-of-10-dollar-a-month-lakehouses">https://tobilg.com/the-age-of-10-dollar-a-month-lakehouses</a></li>
+<li><a href="https://aws.amazon.com/blogs/big-data/use-apache-iceberg-in-your-data-lake-with-amazon-s3-aws-glue-and-snowflake/">https://aws.amazon.com/blogs/big-data/use-apache-iceberg-in-your-data-lake-with-amazon-s3-aws-glue-and-snowflake/</a></li>
+<li>(interesting concept from duckdb to manage tables in object storage. competitor to iceberg ?) <a href="https://duckdb.org/2025/05/27/ducklake.html">https://duckdb.org/2025/05/27/ducklake.html</a></li>
+<li>(e6data talk about object storage native lakehouse) <a href="https://youtu.be/XX-EWRyXVzs?feature=shared">https://youtu.be/XX-EWRyXVzs?feature=shared</a></li>
+</ul>
+<!--
+
+Also miscellanous quality properties section
+There's emergent properties
+
+When service has such characteristics, its becomes a platform, or as Amazon calls it a primitive - https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-2023-letter-to-shareholders
+you get it to use it in flexible ways
+- scratch space in ETL
+- dynamic config store (eg. storing token bucket thresholds for throttling)
+- just
+
+Object Storage Native Data Stores
+Note about lakehouses on s3. (also e6data)
+Note about turbopuffer, parseable
+-->
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I love that Bezos&rsquo;s original spec for S3 was &ldquo;malloc for the internet&rdquo; - <a href="https://news.ycombinator.com/item?id=24802268">https://news.ycombinator.com/item?id=24802268</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I know that its technically an object storage, but you are storing all kind of files at the end of the day and the wording of object is more to indicate a specific access pattern.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://aws.amazon.com/blogs/aws/amazon-s3-update-strong-read-after-write-consistency/">https://aws.amazon.com/blogs/aws/amazon-s3-update-strong-read-after-write-consistency/</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Hey, the UX counts as an API too ! Also its not surprising that people line up to use AWS despite its console sucking and its other shortcomings, the capabilities of its service is exceptional.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="https://aws.amazon.com/blogs/storage/the-inside-story-on-mountpoint-for-amazon-s3-a-high-performance-open-source-file-client/">https://aws.amazon.com/blogs/storage/the-inside-story-on-mountpoint-for-amazon-s3-a-high-performance-open-source-file-client/</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p><a href="https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-2023-letter-to-shareholders">https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-2023-letter-to-shareholders</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/tech">tech</a></li>
+							
+							<li><a href="/tags/s3">s3</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-ZY0T40ZV0H', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
