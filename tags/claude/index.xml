@@ -29,10 +29,10 @@ config -&amp;gt; holds the config related file (eg. which tools are allowed, mcp
     
     <item>
       <title>Claude Pricing (Application vs API)</title>
-      <link>https://saahityaedams.github.io/posts/claude-pricing/</link>
+      <link>https://saahityaedams.github.io/posts/2024/claude-pricing/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/claude-pricing/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/claude-pricing/</guid>
       <description>People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.
 Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage.</description>
     </item>

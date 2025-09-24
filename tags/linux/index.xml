@@ -18,10 +18,10 @@
     
     <item>
       <title>Fresh Linux Install and Setup</title>
-      <link>https://saahityaedams.github.io/posts/fresh-linux-install/</link>
+      <link>https://saahityaedams.github.io/posts/2024/fresh-linux-install/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/fresh-linux-install/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/fresh-linux-install/</guid>
       <description>I have a slightly old gaming laptop (i5, 256GB SSD, 1TB HDD, NVIDIA GeForce GTX 1050) which ran Ubuntu + windows. I haven&amp;rsquo;t used this laptop since college and decided to use it as an always-on home server and secondary machine in my room plugged into power. There is no concrete plan, but high-level plans include using the 1 Tb hard disk as backup and media store (still researching the best way), self hosting some software, and play around with serving tiny LLM models from it.</description>
     </item>
     

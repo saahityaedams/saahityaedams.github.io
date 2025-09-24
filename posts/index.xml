@@ -216,10 +216,10 @@ The characters resonated with me deeply, partly due to the nostalgic setting.</d
     
     <item>
       <title>llm.c rough notes</title>
-      <link>https://saahityaedams.github.io/posts/llm_c/</link>
+      <link>https://saahityaedams.github.io/posts/2024/llm_c/</link>
       <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/llm_c/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/llm_c/</guid>
       <description>I - Getting the defaults working Fix linux-tools broken install with sudo dpkg -i --force-overwrite /var/cache/apt/archives/linux-tools-common_*.deb and then sudo apt --fix-broken install
 Get nvcc (CUDA compiler driver) with sudo apt install nvidia-cuda-toolkit
 Initial command ./train_gpt2fp32cu doesn&amp;rsquo;t work due to OOM issue.
@@ -229,77 +229,77 @@ See GPU usage stats with nvidia-smi and sudo fuser -v /dev/nvidia* and kill proc
     
     <item>
       <title>New Cycle</title>
-      <link>https://saahityaedams.github.io/posts/cycling-across-bangalore/</link>
+      <link>https://saahityaedams.github.io/posts/2024/cycling-across-bangalore/</link>
       <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/cycling-across-bangalore/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/cycling-across-bangalore/</guid>
       <description>Late at night a week ago, Feeling drowsy, I decided to treat myself to a used cycle for Diwali. There wasn&amp;rsquo;t any specific reason, I just always wanted a cycle from a long time plus I liked running and made the reasonable assumption I would like cycling. I initially made a list of some discounted items on Amazon like Noise Cancellation Headphones or an Air Fryer, but none of them felt right.</description>
     </item>
     
     <item>
       <title>Fresh Linux Install and Setup</title>
-      <link>https://saahityaedams.github.io/posts/fresh-linux-install/</link>
+      <link>https://saahityaedams.github.io/posts/2024/fresh-linux-install/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/fresh-linux-install/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/fresh-linux-install/</guid>
       <description>I have a slightly old gaming laptop (i5, 256GB SSD, 1TB HDD, NVIDIA GeForce GTX 1050) which ran Ubuntu + windows. I haven&amp;rsquo;t used this laptop since college and decided to use it as an always-on home server and secondary machine in my room plugged into power. There is no concrete plan, but high-level plans include using the 1 Tb hard disk as backup and media store (still researching the best way), self hosting some software, and play around with serving tiny LLM models from it.</description>
     </item>
     
     <item>
       <title>Claude Pricing (Application vs API)</title>
-      <link>https://saahityaedams.github.io/posts/claude-pricing/</link>
+      <link>https://saahityaedams.github.io/posts/2024/claude-pricing/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/claude-pricing/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/claude-pricing/</guid>
       <description>People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.
 Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage.</description>
     </item>
     
     <item>
       <title>re:kindle</title>
-      <link>https://saahityaedams.github.io/posts/re-kindle/</link>
+      <link>https://saahityaedams.github.io/posts/2024/re-kindle/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/re-kindle/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/re-kindle/</guid>
       <description>I recently read a Wall Street Journal1 article about kindles having a resurgence amongst young readers, which resonated with me since I love my kindle too.
 I have a 5+ yr old kindle paperwhite and it is easily the most well built techy thing I own. It is solid in your hands, and even though it&amp;rsquo;s been dropped countless times, everything seems to work perfectly. It always amazed me that I can pick it up after a month and see that the battery percentage has barely shifted.</description>
     </item>
     
     <item>
       <title>Indiranagar vs Subramanyapura</title>
-      <link>https://saahityaedams.github.io/posts/indiranagar-subramanyapura/</link>
+      <link>https://saahityaedams.github.io/posts/2024/indiranagar-subramanyapura/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/indiranagar-subramanyapura/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/indiranagar-subramanyapura/</guid>
       <description>There&amp;rsquo;s a lot to unpack just from saying &amp;lsquo;Indira-nagar&amp;rsquo; versus &amp;lsquo;Subramanya-pura&amp;rsquo;— one gives off a cool-and-hip vibe, while the other feels more like traditional Indian family vibe. I rented a room in the first for the past year to be closer to work, while the latter has been my home (technically my parents&amp;rsquo;) for more than 10 years through school and college before that.
 Indiranagar seems like an unusual island isolated from the rest of India - in demeanor and culturally.</description>
     </item>
     
     <item>
       <title>Work Beliefs</title>
-      <link>https://saahityaedams.github.io/posts/work-beliefs/</link>
+      <link>https://saahityaedams.github.io/posts/2024/work-beliefs/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/work-beliefs/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/work-beliefs/</guid>
       <description>autonomy take personal responsibility to be proactive and be the owner of implementation E2E craftsmanship never half-ass anything that ships details and elegance matter for designing/building/operating solid systems curiosity best work is not defined but discovered under constraints and in context deep dive get to the root of problem and fix that aim to better understand wider systems pragmatic strong ownership, but value stakeholder input high level sense of urgency, but not hurried some details matter than other - no bike shedding know when to dive deep.</description>
     </item>
     
     <item>
       <title>Driving 30 min to run in the woods</title>
-      <link>https://saahityaedams.github.io/posts/running-in-the-woods/</link>
+      <link>https://saahityaedams.github.io/posts/2024/running-in-the-woods/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/running-in-the-woods/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/running-in-the-woods/</guid>
       <description>People look at me strangely when I mention that I drive like 30 mins one way just to jog awkwardly on a stretch of road in the middle-of-nowhere on weekends.
 The first time I encountered this place was in February 2020. I was training for a half marathon (I am older and tireder now) and set off early in the morning for a slow long run. Feeling adventurous, I ran further than usual.</description>
     </item>
     
     <item>
       <title>Vipassana Experience</title>
-      <link>https://saahityaedams.github.io/posts/vipassana-experience/</link>
+      <link>https://saahityaedams.github.io/posts/2024/vipassana-experience/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/vipassana-experience/</guid>
+      <guid>https://saahityaedams.github.io/posts/2024/vipassana-experience/</guid>
       <description>Just writing up my experience1 attending a 10-day Vipassana course from the 15th to the 25th of July at Dhamma Ketana in Chengannur.
 Starting off with the location. Kerala, what a beauty. The center is basically a plot of tropical rainforest with a few one-story buildings and the main Dhamma center connected by a path. Plus, there are two ponds. Behind the property, there’s a panoramic view of flooded green paddy fields with groves of trees behind them.</description>
     </item>
