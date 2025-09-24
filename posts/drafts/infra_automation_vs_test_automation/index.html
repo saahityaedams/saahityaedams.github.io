@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Thoughts on Infra Automation, Test Automation - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Thoughts on Infra Automation, Test Automation">
+<meta itemprop="description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
+This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance)."><meta itemprop="datePublished" content="2025-09-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2025-09-03T00:00:00+00:00" />
+<meta itemprop="wordCount" content="437">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Thoughts on Infra Automation, Test Automation" />
+<meta property="og:description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
+This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://saahityaedams.github.io/posts/drafts/infra_automation_vs_test_automation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-09-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-09-03T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Thoughts on Infra Automation, Test Automation"/>
+<meta name="twitter:description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
+This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance)."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://saahityaedams.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://saahityaedams.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://saahityaedams.github.io/">saahityaedams</a></h1>
+	<div class="site-description"><p></p><nav class="nav social">
+			<ul class="flat"><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/driftlog">Driftlog</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">03</span>
+							<span class="rest">Sep 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Thoughts on Infra Automation, Test Automation</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<!--
+
+- biased towards feature devlopment
+- prioritize test automation
+- abstract to higher infra whenever possible
+
+- we want to get to goal faster, and prioritize infra - automation
+-->
+<p>I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.</p>
+<p>This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).</p>
+<p>The primary thing that stood out to me was that large aspects of Infra automation code can be reliably generated by LLMs since its mostly straightforward and standard. The other thing was that there are still small nuances and stupid idiosyncracies when trying to setup AWS and Github infra (I gave up on trying to manage github action runners and secrets) in Terraform that get in your way and never really let you automate 100% E2E of your Infra.</p>
+<p>Personally I think choosing to do Infra Automation is more nah-than-yeah atleast at small stage firms. I would say that it is worth investing effort for specific scenarios like when you are running multiple pilot deployments of a single-tenant system for different clients (but these are mostly enterprise problems). Also you do have to be pragmatic about it, prioritizing effort on the aspects with the most bang-for-the-buck and remembering that 100% automation is just not feasible. There are some good aspects of Infra Automation, which is that you have documented your infra just by the very inherent nature of writing code. I think my main blocker with Infra automation is that it seems to puts you into a very system builder mindset (against a product/solutions builder) and catalyses accidental complexity in your infrastructure. Your job at a small firm should be solving customer&rsquo;s problems with a great product, not overcomplicating system architecture by writing multiple microservices and using a million infrastructure components.</p>
+<p>Given all this, I think test automation should generally be prioritized much more (at every level - unit test coverage, integration tests, UI automation tests). We should just make pragmatic decisions to use the highest abstraction of compute platform that is appropriate and minimal infra automation. Writing tests have a positive and direct impact effect on the quality of the product and release velocity, especially when they act like a harness confirming that the system at all levels works as expected. I&rsquo;ve found test automation to have a higher payoff for the team, since its a faster feedback cycle and it directly improves developer productivity.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-ZY0T40ZV0H', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
