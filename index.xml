@@ -20,10 +20,10 @@ What is &amp;ldquo;performance&amp;rdquo; in this context ? I would say that &am
     
     <item>
       <title>Thoughts on Infra Automation, Test Automation</title>
-      <link>https://saahityaedams.github.io/posts/drafts/infra_automation_vs_test_automation/</link>
+      <link>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://saahityaedams.github.io/posts/drafts/infra_automation_vs_test_automation/</guid>
+      <guid>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</guid>
       <description>I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
 This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).</description>
     </item>
