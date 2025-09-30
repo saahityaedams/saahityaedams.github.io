@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>AI Coredump - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="AI Coredump">
+<meta itemprop="description" content="WIP
+This is a catch-all post expanding on a couple of points about LLMs that I&rsquo;ve been meaning to jot down over the last few months, based on my limited experience working with them and the general sense of AI discourse I get from Twitter. My main goal is condensing these thoughts into some kind of coherent thesis-ramble. These points sound aggressively confident, so please read them critically and with a pinch of salt."><meta itemprop="datePublished" content="2025-09-24T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2025-09-24T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1133">
+<meta itemprop="keywords" content="ai,llm," /><meta property="og:title" content="AI Coredump" />
+<meta property="og:description" content="WIP
+This is a catch-all post expanding on a couple of points about LLMs that I&rsquo;ve been meaning to jot down over the last few months, based on my limited experience working with them and the general sense of AI discourse I get from Twitter. My main goal is condensing these thoughts into some kind of coherent thesis-ramble. These points sound aggressively confident, so please read them critically and with a pinch of salt." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://saahityaedams.github.io/posts/drafts/ai_coredump/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-09-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-09-24T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="AI Coredump"/>
+<meta name="twitter:description" content="WIP
+This is a catch-all post expanding on a couple of points about LLMs that I&rsquo;ve been meaning to jot down over the last few months, based on my limited experience working with them and the general sense of AI discourse I get from Twitter. My main goal is condensing these thoughts into some kind of coherent thesis-ramble. These points sound aggressively confident, so please read them critically and with a pinch of salt."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://saahityaedams.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://saahityaedams.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://saahityaedams.github.io/">saahityaedams</a></h1>
+	<div class="site-description"><p></p><nav class="nav social">
+			<ul class="flat"><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/driftlog">Driftlog</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">24</span>
+							<span class="rest">Sep 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">AI Coredump</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p><strong>WIP</strong></p>
+<p><em>This is a catch-all post expanding on a couple of points about LLMs that I&rsquo;ve been meaning to jot down over the last few months, based on my limited experience working with them and the general sense of AI discourse I get from Twitter. My main goal is condensing these thoughts into some kind of coherent thesis-ramble. These points sound aggressively confident, so please read them critically and with a pinch of salt.</em></p>
+<h4 id="1">1</h4>
+<p><strong>We still are not sure who&rsquo;ll capture the value in AI.</strong></p>
+<p>I really like this piece <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> in the Colossus magazine, where Mr. Neumann makes the case that like containerisation (shipping not software) capturing net-value is unlikely even if AI is very useful to consumers. The best case scenario for looking for good and valuable opportunities in AI seems to be &ldquo;think through the implications of knowledge workers becoming more efficient, to imagine what markets this efficiency unlocks, and to invest in those&rdquo; (from the article).</p>
+<p>In terms of AI products, I&rsquo;m surprised that I only interact and get value out of a couple of AI products - primarily claude through claude.ai, Zed text threads and claude code. In terms of value addition for customers in AI products (a necessary but not sufficient condition for value capture), the bare minimum test is that the customer should not be able to navigate to chatgpt and perform the functionality with basic functionality. If that is the case, the product, there isn&rsquo;t much of a moat to start off an the customer is almost always going to prefer chatgpt for its flexibility and the switching cost is not worth it.</p>
+<p>For me personally, i speculate some of the characteristics of a valuable AI product are :-</p>
+<ul>
+<li>Outcome: Solves specific problems E2E deeply (eg. automated pentesting, automated BI dashboards).</li>
+<li>Speed: Eliminates waiting states by removing bottlenecks (eg. automated code review)</li>
+<li>Bring the AI to me, don&rsquo;t take me to it: <em>This is more of an characteristic in incumbents</em> (eg. AI suggestions in Gmail and Docs, AI Overview in Google Search)</li>
+<li>Good UX <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>: A personal favoutite of mine. (eg. text prediction in Cursor, an agent interface in claude code, voice-to-text, meeting notes, notebook LM)</li>
+<li>Cost: Decrease cost, especially labour-related (eg. AI customer support, document review)</li>
+</ul>
+<!--
+notes
+mainly about this
+    - diferentiated workflow
+    people will pay for tools that improve speed, they don't have to Chatgpt stuff
+    Im getting value from this clearly: not from that many products, I know Im getting value from Chatgpt, Claude Workbench, Claude Code. That's about it
+
+
+    ### Value Addition in AI
+
+    Tangentially, one important aspect that AI product builders have to think about is the value addition (a necessary but not sufficient condition for value capture) of their products to customers. This question is important to think about, if the customer can navigate to Chatgpt and perform the functionality of the product by basic prompting, there isn't much of moat to start off and the customer is almost always going to prefer ChatGPT for its flexibility.
+
+    For me personally, the characteristics of a valuable AI product have been :-
+
+    - Outcome:
+    - Speed:
+    - Bring the AI to me, don't take me to it:
+    - Good UX:
+
+-->
+<hr>
+<h4 id="2">2</h4>
+<ul>
+<li><strong>Diffusing AI into the economy isn&rsquo;t as cut-and-dry as its made out to be, it&rsquo;s a lot of work to just get it reliably deployed in a valuable production setting.</strong></li>
+<li><strong>Models performance seem to be stagnating in 2025 (at least not showing as much of a rapid improvement as before ? ).</strong></li>
+</ul>
+<p>I&rsquo;ll try to keep this brief. The first point follows partly from the second point. I think people vastly overestimated how easy it is to get any serious AI system deployed in enterprises or into anything important<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. There&rsquo;s even an MIT study that shows 95% of AI pilot projects failing<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>But I strongly believe that most companies are not even scratching the surface in leveraging existing AI capabilities (especially for internal business processes and operations). Like most issues I get the sense that diffusion is a socio-technical issue with inherent friction. Still there&rsquo;s enterprises leveraging AI properly out there<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>Also I don&rsquo;t think AGI (or atleast what most people consider AGI) is in direct sight and a more relevant metric to understand value of AI systems is in its diffusion.</p>
+<!--
+notes
+- AGI is not in sight and not relevant, a more relevant metric is diffusion.
+maker - checker
+hypothesiser - validator
+
+-->
+<hr>
+<h4 id="3">3</h4>
+<p><strong>There&rsquo;s clearly a marked impact on knowledge work ( especially software engineering) .</strong></p>
+<p>Personally I&rsquo;ve found LLMs to be clearly useful (see <a href="https://saahityaedams.github.io/posts/ai_ui_ux/">AI_UI_UX</a> &amp; <a href="https://saahityaedams.github.io/posts/claude_code_usage_cost/">claude_code_usage_cost</a> ). I started playing around with LLMs late last year, I started off with using the Zed text threads, basically adding a file (or chunks of it ) context into a thread, talking to an LLM about it and then pasting the generated code back into my codebase. A couple of months later I started using claude code to implement features and fix bugs in isolated modules and that was fun too (except i was bored waiting for claude code to complete a task).</p>
+<p>Over the past couple of months, I&rsquo;ve also encountered some scenarios like reviewed &ldquo;vibe-coded&rdquo; PRs that are so horrendous and non-sensical - that degraded the codebases to a big ball of mud-slop in a couple of months. Another such scenario was when claude code spent a lot of time implementing a feature , added some bugs, was never able to recover from it and then gave up; which lead me to spend a lot of time trying to just understand the code and then some fixing it, when it would have taken me way less time just implementing it from scratch. My sense is this stems from two issues. One is a constraint of the models that it cannot maintain a clear mental model<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. And two general socio-technical / quality-bar-to-low / bad-llm-usage problem (eg. team not investing in quality gates for AI-generated code).</p>
+<p>I&rsquo;m not too concerned about people becoming insignificant in the software development process because it&rsquo;s still not clear to me what kind of workflows will get us to a state of LLM generated code being deployed all the way till production with minimal human intervention. A person still has to take responsibilty for any serious software system and its evolution in production. Software engineering consists of more than just code generation.</p>
+<p>A second order effect I&rsquo;m interested is the effect on quality of software systems. In my time working, I&rsquo;ve learnt that the quality of software is more or less dictated by finance and economics more than anything and most code is already pretty terrible. But I do expect at least a few teams to leverage LLMs to get to better software quality. <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<p>Another concern I&rsquo;m interested is folks getting lazier and not having a good understanding of their systems that have to maintain. Generally &ldquo;Not having a good understanding of systems&rdquo; is more a symptom of a human fallability (of lack of ownership) and organisation incentives at play. In my opinion laziness is a bigger concern since using LLMs extensively leads to you not exercising some skill muscles and loosing them <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. Another aspect of the laziness is folks loosing the researching nerve, and blindly trusting LLMs not considering stuff like confirmation bias.</p>
+<!--
+important question of how to raise quality
+PSYCHOLOGY OF AI: agentic stuff is making me lazier when the earlier chat model was faster I had to cut copy paste
+
+-->
+<!--
+ref links
+- https://zed.dev/blog/why-llms-cant-build-software
+- https://zed.dev/blog/software-craftsmanship-in-the-era-of-vibes
+- https://zed.dev/blog/dialing-back-my-llm-usage-with-alberto-fortin
+- https://commoncog.com/how-to-use-ai-without-becoming-stupid/
+-->
+<hr>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://joincolossus.com/article/ai-will-not-make-you-rich/">https://joincolossus.com/article/ai-will-not-make-you-rich/</a> ( I don&rsquo;t completely agree with this, I do think AI is a completely new technology wave.)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.strangevc.com/stories/great-ux-unlocks-insane-user-growth-for-ai-companies">https://www.strangevc.com/stories/great-ux-unlocks-insane-user-growth-for-ai-companies</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://www.wsj.com/tech/ai/ais-big-leaps-are-slowing-that-could-be-a-good-thing-34c87619">https://www.wsj.com/tech/ai/ais-big-leaps-are-slowing-that-could-be-a-good-thing-34c87619</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf">https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="https://www.firstround.com/ai/brex">https://www.firstround.com/ai/brex</a> (The other company articles on the website are great too)&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p><a href="https://zed.dev/blog/why-llms-cant-build-software">https://zed.dev/blog/why-llms-cant-build-software</a> (Great article from the Zed team about the fundamental issue of LLMs creating software being that they don&rsquo;t have a proper mental model)&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p><a href="https://zed.dev/blog/software-craftsmanship-in-the-era-of-vibes">https://zed.dev/blog/software-craftsmanship-in-the-era-of-vibes</a> (Another great article from the Zed team about how we should aim to leverage LLMs to make better software)&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p><a href="https://commoncog.com/how-to-use-ai-without-becoming-stupid/">https://commoncog.com/how-to-use-ai-without-becoming-stupid/</a> (I like this article which takes about never outsourcing your subjective judegement to an LLM without a good reason)&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/ai">ai</a></li>
+							
+							<li><a href="/tags/llm">llm</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-ZY0T40ZV0H', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
