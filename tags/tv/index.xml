@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tv on saahityaedams</title>
+    <title>Tv on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/tv/</link>
-    <description>Recent content in tv on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Tv on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/tv/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/tv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Favourite Comedy TV Shows</title>
       <link>https://saahityaedams.github.io/posts/fav_comedy_shows/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/fav_comedy_shows/</guid>
-      <description>Patriot Depressed spy goes to Luxemborg undercover to bribe Iranians, messes it up and tries fixing it. He also has to be handle his BS undercover job.
-Curb your Enthusiasm Cynical Larry David is irritated by the world, sticks to his weird rules and offends people by accident.
-Nathan for You Nathan Fielder gives baffling and hilarious advice to small businesses.
-James May: Our Man in Japan English man tours Japan while engaging in british humour.</description>
+      <description>&lt;h3 id=&#34;patriot&#34;&gt;Patriot&lt;/h3&gt;&#xA;&lt;p&gt;Depressed spy goes to Luxemborg undercover to bribe Iranians, messes it up and tries fixing it. He also has to be handle his BS undercover job.&lt;/p&gt;&#xA;&lt;h3 id=&#34;curb-your-enthusiasm&#34;&gt;Curb your Enthusiasm&lt;/h3&gt;&#xA;&lt;p&gt;Cynical Larry David is irritated by the world, sticks to his weird rules and offends people by accident.&lt;/p&gt;&#xA;&lt;h3 id=&#34;nathan-for-you&#34;&gt;Nathan for You&lt;/h3&gt;&#xA;&lt;p&gt;Nathan Fielder gives baffling and hilarious advice to small businesses.&lt;/p&gt;&#xA;&lt;h3 id=&#34;james-may-our-man-in-japan&#34;&gt;James May: Our Man in Japan&lt;/h3&gt;&#xA;&lt;p&gt;English man tours Japan while engaging in british humour.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Favourite Drama TV Shows</title>
       <link>https://saahityaedams.github.io/posts/fav_drama_shows/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/fav_drama_shows/</guid>
-      <description>Bosch Old school Los Angeles cop keeps solving a lot of cases with good old detective work.
-Justified US Marshal gets transfered back home to Kentucky. Emaculate old western movie vibes and a different side of American culture, ie Applachia.
-Succession Corporate family drama. Each of 3 incompetent kids want to run evil dad&amp;rsquo;s megacorp.</description>
+      <description>&lt;h3 id=&#34;bosch&#34;&gt;Bosch&lt;/h3&gt;&#xA;&lt;p&gt;Old school Los Angeles cop keeps solving a lot of cases with good old detective work.&lt;/p&gt;&#xA;&lt;h3 id=&#34;justified&#34;&gt;Justified&lt;/h3&gt;&#xA;&lt;p&gt;US Marshal gets transfered back home to Kentucky. Emaculate old western movie vibes and a different side of American culture, ie Applachia.&lt;/p&gt;&#xA;&lt;h3 id=&#34;succession&#34;&gt;Succession&lt;/h3&gt;&#xA;&lt;p&gt;Corporate family drama. Each of 3 incompetent kids want to run evil dad&amp;rsquo;s megacorp.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

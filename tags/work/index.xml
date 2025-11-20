@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>work on saahityaedams</title>
+    <title>Work on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/work/</link>
-    <description>Recent content in work on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Work on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Work Beliefs</title>
       <link>https://saahityaedams.github.io/posts/2024/work-beliefs/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/work-beliefs/</guid>
-      <description>autonomy take personal responsibility to be proactive and be the owner of implementation E2E craftsmanship never half-ass anything that ships details and elegance matter for designing/building/operating solid systems curiosity best work is not defined but discovered under constraints and in context deep dive get to the root of problem and fix that aim to better understand wider systems pragmatic strong ownership, but value stakeholder input high level sense of urgency, but not hurried some details matter than other - no bike shedding know when to dive deep.</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;autonomy&#xA;&lt;ul&gt;&#xA;&lt;li&gt;take personal responsibility to be proactive and be the owner of implementation E2E&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;craftsmanship&#xA;&lt;ul&gt;&#xA;&lt;li&gt;never half-ass anything that ships&lt;/li&gt;&#xA;&lt;li&gt;details and elegance matter for designing/building/operating solid systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;curiosity&#xA;&lt;ul&gt;&#xA;&lt;li&gt;best work is not defined but discovered under constraints and in context&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;deep dive&#xA;&lt;ul&gt;&#xA;&lt;li&gt;get to the root of problem and fix that&lt;/li&gt;&#xA;&lt;li&gt;aim to better understand wider systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;pragmatic&#xA;&lt;ul&gt;&#xA;&lt;li&gt;strong ownership, but value stakeholder input&lt;/li&gt;&#xA;&lt;li&gt;high level sense of urgency, but not hurried&lt;/li&gt;&#xA;&lt;li&gt;some details matter than other - no bike shedding&lt;/li&gt;&#xA;&lt;li&gt;know when to dive deep. weigh practise over academicy-ivory-tower theory&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>postgresql on saahityaedams</title>
+    <title>Postgresql on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/postgresql/</link>
-    <description>Recent content in postgresql on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Postgresql on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL PGMiner</title>
       <link>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</guid>
-      <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by the postgres user) Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency. https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;SSH into remote machine where application API resp time is slow&lt;/li&gt;&#xA;&lt;li&gt;Look at htop(which is at 100% with some weird command run by the postgres user)&#xA;&lt;img src=&#34;https://saahityaedams.github.io/photos/pgminer.png&#34; alt=&#34;pgminer-htop&#34;&gt;&lt;/li&gt;&#xA;&lt;li&gt;Google kdevtmpfsi&lt;/li&gt;&#xA;&lt;li&gt;A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution&#34;&gt;https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution&lt;/a&gt;&#xA;&lt;a href=&#34;https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu&#34;&gt;https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu&lt;/a&gt;&#xA;&lt;a href=&#34;https://nvd.nist.gov/vuln/detail/CVE-2019-9193&#34;&gt;https://nvd.nist.gov/vuln/detail/CVE-2019-9193&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

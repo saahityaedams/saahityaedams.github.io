@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thundering-herd on saahityaedams</title>
+    <title>Thundering-Herd on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/thundering-herd/</link>
-    <description>Recent content in thundering-herd on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Thundering-Herd on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/thundering-herd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/thundering-herd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL Thundering herd problem</title>
       <link>https://saahityaedams.github.io/posts/ancient/17-08-21-til/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/17-08-21-til/</guid>
-      <description>https://en.wikipedia.org/wiki/Thundering_herd_problem http://www.catb.org/jargon/html/T/thundering-herd-problem.html https://instagram-engineering.com/thundering-herds-promises-82191c8af57d https://www.reddit.com/r/RedditEng/comments/obqtfm/solving_the_three_stooges_problem/</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Thundering_herd_problem&#34;&gt;https://en.wikipedia.org/wiki/Thundering_herd_problem&lt;/a&gt;&#xA;&lt;a href=&#34;http://www.catb.org/jargon/html/T/thundering-herd-problem.html&#34;&gt;http://www.catb.org/jargon/html/T/thundering-herd-problem.html&lt;/a&gt;&#xA;&lt;a href=&#34;https://instagram-engineering.com/thundering-herds-promises-82191c8af57d&#34;&gt;https://instagram-engineering.com/thundering-herds-promises-82191c8af57d&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.reddit.com/r/RedditEng/comments/obqtfm/solving_the_three_stooges_problem/&#34;&gt;https://www.reddit.com/r/RedditEng/comments/obqtfm/solving_the_three_stooges_problem/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

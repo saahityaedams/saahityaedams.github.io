@@ -4,486 +4,345 @@
     <title>Posts on saahityaedams</title>
     <link>https://saahityaedams.github.io/posts/</link>
     <description>Recent content in Posts on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Coredump</title>
       <link>https://saahityaedams.github.io/posts/ai_coredump/</link>
       <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ai_coredump/</guid>
-      <description>WIP
-This is a catch-all post expanding on a couple of points about LLMs that I&amp;rsquo;ve been meaning to jot down over the last few months, based on my limited experience working with them and the general sense of AI discourse I get from Twitter. My main goal is condensing these thoughts into some kind of coherent thesis-ramble. These points sound aggressively confident, so please read them critically and with a pinch of salt.</description>
+      <description>&lt;p&gt;&lt;strong&gt;WIP&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This is a catch-all post expanding on a couple of points about LLMs that I&amp;rsquo;ve been meaning to jot down over the last few months, based on my limited experience working with them and the general sense of AI discourse I get from Twitter. My main goal is condensing these thoughts into some kind of coherent thesis-ramble. These points sound aggressively confident, so please read them critically and with a pinch of salt.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>S3 is good software</title>
       <link>https://saahityaedams.github.io/posts/s3_is_so_good/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/s3_is_so_good/</guid>
-      <description>Continuing from this previous post (see zed_is_good_software.md), I wanted to riff/write/think about why I like S3 so much.
-Similar to the previous post, I&amp;rsquo;ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.
-What is &amp;ldquo;performance&amp;rdquo; in this context ? I would say that &amp;ldquo;operational quality&amp;rdquo; is a more accurate word that I&amp;rsquo;m looking for. S3 for me is the fundamental service for storing/querying files 12 when building distributed systems, so the primary expectation is durability (property that data doesn&amp;rsquo;t get lost or corrupted) and then availability (property that you can access your data when you need it).</description>
+      <description>&lt;p&gt;Continuing from this previous post (see &lt;code&gt;zed_is_good_software.md&lt;/code&gt;), I wanted to riff/write/think about why I like S3 so much.&lt;/p&gt;&#xA;&lt;p&gt;Similar to the previous post, I&amp;rsquo;ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.&lt;/p&gt;&#xA;&lt;p&gt;What is &amp;ldquo;performance&amp;rdquo; in this context ? I would say that &amp;ldquo;operational quality&amp;rdquo; is a more accurate word that I&amp;rsquo;m looking for. S3 for me is the fundamental service for storing/querying files &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; when building distributed systems, so the primary expectation is durability (property that data doesn&amp;rsquo;t get lost or corrupted) and then availability (property that you can access your data when you need it). In terms of these parameters S3 is boringly stable and reliable, your data is never getting lost and you&amp;rsquo;ll almost always be able to access you data (unless there&amp;rsquo;s an AWS outage, then most of the internet is down anyway). There&amp;rsquo;s also consistency, where S3 is strongly read-after-write consistent &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; since Dec 2020.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Thoughts on Infra Automation, Test Automation</title>
       <link>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</guid>
-      <description>I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
-This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).</description>
+      <description>&lt;p&gt;I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.&lt;/p&gt;&#xA;&lt;p&gt;This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AI Tampermonkey</title>
       <link>https://saahityaedams.github.io/posts/ai_tampermonkey/</link>
       <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ai_tampermonkey/</guid>
-      <description>The below document is a quick 1 pager proposal I wrote for BoomiAI Weekend Hacks.
-AI Tampermonkeying - 11th August 2025 Purpose This documents details a specific AI product idea to &amp;ldquo;home-cook&amp;rdquo;1 enhancements to existing web applications. I request BoomiAI approval to implement this on 30th August at Boomi AI Weekend Hacks BLR :)
-Background Tampermonkey Tampermonkey2 is a cross-platform browser extension with a large userbase (&amp;gt; 10 million folks) that people use to enhance the functionality of their most frequently used webpage.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The below document is a quick 1 pager proposal I wrote for BoomiAI Weekend Hacks.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;ai-tampermonkeying---11th-august-2025&#34;&gt;AI Tampermonkeying - 11th August 2025&lt;/h1&gt;&#xA;&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;&#xA;&lt;p&gt;This documents details a specific AI product idea to &amp;ldquo;home-cook&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; enhancements to existing web applications. I request BoomiAI approval to implement this on 30th August at Boomi AI Weekend Hacks BLR :)&lt;/p&gt;&#xA;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;h3 id=&#34;tampermonkey&#34;&gt;Tampermonkey&lt;/h3&gt;&#xA;&lt;p&gt;Tampermonkey&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; is a cross-platform browser extension with a large userbase (&amp;gt; 10 million folks) that people use to enhance the functionality of their most frequently used webpage. This is done via writing Javascript scripts called userscripts and running it via the browser extension. Tampermonkey also makes it easy to find and install userscripts created by other users, thus letting you access a library of commonly used customisations and enhancements for your favourite web pages.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Coffee Delivery Mechanisms</title>
       <link>https://saahityaedams.github.io/posts/coffee_delivery_mechanisms/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/coffee_delivery_mechanisms/</guid>
-      <description>I&amp;rsquo;ve been a late entrant to the Church of Coffee (been drinking it for a couple of year max)1. More specifically I belonged to the sect of South Indian filter coffee 2. Just to clarify I&amp;rsquo;m both a fan of the taste and its stimulating property.
-But I&amp;rsquo;ve been extra creative with my coffee in 2025. I first started off with instant coffee (specifically Continental Xtra - which really has a kick), after tasting it at a cousin&amp;rsquo;s place.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been a late entrant to the Church of Coffee (been drinking it for a couple of year max)&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. More specifically I belonged to the sect of South Indian filter coffee &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Just to clarify I&amp;rsquo;m both a fan of the taste and its stimulating property.&lt;/p&gt;&#xA;&lt;p&gt;But I&amp;rsquo;ve been extra creative with my coffee in 2025. I first started off with instant coffee (specifically &lt;em&gt;Continental Xtra&lt;/em&gt; - which really has a kick), after tasting it at a cousin&amp;rsquo;s place. Using instant coffee meant I could be lazier and skip the brewing process and get my coffee fix at pretty much any time. I make sure to buy the sachets instead of the larger 200gm pack (Its approx. 50% cheaper per gram).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>DuckDB unknown unknowns</title>
       <link>https://saahityaedams.github.io/posts/duckdb_unknowns_unknowns/</link>
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/duckdb_unknowns_unknowns/</guid>
-      <description>Some software is very lovable (see zed_is_good_software.md). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues1, I have a more nuanced opinion about duckdb.
-This scenario brings to mind a certain favourite quote There are unkown unkowns and this great article . In this context, I wrangled with two issues
-Duckdb does not support query timeout: This seems so crazy to me.</description>
+      <description>&lt;p&gt;Some software is very lovable (see &lt;code&gt;zed_is_good_software.md&lt;/code&gt;). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, I have a more nuanced opinion about duckdb.&lt;/p&gt;&#xA;&lt;p&gt;This scenario brings to mind a certain favourite quote &lt;a href=&#34;https://en.wikipedia.org/wiki/There_are_unknown_unknowns&#34;&gt;There are unkown unkowns&lt;/a&gt; and this &lt;a href=&#34;https://mcfunley.com/choose-boring-technology&#34;&gt;great article&lt;/a&gt; . In this context, I wrangled with two issues&lt;/p&gt;&#xA;&lt;h3 id=&#34;duckdb-does-not-support-query-timeout&#34;&gt;Duckdb does not support query timeout:&lt;/h3&gt;&#xA;&lt;p&gt;This seems so crazy to me. How does someone consider this for a production usecase without a fundamental feature like this. All the workaround for this talk about a multi processing (a mult-thread doesn&amp;rsquo;t work) with a timeout (and consequently move away from in-memory usage to the FS usage of duckdb to avoid penalty of running queries against uncached tables each time).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Claude Code Usage Cost</title>
       <link>https://saahityaedams.github.io/posts/claude_code_usage_cost/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/claude_code_usage_cost/</guid>
-      <description>Poking around in the ~/.claude folder and looking at the files that claude code is saving to the local machine.
-➜ .claude pwd /Users/saahityae/.claude ➜ .claude ls config projects statsig local shell-snapshots todos There&amp;rsquo;s
-config -&amp;gt; holds the config related file (eg. which tools are allowed, mcps configured, etc) local -&amp;gt; the actual node CLI app. shell-snapshots -&amp;gt; ? statsig -&amp;gt; something related to https://statsig.com/ . I&amp;rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality) todos - Basically a bunch of files with the structured text of TODOs that the claude code uses when you&amp;rsquo;re using it like { &amp;#34;content&amp;#34;: &amp;#34;Modify Dockerfile to use UV instead of Poetry&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;in_progress&amp;#34;, &amp;#34;priority&amp;#34;: &amp;#34;high&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;1&amp;#34; }, { &amp;#34;content&amp;#34;: &amp;#34;Update file copy instructions to handle uv.</description>
+      <description>&lt;p&gt;Poking around in the &lt;code&gt;~/.claude&lt;/code&gt; folder and looking at the files that claude code is saving to the local machine.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;➜  .claude pwd&#xA;/Users/saahityae/.claude&#xA;➜  .claude ls&#xA;config          projects        statsig&#xA;local           shell-snapshots todos&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There&amp;rsquo;s&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;config&lt;/code&gt; -&amp;gt; holds the config related file (eg. which tools are allowed, mcps configured, etc)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;local&lt;/code&gt; -&amp;gt; the actual node CLI app.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;shell-snapshots&lt;/code&gt; -&amp;gt; ?&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;statsig&lt;/code&gt; -&amp;gt; something related to &lt;a href=&#34;https://statsig.com/&#34;&gt;https://statsig.com/&lt;/a&gt; . I&amp;rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;todos&lt;/code&gt; - Basically a bunch of files with the structured text of TODOs that the claude code  uses when you&amp;rsquo;re using it like&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Modify Dockerfile to use UV instead of Poetry&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;status&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;in_progress&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;priority&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;high&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;,&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Update file copy instructions to handle uv.lock instead of poetry.lock&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;status&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pending&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;priority&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;medium&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;projects&lt;/code&gt; -&amp;gt; the most important of these that holds the sessions and interactions with claude code. There&amp;rsquo;s a bunch of &lt;code&gt;.jsonl&lt;/code&gt; each with a session (I think).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;In the &lt;code&gt;projects&lt;/code&gt; folder, there&amp;rsquo;s a folder for each project (repo ?) you&amp;rsquo;re using claude code . There&amp;rsquo;s a bunch of &lt;code&gt;.jsonl&lt;/code&gt; each with a session (I think) in each of these folder. Each line of these &lt;code&gt;.jsonl&lt;/code&gt; is something like the below&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Troubleshooting Linux Notes</title>
       <link>https://saahityaedams.github.io/posts/htop_linux/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/htop_linux/</guid>
-      <description>One thing I&amp;rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting.</description>
+      <description>&lt;p&gt;One thing I&amp;rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>28 Years Later Movie Review</title>
       <link>https://saahityaedams.github.io/posts/28_years_later_move_review/</link>
       <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/28_years_later_move_review/</guid>
-      <description>I went to see the movie 28 Years Later with no expectations 1(I thought it could be a (trashy ?) zombie horror movie), but found this movie to be suprisingly quality film-making - great story, great acting, good cinematography 2. Roughly, the story is about the protagonist teenager Spikey who is part of a survivor village holed up in an island off mainland (Britain) after a virus turns pretty-much-everyone-else into zombies and his adventures visiting the mainland and his encounters with the zombies.</description>
+      <description>&lt;p&gt;I went to see the movie 28 Years Later with no expectations &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;(I thought it could be a (trashy ?) zombie horror movie), but found this movie to be suprisingly quality film-making - great story, great acting, good cinematography &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Roughly, the story is about the protagonist teenager Spikey who is part of a survivor village holed up in an island off mainland (Britain) after a virus turns pretty-much-everyone-else into zombies and his adventures visiting the mainland and his encounters with the zombies. I really liked the movie and I think it ranks highly amongst other greats in the genre like Apocalypto and Train to Busan.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Macbook Air M1 Review</title>
       <link>https://saahityaedams.github.io/posts/2025_macbook_m1_air_review/</link>
       <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2025_macbook_m1_air_review/</guid>
-      <description>The first thing I remember when purchasing this laptop is the delay in shipment. It took like 3 months to finally receive it. I remember calling the customer service after like 2 months asking for an update. They sweet talked to me for an hour (they could have simply said we have supply-chain related delays (which was the standard reason in 2022 for any item that had a chip in it)) and then added a free pair of airpods to my order as an apology for the delay (I&amp;rsquo;m not complaining).</description>
+      <description>&lt;p&gt;The first thing I remember when purchasing this laptop is the delay in shipment. It took like 3 months to finally receive it. I remember calling the customer service after like 2 months asking for an update. They sweet talked to me for an hour (they could have simply said we have supply-chain related delays (which was the standard reason in 2022 for any item that had a chip in it)) and then added a free pair of airpods to my order as an apology for the delay (I&amp;rsquo;m not complaining). I&amp;rsquo;ve now had my Macbook M1 Air for 3 years and have some thoughts on it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AI Sovereignity</title>
       <link>https://saahityaedams.github.io/posts/gcpp_artifacts/thoughts_about_ai_sovereignity-1/</link>
       <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/thoughts_about_ai_sovereignity-1/</guid>
-      <description>**These post build upon my thoughts about AI sovereignity following the workshop last week. Its mainly an exploration of two ideas. One is the idea of thinking of soverignity from an societal use-case perspective. The other is an AI diffusion framework. **
-Fleshing out the Industry-Academia Idea A good and simple framework for diffusing any new radical idea is &amp;ldquo;Connecting good people to good ideas and good networks&amp;rdquo; (from Takshashila&amp;rsquo;s mission).</description>
+      <description>&lt;p&gt;**These post build upon my thoughts about AI sovereignity following the workshop last week. Its mainly an exploration of two ideas. One is the idea of thinking of soverignity from an societal use-case perspective. The other is an AI diffusion framework. **&lt;/p&gt;&#xA;&lt;h2 id=&#34;fleshing-out-the-industry-academia-idea&#34;&gt;Fleshing out the Industry-Academia Idea&lt;/h2&gt;&#xA;&lt;p&gt;A good and simple framework for diffusing any new radical idea is &amp;ldquo;Connecting good people to good ideas and good networks&amp;rdquo; (from Takshashila&amp;rsquo;s mission). By connecting key actors in the ecosystem - industries, academia, researchers, and large tech companies - we can create a self-reinforcing virtuous cycle that benefits everyone. The government is ideally positioned to orchestrate and accelerate this process.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Scaling Era Book Review</title>
       <link>https://saahityaedams.github.io/posts/gcpp_artifacts/the_scaling_era_book_review/</link>
       <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/the_scaling_era_book_review/</guid>
-      <description>Dwarkesh&amp;rsquo;s book - &amp;ldquo;The Scaling Era&amp;rdquo; (25th March 2025, Stripe Press) is a delightful oddity. It&amp;rsquo;s uniquely formatted - mostly as snippets of his podcast episodes related to AI categorized across crucial aspects of LLMs like Safety and Scaling. The book is a superb highlight reel of Dwarkesh&amp;rsquo;s podcast, reflecting the excellent quality of his show (superb guest quality, discourse quality, intellectual topics, etc.).
-The book excels at discussing the not-strictly technical &amp;amp; under-discussed aspects of LLMs like inference scaling, cluster sizes, and impacts of AGI.</description>
+      <description>&lt;p&gt;Dwarkesh&amp;rsquo;s book - &amp;ldquo;The Scaling Era&amp;rdquo; (25th March 2025, Stripe Press) is a delightful oddity. It&amp;rsquo;s uniquely formatted - mostly as snippets of his podcast episodes related to AI categorized across crucial aspects of LLMs like Safety and Scaling. The book is a superb highlight reel of Dwarkesh&amp;rsquo;s podcast, reflecting the excellent quality of his show (superb guest quality, discourse quality, intellectual topics, etc.).&lt;/p&gt;&#xA;&lt;p&gt;The book excels at discussing the not-strictly technical &amp;amp; under-discussed aspects of LLMs like inference scaling, cluster sizes, and impacts of AGI. Dwarkesh has meticulously edited/curated the interviews and referenced important material discussed in his podcasts (references and glossary made up about 50% of the book on my Kindle). The format also excels in bringing readers perspectives from diverse experts in a relaxed conversation format - both AI doomers (like Yudkowsky) and folks with more nuanced opinions (like Gwern).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>DPI Enshittification?</title>
       <link>https://saahityaedams.github.io/posts/gcpp_artifacts/dpi_enshittification/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/dpi_enshittification/</guid>
-      <description>Recently came across the term ‘enshittification’ (or politically correct version: platform decay) coined by Cory Doctrow: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
-Are we likely to see similar trends in some of the DPI platforms: Aadhaar, UPI, Digiyatra, etc.? True, the controlling shareholder isn&amp;rsquo;t maximizing for profits but may want to extract a different kind of &amp;lsquo;value&amp;rsquo;.
-https://opentakshashila.net/posts/80874543
-OP asks an interesting question, are DPIs likely to enshittify in the future ? Your&amp;rsquo;s truly noted down his meandering &amp;amp; biased thoughts below.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Recently came across the term ‘enshittification’ (or politically correct version: platform decay) coined by Cory Doctrow: &lt;a href=&#34;https://www.wired.com/story/tiktok-platforms-cory-doctorow/&#34;&gt;https://www.wired.com/story/tiktok-platforms-cory-doctorow/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Are we likely to see similar trends in some of the DPI platforms: Aadhaar, UPI, Digiyatra, etc.? True, the controlling shareholder isn&amp;rsquo;t maximizing for profits but may want to extract a different kind of &amp;lsquo;value&amp;rsquo;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://opentakshashila.net/posts/80874543&#34;&gt;https://opentakshashila.net/posts/80874543&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;OP asks an interesting question, are DPIs likely to enshittify in the future ? Your&amp;rsquo;s truly noted down his meandering &amp;amp; biased thoughts below.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Good software: re:Zed</title>
       <link>https://saahityaedams.github.io/posts/zed_is_good_software/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/zed_is_good_software/</guid>
-      <description>I&amp;rsquo;ve travelled all across the editor-lands from vim to emacs to vscode and then intellij. Now I think I&amp;rsquo;ve settled for Zed (My screen time says I&amp;rsquo;ve used Zed an average of approx. 3 hours over the past work week plus I wrote this post in Zed).
-You intuitively get a sense for good software. Over the last few years I&amp;rsquo;ve had the pleasure of using some good software. Some notable entries in this list are uv (yes, the package manager), Tailscale &amp;amp; Zed.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve travelled all across the editor-lands from vim to emacs to vscode and then intellij. Now I think I&amp;rsquo;ve settled for Zed (My screen time says I&amp;rsquo;ve used Zed an average of approx. 3 hours over the past work week plus I wrote this post in Zed).&lt;/p&gt;&#xA;&lt;p&gt;You intuitively get a sense for good software. Over the last few years I&amp;rsquo;ve had the pleasure of using some good software. Some notable entries in this list are uv (yes, the package manager), Tailscale &amp;amp; Zed. All of these software share some characteristics. 1) They work fast and effortlessly for me and never hog CPU and memory (No random resource spikes either) - in other words great performance. 2) They have a clean interface and API that hides complexity. What they do seems easy, but isn&amp;rsquo;t just going by the fact that they stand out like diamonds in a coal mine. They inspire me to make good software and are a gold standard we should aspire to.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My LLM usage pattern</title>
       <link>https://saahityaedams.github.io/posts/ai_ui_ux/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ai_ui_ux/</guid>
-      <description>So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&amp;rsquo;ve been using is Zed (absolutely love this code editor who &amp;rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided.</description>
+      <description>&lt;p&gt;So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&amp;rsquo;ve been using is Zed (absolutely love this code editor who &amp;rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided. I am a fan of Anthropic&amp;rsquo;s Claude 3.5 Sonnet model which I trust to write great code for me. In terms of cost, looking at the API cost in the Anthropic console tells me I have used approx $10 worth of tokens over the past month.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Favourite Comedy TV Shows</title>
       <link>https://saahityaedams.github.io/posts/fav_comedy_shows/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/fav_comedy_shows/</guid>
-      <description>Patriot Depressed spy goes to Luxemborg undercover to bribe Iranians, messes it up and tries fixing it. He also has to be handle his BS undercover job.
-Curb your Enthusiasm Cynical Larry David is irritated by the world, sticks to his weird rules and offends people by accident.
-Nathan for You Nathan Fielder gives baffling and hilarious advice to small businesses.
-James May: Our Man in Japan English man tours Japan while engaging in british humour.</description>
+      <description>&lt;h3 id=&#34;patriot&#34;&gt;Patriot&lt;/h3&gt;&#xA;&lt;p&gt;Depressed spy goes to Luxemborg undercover to bribe Iranians, messes it up and tries fixing it. He also has to be handle his BS undercover job.&lt;/p&gt;&#xA;&lt;h3 id=&#34;curb-your-enthusiasm&#34;&gt;Curb your Enthusiasm&lt;/h3&gt;&#xA;&lt;p&gt;Cynical Larry David is irritated by the world, sticks to his weird rules and offends people by accident.&lt;/p&gt;&#xA;&lt;h3 id=&#34;nathan-for-you&#34;&gt;Nathan for You&lt;/h3&gt;&#xA;&lt;p&gt;Nathan Fielder gives baffling and hilarious advice to small businesses.&lt;/p&gt;&#xA;&lt;h3 id=&#34;james-may-our-man-in-japan&#34;&gt;James May: Our Man in Japan&lt;/h3&gt;&#xA;&lt;p&gt;English man tours Japan while engaging in british humour.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Favourite Drama TV Shows</title>
       <link>https://saahityaedams.github.io/posts/fav_drama_shows/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/fav_drama_shows/</guid>
-      <description>Bosch Old school Los Angeles cop keeps solving a lot of cases with good old detective work.
-Justified US Marshal gets transfered back home to Kentucky. Emaculate old western movie vibes and a different side of American culture, ie Applachia.
-Succession Corporate family drama. Each of 3 incompetent kids want to run evil dad&amp;rsquo;s megacorp.</description>
+      <description>&lt;h3 id=&#34;bosch&#34;&gt;Bosch&lt;/h3&gt;&#xA;&lt;p&gt;Old school Los Angeles cop keeps solving a lot of cases with good old detective work.&lt;/p&gt;&#xA;&lt;h3 id=&#34;justified&#34;&gt;Justified&lt;/h3&gt;&#xA;&lt;p&gt;US Marshal gets transfered back home to Kentucky. Emaculate old western movie vibes and a different side of American culture, ie Applachia.&lt;/p&gt;&#xA;&lt;h3 id=&#34;succession&#34;&gt;Succession&lt;/h3&gt;&#xA;&lt;p&gt;Corporate family drama. Each of 3 incompetent kids want to run evil dad&amp;rsquo;s megacorp.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Don&#39;t Tell Me I Can&#39;t Review</title>
       <link>https://saahityaedams.github.io/posts/dont-tell-me-i-cant-review/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/dont-tell-me-i-cant-review/</guid>
-      <description>The book &amp;ldquo;Don&amp;rsquo;t Tell Me I Can&amp;rsquo;t&amp;rdquo; is the memoir of an ambitious 14 year old who is homeschooled. It is singular in its genre for being heartfelt and authentic. Reading this book really did feel like a very mature child talking to me. The fact that is 73 pages and written in plain conversational English makes for a great one sitting read.
-The book written in first person by Cole Summers (pseudonym) talks about his homeschooling journey which includes starting multiple businesses (I love that he derives inspiration and quotes Buffet and Munger throughout the book).</description>
+      <description>&lt;p&gt;The book &amp;ldquo;Don&amp;rsquo;t Tell Me I Can&amp;rsquo;t&amp;rdquo; is the memoir of an ambitious 14 year old who is homeschooled. It is singular in its genre for being heartfelt and authentic. Reading this book really did feel like a very mature child talking to me. The fact that is 73 pages and written in plain conversational English makes for a great one sitting read.&lt;/p&gt;&#xA;&lt;p&gt;The book written in first person by Cole Summers (pseudonym) talks about his homeschooling journey which includes starting multiple businesses (I love that he derives inspiration and quotes Buffet and Munger throughout the book). From his first business at 7, breeding and selling rabbits, to then purchasing a 350 acre ranch (for rearing meat goats) at 9 and buying/renovating a house shortly after that.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Government&#39;s Role in the Market?</title>
       <link>https://saahityaedams.github.io/posts/gcpp_artifacts/gov-market-role/</link>
       <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/gov-market-role/</guid>
-      <description>Market economics: role of gov offering goods and services
-For many essential goods and services, the government becomes a player in the market and offers these goods and services at a controlled price e.g., transport, hospitals etc. Alternative is that the government lets the market provide these goods and services but incentivises them in different ways. How do you assess the two different approaches keeping in mind that any government intervention in general leads to inefficiencies in the market.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Market economics: role of gov offering goods and services&lt;/p&gt;&#xA;&lt;p&gt;For many essential goods and services, the government becomes a player in the market and offers these goods and services at a controlled price e.g., transport, hospitals etc. Alternative is that the government lets the market provide these goods and services but incentivises them in different ways. How do you assess the two different approaches keeping in mind that any government intervention in general leads to inefficiencies in the market.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Are Tech Stocks Overvalued ?</title>
       <link>https://saahityaedams.github.io/posts/are-tech-stocks-overvalued/</link>
       <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/are-tech-stocks-overvalued/</guid>
-      <description>WIP
-My good friend Rishabh argues that US Tech stocks are overvalued (on account of AI hype) and specifically that the &amp;ldquo;Edelweiss US Technology Equity FoF is not a good investment option. He cites this very well written memo from Howard Marks1 that suggests that the Tech Stocks and the S&amp;amp;P 500 shows signs of potential bubble behaviour.
-I want to document my thoughts about this and hopefully clarify my thinking (for myself primarily) about why I think some tech stocks are still so attractive to me.</description>
+      <description>&lt;p&gt;&lt;strong&gt;WIP&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;My good friend Rishabh argues that US Tech stocks are overvalued (on account of AI hype) and specifically that the &amp;ldquo;Edelweiss US Technology Equity FoF is not a good investment option. He cites this very well written memo from Howard Marks&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; that suggests that the Tech Stocks and the S&amp;amp;P 500 shows signs of potential bubble behaviour.&lt;/p&gt;&#xA;&lt;p&gt;I want to document my thoughts about this and hopefully clarify my thinking (for myself primarily) about why I think some tech stocks are still so attractive to me. &lt;strong&gt;[DISCLAIMER: I COULD BE COMPLETELY WRONG AND I OWN A SMALL NUMBER OF AMZN STOCK]&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Moneyball Review</title>
       <link>https://saahityaedams.github.io/posts/moneyball-review/</link>
       <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/moneyball-review/</guid>
-      <description>Rough Notes
-Reading the book moneyball felt like a slog (maybe I would be better off watching the movie) and made me feel like the book was overhyped. This could be due to the fact that I knew zilch about baseball before reading the book, and had to do basic wikipedia research while reading the book.
-The narrative while strong within a chapter didn&amp;rsquo;t flow through the whole book and the later part of the book felt boring.</description>
+      <description>&lt;p&gt;&lt;em&gt;Rough Notes&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Reading the book moneyball felt like a slog (maybe I would be better off watching the movie) and made me feel like the book was overhyped. This could be due to the fact that I knew zilch about baseball before reading the book, and had to do basic wikipedia research while reading the book.&lt;/p&gt;&#xA;&lt;p&gt;The narrative while strong within a chapter didn&amp;rsquo;t flow through the whole book and the later part of the book felt boring. In contrast, a narrative of this genre that I loved was &amp;ldquo;Soul of a new machine&amp;rdquo;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>No Presents Please Review</title>
       <link>https://saahityaedams.github.io/posts/no-presents-please-review/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/no-presents-please-review/</guid>
-      <description>&amp;lsquo;No Presents Please&amp;rsquo; was a fun, light and breezy first read of the year, consisting of 16 short stories set in Mumbai. Following the lives of working and middle-class characters (from the 1990s?), the stories capture people&amp;rsquo;s interactions against the backdrop of their daily work lives, reminded me of a less romantic and primitive version of the Modern Love TV show.
-The characters resonated with me deeply, partly due to the nostalgic setting.</description>
+      <description>&lt;p&gt;&amp;lsquo;No Presents Please&amp;rsquo; was a fun, light and breezy first read of the year, consisting of 16 short stories set in Mumbai. Following the lives of working and middle-class characters (from the 1990s?), the stories capture people&amp;rsquo;s interactions against the backdrop of their daily work lives, reminded me of a less romantic and primitive version of the Modern Love TV show.&lt;/p&gt;&#xA;&lt;p&gt;The characters resonated with me deeply, partly due to the nostalgic setting. These are honest people making just enough to get by, living simpler lives while facing universal human challenges. Despite their modest circumstances, their stories touch on fundamental aspects of the human condition.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>llm.c rough notes</title>
       <link>https://saahityaedams.github.io/posts/2024/llm_c/</link>
       <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/llm_c/</guid>
-      <description>I - Getting the defaults working Fix linux-tools broken install with sudo dpkg -i --force-overwrite /var/cache/apt/archives/linux-tools-common_*.deb and then sudo apt --fix-broken install
-Get nvcc (CUDA compiler driver) with sudo apt install nvidia-cuda-toolkit
-Initial command ./train_gpt2fp32cu doesn&amp;rsquo;t work due to OOM issue.
-Decreasing batch size and sequence length doesn&amp;rsquo;t work ./train_gpt2fp32cu -b 1 -t 512
-See GPU usage stats with nvidia-smi and sudo fuser -v /dev/nvidia* and kill process using the significant GPU resources with kill -9 &amp;lt;pid&amp;gt;.</description>
+      <description>&lt;h3 id=&#34;i---getting-the-defaults-working&#34;&gt;I - Getting the defaults working&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Fix linux-tools broken install with &lt;code&gt;sudo dpkg -i --force-overwrite /var/cache/apt/archives/linux-tools-common_*.deb&lt;/code&gt; and then &lt;code&gt;sudo apt --fix-broken install&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Get nvcc (CUDA compiler driver) with &lt;code&gt;sudo apt install nvidia-cuda-toolkit&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Initial command &lt;code&gt;./train_gpt2fp32cu&lt;/code&gt; doesn&amp;rsquo;t work due to OOM issue.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Decreasing batch size and sequence length doesn&amp;rsquo;t work &lt;code&gt;./train_gpt2fp32cu -b 1 -t 512&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;See GPU usage stats with &lt;code&gt;nvidia-smi&lt;/code&gt; and &lt;code&gt;sudo fuser -v /dev/nvidia*&lt;/code&gt; and kill process using the significant GPU resources with &lt;code&gt;kill -9 &amp;lt;pid&amp;gt;&lt;/code&gt;. In my case, it was ollama.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>New Cycle</title>
       <link>https://saahityaedams.github.io/posts/2024/cycling-across-bangalore/</link>
       <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/cycling-across-bangalore/</guid>
-      <description>Late at night a week ago, Feeling drowsy, I decided to treat myself to a used cycle for Diwali. There wasn&amp;rsquo;t any specific reason, I just always wanted a cycle from a long time plus I liked running and made the reasonable assumption I would like cycling. I initially made a list of some discounted items on Amazon like Noise Cancellation Headphones or an Air Fryer, but none of them felt right.</description>
+      <description>&lt;p&gt;Late at night a week ago, Feeling drowsy, I decided to treat myself to a used cycle for Diwali. There wasn&amp;rsquo;t any specific reason, I just always wanted a cycle from a long time plus I liked running and made the reasonable assumption I would like cycling. I initially made a list of some discounted items on Amazon like Noise Cancellation Headphones or an Air Fryer, but none of them felt right. I chose a &amp;ldquo;sparingly used&amp;rdquo; Firefox Rapide (for some reason all items on OLX are &amp;ldquo;sparing used&amp;rdquo;).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fresh Linux Install and Setup</title>
       <link>https://saahityaedams.github.io/posts/2024/fresh-linux-install/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/fresh-linux-install/</guid>
-      <description>I have a slightly old gaming laptop (i5, 256GB SSD, 1TB HDD, NVIDIA GeForce GTX 1050) which ran Ubuntu + windows. I haven&amp;rsquo;t used this laptop since college and decided to use it as an always-on home server and secondary machine in my room plugged into power. There is no concrete plan, but high-level plans include using the 1 Tb hard disk as backup and media store (still researching the best way), self hosting some software, and play around with serving tiny LLM models from it.</description>
+      <description>&lt;p&gt;I have a slightly old gaming laptop (i5, 256GB SSD, 1TB HDD, NVIDIA GeForce GTX 1050) which ran Ubuntu + windows. I haven&amp;rsquo;t used this laptop since college and decided to use it as an always-on home server and secondary machine in my room plugged into power. There is no concrete plan, but high-level plans include using the 1 Tb hard disk as backup and media store (still researching the best way), self hosting some software, and play around with serving tiny LLM models from it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Claude Pricing (Application vs API)</title>
       <link>https://saahityaedams.github.io/posts/2024/claude-pricing/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/claude-pricing/</guid>
-      <description>People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.
-Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage.</description>
+      <description>&lt;p&gt;People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.&lt;/p&gt;&#xA;&lt;p&gt;Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>re:kindle</title>
       <link>https://saahityaedams.github.io/posts/2024/re-kindle/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/re-kindle/</guid>
-      <description>I recently read a Wall Street Journal1 article about kindles having a resurgence amongst young readers, which resonated with me since I love my kindle too.
-I have a 5+ yr old kindle paperwhite and it is easily the most well built techy thing I own. It is solid in your hands, and even though it&amp;rsquo;s been dropped countless times, everything seems to work perfectly. It always amazed me that I can pick it up after a month and see that the battery percentage has barely shifted.</description>
+      <description>&lt;p&gt;I recently read a Wall Street Journal&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; article about kindles having a resurgence amongst young readers, which resonated with me since I love my kindle too.&lt;/p&gt;&#xA;&lt;p&gt;I have a 5+ yr old kindle paperwhite and it is easily the most well built techy thing I own. It is solid in your hands, and even though it&amp;rsquo;s been dropped countless times, everything seems to work perfectly. It always amazed me that I can pick it up after a month and see that the battery percentage has barely shifted.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Indiranagar vs Subramanyapura</title>
       <link>https://saahityaedams.github.io/posts/2024/indiranagar-subramanyapura/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/indiranagar-subramanyapura/</guid>
-      <description>There&amp;rsquo;s a lot to unpack just from saying &amp;lsquo;Indira-nagar&amp;rsquo; versus &amp;lsquo;Subramanya-pura&amp;rsquo;— one gives off a cool-and-hip vibe, while the other feels more like traditional Indian family vibe. I rented a room in the first for the past year to be closer to work, while the latter has been my home (technically my parents&amp;rsquo;) for more than 10 years through school and college before that.
-Indiranagar seems like an unusual island isolated from the rest of India - in demeanor and culturally.</description>
+      <description>&lt;p&gt;There&amp;rsquo;s a lot to unpack just from saying &amp;lsquo;Indira-nagar&amp;rsquo; versus &amp;lsquo;Subramanya-pura&amp;rsquo;— one gives off a cool-and-hip vibe, while the other feels more like traditional Indian family vibe. I rented a room in the first for the past year to be closer to work, while the latter has been my home (technically my parents&amp;rsquo;) for more than 10 years through school and college before that.&lt;/p&gt;&#xA;&lt;p&gt;Indiranagar seems like an unusual island isolated from the rest of India - in demeanor and culturally. I remember reading that it was originally an old Bangalore suburb where army officers lived; now it&amp;rsquo;s the happening and desired place in Bangalore. Most streets are pretty clean, lined with large trees( which form a canopy above you). There are no high-rises to be seen anywhere. It&amp;rsquo;s a melting pot &amp;ldquo;posh&amp;rdquo; area with well-to-do people from across the country.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Work Beliefs</title>
       <link>https://saahityaedams.github.io/posts/2024/work-beliefs/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/work-beliefs/</guid>
-      <description>autonomy take personal responsibility to be proactive and be the owner of implementation E2E craftsmanship never half-ass anything that ships details and elegance matter for designing/building/operating solid systems curiosity best work is not defined but discovered under constraints and in context deep dive get to the root of problem and fix that aim to better understand wider systems pragmatic strong ownership, but value stakeholder input high level sense of urgency, but not hurried some details matter than other - no bike shedding know when to dive deep.</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;autonomy&#xA;&lt;ul&gt;&#xA;&lt;li&gt;take personal responsibility to be proactive and be the owner of implementation E2E&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;craftsmanship&#xA;&lt;ul&gt;&#xA;&lt;li&gt;never half-ass anything that ships&lt;/li&gt;&#xA;&lt;li&gt;details and elegance matter for designing/building/operating solid systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;curiosity&#xA;&lt;ul&gt;&#xA;&lt;li&gt;best work is not defined but discovered under constraints and in context&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;deep dive&#xA;&lt;ul&gt;&#xA;&lt;li&gt;get to the root of problem and fix that&lt;/li&gt;&#xA;&lt;li&gt;aim to better understand wider systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;pragmatic&#xA;&lt;ul&gt;&#xA;&lt;li&gt;strong ownership, but value stakeholder input&lt;/li&gt;&#xA;&lt;li&gt;high level sense of urgency, but not hurried&lt;/li&gt;&#xA;&lt;li&gt;some details matter than other - no bike shedding&lt;/li&gt;&#xA;&lt;li&gt;know when to dive deep. weigh practise over academicy-ivory-tower theory&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Driving 30 min to run in the woods</title>
       <link>https://saahityaedams.github.io/posts/2024/running-in-the-woods/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/running-in-the-woods/</guid>
-      <description>People look at me strangely when I mention that I drive like 30 mins one way just to jog awkwardly on a stretch of road in the middle-of-nowhere on weekends.
-The first time I encountered this place was in February 2020. I was training for a half marathon (I am older and tireder now) and set off early in the morning for a slow long run. Feeling adventurous, I ran further than usual.</description>
+      <description>&lt;p&gt;People look at me strangely when I mention that I drive like 30 mins one way just to jog awkwardly on a stretch of road in the middle-of-nowhere on weekends.&lt;/p&gt;&#xA;&lt;p&gt;The first time I encountered this place was in February 2020. I was training for a half marathon (I am older and tireder now) and set off early in the morning for a slow long run. Feeling adventurous, I ran further than usual. As I progressed, Bangalore&amp;rsquo;s outskirts changed from empty BDA plots and occasional houses to deserted access roads partially reclaimed by plants. This gave way to a stretch of empty highway, which then became a small road winding through the woods leading to a lake. I returned home after noon, feeling like an explorer who had reached some foreign land.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Vipassana Experience</title>
       <link>https://saahityaedams.github.io/posts/2024/vipassana-experience/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/vipassana-experience/</guid>
-      <description>Just writing up my experience1 attending a 10-day Vipassana course from the 15th to the 25th of July at Dhamma Ketana in Chengannur.
-Starting off with the location. Kerala, what a beauty. The center is basically a plot of tropical rainforest with a few one-story buildings and the main Dhamma center connected by a path. Plus, there are two ponds. Behind the property, there’s a panoramic view of flooded green paddy fields with groves of trees behind them.</description>
+      <description>&lt;p&gt;&lt;em&gt;Just writing up my experience&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; attending a 10-day Vipassana course from the 15th to the 25th of July at Dhamma Ketana in Chengannur.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Starting off with the location. Kerala, what a beauty. The center is basically a plot of tropical rainforest with a few one-story buildings and the main Dhamma center connected by a path. Plus, there are two ponds. Behind the property, there’s a panoramic view of flooded green paddy fields with groves of trees behind them. Plus, it was the monsoons (great pleasant weather), so it suddenly started pouring and then stopped raining a couple of hours later almost every day.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Crossing Bridges(2013) Review</title>
       <link>https://saahityaedams.github.io/posts/ancient/crossing-bridges/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/crossing-bridges/</guid>
-      <description>Crossing Bridges(2013) is an unusual movie. Unlike a typical Bollywood movie, it does not have drama, nor is it like the recent Biopicy style movies that show the protagonist overcoming an obstacle, yet the movie was engrossing and my connection with the protagonist so strong that I did not pick up my phone more than twice while watching it.
-– SPOILERS AHEAD –
-The movie starts by showing a man called Tashi who has returned to his village in Arunachal Pradesh from Mumbai after being laid off.</description>
+      <description>&lt;p&gt;Crossing Bridges(2013) is an unusual movie. Unlike a typical Bollywood movie, it does not have drama, nor is it like the recent Biopicy style movies that show the protagonist overcoming an obstacle, yet the movie was engrossing and my connection with the protagonist so strong that I did not pick up my phone more than twice while watching it.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;– SPOILERS AHEAD –&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;The movie starts by showing a man called Tashi who has returned to his village in Arunachal Pradesh from Mumbai after being laid off. Tashi is shown as this guy who has come back to his village after a very long time working in the city as a YASP(yours truly) and hence doesn’t seem to fit in his village. Not that there is a lack of conflict in the movie, but the protagonist&amp;rsquo;s main conflict is so sublime and internal(just like most normal people): his parents want him to settle down in the village to take over the farm, he wants to get a job back in the city and move back as he is bored in the village. There are other non-crucial points in the storyline, him buying a TV as he is bored(Dad is against the idea, but is glued to it after he gets it), his friendly relationship with a fellow replacement teacher Anila&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, etc. Finally, Tashi decides to stay back in the village as a teacher even after getting a job in the city.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Simple Drupal 7 Shell</title>
       <link>https://saahityaedams.github.io/posts/ancient/drupal-shell/</link>
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/drupal-shell/</guid>
-      <description>Problem For debugging drupal 7 code, there is no packaged shell like django or ROR and we must start a normal PHP interactive shell and then initialize and bootstrap the DRUPAL installation in the shell. This involves searching and copying the 4 lines of drupal initialization and bootstrapping code from the project and pasting it in the PHP shell before doing any Drupal debugging work.
-Solution PHP CLI has an settings option auto_prepend_file which can be used to run some initialization code before running the PHP interactive shell with php -a.</description>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;For debugging drupal 7 code, there is no packaged shell like django or ROR and we must start a normal PHP interactive shell and then initialize and bootstrap the DRUPAL installation in the shell. This involves searching and copying the 4 lines of drupal initialization and bootstrapping code from the project and pasting it in the PHP shell before doing any Drupal debugging work.&lt;/p&gt;&#xA;&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;&#xA;&lt;p&gt;PHP CLI has an settings option &lt;code&gt;auto_prepend_file&lt;/code&gt; which can be used to run some initialization code before running the PHP interactive shell with &lt;code&gt;php -a&lt;/code&gt;. So running&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lalbagh and Cubbon Park Pretty Maps</title>
       <link>https://saahityaedams.github.io/posts/ancient/lalbagh-and-cubbon-park/</link>
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/lalbagh-and-cubbon-park/</guid>
-      <description>Cubbon Park Lalbagh Made with Pretty maps</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://saahityaedams.github.io/photos/cubbon.png&#34; alt=&#34;Lalbagh&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 align=&#34;center&#34;&gt;Cubbon Park&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://saahityaedams.github.io/photos/lalbagh.png&#34; alt=&#34;Lalbagh&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 align=&#34;center&#34;&gt;Lalbagh&lt;/h3&gt;&#xA;&lt;p&gt;Made with &lt;a href=&#34;https://github.com/marceloprates/prettymaps&#34;&gt;Pretty maps&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL PGMiner</title>
       <link>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/22-08-21-til/</guid>
-      <description>SSH into remote machine where application API resp time is slow Look at htop(which is at 100% with some weird command run by the postgres user) Google kdevtmpfsi A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency. https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu https://nvd.nist.gov/vuln/detail/CVE-2019-9193</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;SSH into remote machine where application API resp time is slow&lt;/li&gt;&#xA;&lt;li&gt;Look at htop(which is at 100% with some weird command run by the postgres user)&#xA;&lt;img src=&#34;https://saahityaedams.github.io/photos/pgminer.png&#34; alt=&#34;pgminer-htop&#34;&gt;&lt;/li&gt;&#xA;&lt;li&gt;Google kdevtmpfsi&lt;/li&gt;&#xA;&lt;li&gt;A malware that scans open postgres ports with default(or weak) password and then uses executes a bash script to mine cryptocurrency.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution&#34;&gt;https://www.securityweek.com/pgminer-crypto-mining-botnet-abuses-postgresql-distribution&lt;/a&gt;&#xA;&lt;a href=&#34;https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu&#34;&gt;https://stackoverflow.com/questions/60151640/kdevtmpfsi-using-the-entire-cpu&lt;/a&gt;&#xA;&lt;a href=&#34;https://nvd.nist.gov/vuln/detail/CVE-2019-9193&#34;&gt;https://nvd.nist.gov/vuln/detail/CVE-2019-9193&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL MySQL GROUP_CONCATE truncates to 1024</title>
       <link>https://saahityaedams.github.io/posts/ancient/20-08-21-til/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/20-08-21-til/</guid>
-      <description>https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat
-In another case of the being burned due to not looking at the documentation properly and blindly copying a query,the root cause of a field issue turned out to be MySQL function GROUP_CONCATE truncating the result of the query to 1024 by default unless group_concat_max_len is set explicitly. Plus depending on the way of processing this query results in your program, it is unlikely to figure out the results were ever truncated.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;In another case of the being burned due to not looking at the documentation properly and blindly copying a query,the root cause of a field issue turned out to be MySQL function GROUP_CONCATE truncating the result of the query to 1024 by default unless &lt;code&gt;group_concat_max_len&lt;/code&gt;  is set explicitly. Plus depending on the way of processing this query results in your program, it is unlikely to figure out the results were ever truncated.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL Clipboard manager</title>
       <link>https://saahityaedams.github.io/posts/ancient/18-08-21-til/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/18-08-21-til/</guid>
-      <description>Recently saw someone looking at the history of their all the cut-copy text when presenting their screen in a call. One day later after installing https://maccy.app/, I&amp;rsquo;m wondering how the heck did I not know something like this(clipboard managers) ever existed before. Psst&amp;hellip; It&amp;rsquo;s probably because I&amp;rsquo;ve worked completely remote after completing college.
-Very useful for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.</description>
+      <description>&lt;p&gt;Recently saw someone looking at the history of their all the cut-copy text  when presenting their screen in a call. One day later after installing &lt;a href=&#34;https://maccy.app/&#34;&gt;https://maccy.app/&lt;/a&gt;, I&amp;rsquo;m wondering how the heck did I not know something like this(clipboard managers) ever existed before. Psst&amp;hellip; It&amp;rsquo;s probably because I&amp;rsquo;ve worked completely remote after completing college.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Very useful for navigating large legacy codebases with bad editor support and the only way to navigate between functions is copying the function name and finding it&lt;/li&gt;&#xA;&lt;li&gt;Pasting commands to run in the terminal shell of a remote servers that you forgot and had run in another remote server.&lt;/li&gt;&#xA;&lt;li&gt;You copied something and forgot about it, later in the day you need it and you don&amp;rsquo;t want to have to go through your tabs, documents, code, etc. It probably is there in the history of the clipboard manager.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>TIL Thundering herd problem</title>
       <link>https://saahityaedams.github.io/posts/ancient/17-08-21-til/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/17-08-21-til/</guid>
-      <description>https://en.wikipedia.org/wiki/Thundering_herd_problem http://www.catb.org/jargon/html/T/thundering-herd-problem.html https://instagram-engineering.com/thundering-herds-promises-82191c8af57d https://www.reddit.com/r/RedditEng/comments/obqtfm/solving_the_three_stooges_problem/</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Thundering_herd_problem&#34;&gt;https://en.wikipedia.org/wiki/Thundering_herd_problem&lt;/a&gt;&#xA;&lt;a href=&#34;http://www.catb.org/jargon/html/T/thundering-herd-problem.html&#34;&gt;http://www.catb.org/jargon/html/T/thundering-herd-problem.html&lt;/a&gt;&#xA;&lt;a href=&#34;https://instagram-engineering.com/thundering-herds-promises-82191c8af57d&#34;&gt;https://instagram-engineering.com/thundering-herds-promises-82191c8af57d&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.reddit.com/r/RedditEng/comments/obqtfm/solving_the_three_stooges_problem/&#34;&gt;https://www.reddit.com/r/RedditEng/comments/obqtfm/solving_the_three_stooges_problem/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hampta Pass Journal Entries</title>
       <link>https://saahityaedams.github.io/posts/ancient/hampta-journal/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/hampta-journal/</guid>
-      <description>11 July ⁃	Making everyone hurry in the morning to get to the airport ⁃	But my phone had no charge, iphone cable doesn&#39;t work with power bank ⁃	TIL - 2 rupee lounge ⁃	Is Turbulence just driving in clouds =&amp;gt; like going over potholes ⁃	Walk out of Delhi Airport - damn hot ⁃	Terrible terrible coffee ⁃	Bus ride - 500 kms - loud Dhaba with randos signing in Haryanvi 12 July ⁃	Raining and hair pin bendy roads all the way to Manali ⁃	Get ready fast, submit all docs ⁃	Goto start point of trek in sumo, at top ⁃	Crows seems to be there at the top of the mountains for some reason unlike pigeons in Manali.</description>
+      <description>&lt;h1 id=&#34;11-july&#34;&gt;11 July&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;⁃&#x9;Making everyone hurry in the morning to get to the airport&#xA;⁃&#x9;But my phone had no charge, iphone cable doesn&#39;t work with power bank&#xA;⁃&#x9;TIL - 2 rupee lounge&#xA;⁃&#x9;Is Turbulence just driving in clouds =&amp;gt; like going over potholes&#xA;⁃&#x9;Walk out of Delhi Airport - damn hot&#xA;⁃&#x9;Terrible terrible coffee&#xA;⁃&#x9;Bus ride - 500 kms - loud Dhaba with randos signing in Haryanvi&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;12-july&#34;&gt;12 July&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;⁃&#x9;Raining and hair pin bendy roads all the way to Manali &#xA;⁃&#x9;Get ready fast, submit all docs&#xA;⁃&#x9;Goto start point of trek in sumo, at top&#xA;⁃&#x9;Crows seems to be there at the top of the mountains for some reason unlike pigeons in Manali.&#xA;⁃&#x9;Come back down due to some reason. Should have realized the crows were a bad omen.&#xA;⁃&#x9;Intro with everyone&#xA;⁃&#x9;Great manchurian and lemon ginger honey tea in Keylongs Inn&#xA;⁃&#x9;Uncertainty regarding trek due to the Incident&#xA;⁃&#x9;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;13-july&#34;&gt;13 July&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;⁃&#x9;Am I on vacation - great room, great view, wake up leisurely?&#xA;⁃&#x9;Weather is great, how was the weather man so wrong ?&#xA;⁃&#x9;Feels like the clouds roll down the hills into the valley and go along with the Beas river down&#xA;⁃&#x9;Back to start point&#xA;⁃&#x9;Start trek only 30 mins&#xA;⁃&#x9;Met 2 Ih groups heading down on the way&#xA;⁃&#x9;Reached Campsite&#xA;⁃&#x9;Lunch, oximeter reading(didn’t work for me - almost never worked for me), invisible volleyball&#xA;⁃&#x9;Ih stuff&#xA;⁃&#x9;Unique Poop experience&#xA;⁃&#x9;Sleeping in sleeping bag&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;14-july&#34;&gt;14 July&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;⁃&#x9;Woke up to a great day, slightly cloudy&#xA;⁃&#x9;Starts raining cats and dogs when brushing&#xA;⁃&#x9;Are we going ahead or not?(Trek Leader - random probabilities and crazy scenarios )&#xA;⁃&#x9;Sky clears up and we get to go ahead after Ih conf)&#xA;⁃&#x9;Crossed the river on bridge&#xA;⁃&#x9;Walked(mostly sludge, crap and boulders)&#xA;⁃&#x9;Chika pass water crossing with human chain(hey we could have used the bridge slightly upstream but didn’t )&#xA;⁃&#x9;Multiple small stream crossings through out&#xA;⁃&#x9;Tricky uphill section with going over narrow path with boulders on one side and a river flowing in full force down on the other&#xA;⁃&#x9;Another major river crossing with river traversing(rope across river)&#xA;⁃&#x9;Short walk through grasslands with crazy amount of flowers) and reach base camp (Jwara camp)&#xA;⁃&#x9;Apparently it was only 4.5 km, but lots of uphill(elevation climb ?)&#xA;⁃&#x9;Lunch&#xA;⁃&#x9;Some games later&#xA;⁃&#x9;Snacks - soya manchurian?&#xA;⁃&#x9;Went for short walk from camp site with Shravani and shiva&#xA;⁃&#x9;Philosophical discussion&#xA;⁃&#x9;Great Dinner and terrible spo2 reading&#xA;⁃&#x9;End of another day in the life of not working Saahitya&#xA;⁃&#x9;Ending thoughts&#xA;&#x9;*&#x9;Seems like the first day where things happened without a hiccup.&#xA;&#x9;*       Next trek is not going to be a monsoon trek&#xA;&#x9;*       Professional helpful ih staff&#xA;&#x9;*&#x9;Should plan to do this once a year&#xA;&#x9;*&#x9;Should start running again(fitness level down)&#xA;&#x9;*&#x9;Insignificance compared to the mountains and nature.&#xA;&#x9;*&#x9;Times flies when you are trekking&#xA;&#x9;*&#x9;Trekking shouldn’t be a masochist activity, must be slight cardio&#xA;&#x9;*&#x9;Should I be in the front or the back of the queue of people trekking(advantages vs disadvantages ?)&#x9;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;15-july&#34;&gt;15 July&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;⁃&#x9;Again day starts with raining&#xA;⁃&#x9;Had to start at 8, but we start at 830&#xA;⁃&#x9;Do warmup&#xA;⁃&#x9;Walk sometime&#xA;⁃&#x9;Someone had to return&#xA;⁃&#x9;Beautiful grassland crossing streams&#xA;⁃&#x9;Reached Balu ka ghera&#xA;⁃&#x9;Nothing much on the trek&#xA;⁃&#x9;Some games lunch then some more stuff&#xA;⁃&#x9;Serious talk from Local guides regarding tmrw&#xA;⁃&#x9;Dinner&#xA;⁃&#x9;Great day but not much to say as I can’t recollect too much + have to sleep for big day tmrw&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;16-july&#34;&gt;16 July&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;⁃&#x9;Perfect weather&#xA;⁃&#x9;woke up but food got delayed as cooks alarm didn’t ring as battery drained due to cold&#xA;⁃&#x9;Started at 630 instead of 6 with packed lunch&#xA;⁃&#x9;crossed many streams and many ice sheets between rocks&#xA;⁃&#x9;Same routine of walking across crap, sludge, boulders&#xA;⁃&#x9;Walked for like a km on a narrow ridge with a fast flowing stream on one side and glacier on another.&#xA;⁃&#x9;Then had to walk on steep snow for like 100 m&#xA;⁃&#x9;Hampta pass - what is a pass, why is this called a pass?&#xA;⁃&#x9;Seems like we went over some snow and end of hampta pass&#xA;⁃&#x9;Descent was very scary as it was On a side of a mountain for 1000s of feet. Was able to spot something like a turquoise color pond from above in the valley&#xA;⁃&#x9;Reached steep ice slope with boulders at bottom&#xA;⁃&#x9;Local guides helped me get across fit by sliding&#xA;⁃&#x9;Funny scene of a guy taking 4 people sliding with him after slipping and falling&#xA;⁃&#x9;Had packed Lunch &#xA;⁃&#x9;Walked across stony grassland with river flowing one one side till camp&#xA;-&#x9;How do these trekking orgs filter out suicidal people - this trek seems like a great place for someone to jump while descending or get washed down by the river&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;17-july&#34;&gt;17 July&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;⁃&#x9;day starts off lazy as we have crossed the pass&#xA;⁃&#x9;We cross the river bare feet, incredible cold, couldn’t feel our feet when we come across the other side. Had to run around in grass for 10-15 mins and then hike for like half an hour to feel something.&#xA;⁃&#x9;Straight forward walk descending in grassland.&#xA;⁃&#x9;Slightly more steep short descent&#xA;⁃&#x9;Cross river over plank&#xA;⁃&#x9;Cross 50 feet of snow on side of mountain with fast flowing Chandra river on the side&#xA;⁃&#x9;Walk on desert like scenery to come to vans. End of trek.&#xA;⁃&#x9;Go to last campsite, eat lunch rajma chawal, pay for vans&#xA;⁃&#x9;Vans take us to Manali, on Rohtang pass road&#xA;⁃&#x9;Go though Atal tunnel, scenery changes from dry deserty landscape to foggy pine filled green valley&#xA;⁃&#x9;See lot of tourists on the way to Manali, Laughing at the stupid poses for pictures&#xA;-&#x9;Todo I learned about Delhi-walle meme in Manali&#xA;⁃&#x9;Reach Keylongs inn, walk to other hotel to get the cloakroom stuff&#xA;⁃&#x9;Get on bus back to Delhi&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://photos.app.goo.gl/NHrahdTi7JrWfj11A&#34;&gt;Gallery link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Logging in Drupal</title>
       <link>https://saahityaedams.github.io/posts/ancient/drupal-logging/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/drupal-logging/</guid>
-      <description>Setting up proper logging today prevents the big headache tommorow
-Components syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space. Steps We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
+      <description>&lt;p&gt;Setting up proper logging today prevents the big headache tommorow&lt;/p&gt;&#xA;&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog)&lt;/li&gt;&#xA;&lt;li&gt;logrotate - to archive the old logs to help classify by data and save space.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;We enable syslog in the modules in drupal and save with the default config&lt;/li&gt;&#xA;&lt;li&gt;add a file in /etc/rsyslog.d directory called 45-drupal.conf for drupal log specific configuration&lt;/li&gt;&#xA;&lt;li&gt;add this to file&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local0.* /var/log/drupal.log&#xA;&amp;amp; ~&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;restart rsyslog by running sudo service rsyslog restart&lt;/li&gt;&#xA;&lt;li&gt;Write a configuration file in /etc/logrotate.d/&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/var/log/drupal.log {&#xA;daily&#xA;missingok&#xA;rotate 31&#xA;compress&#xA;notifempty&#xA;copytruncate&#xA;sharedscripts&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>The Most Important Design Guideline</title>
       <link>https://saahityaedams.github.io/posts/ancient/solid-grasp/</link>
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/solid-grasp/</guid>
-      <description>In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&amp;#39;t know whether applying them helps as I never could remember it and I definitely wasn&amp;#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C++ with the interface being written in the header file and the implementation being written in the library source file.</description>
+      <description>&lt;p&gt;&#xA;In college we were taught SOLID and GRASP principles which was more heuristics than principles&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; that was supposed to make our code better. I honestly don&amp;#39;t know whether applying them helps as I never could remember it and I definitely wasn&amp;#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of &lt;strong&gt;interface and implementation&lt;/strong&gt;, which was beautifully taught in C++ with the interface being written in the header file and the implementation being written in the library source file. His point being &lt;strong&gt;interfaces&lt;/strong&gt; are static and hard to change and must be designed well and carefully, in contast with &lt;strong&gt;implementation&lt;/strong&gt;  being abstracted away from user and hence easy to change. A video he had asked us to look at that I recently rewatched after a year of being paid to write software makes a lot more sense now. The video expands on the above point + metions some other very usefull guidelines and is a must watch.  &lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Building Endurance the Right Way</title>
       <link>https://saahityaedams.github.io/posts/ancient/endurance-notes/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/endurance-notes/</guid>
-      <description>Notes taken while listening to Building Endurance the Right Way
-Aspects to Endurance - Cardio &amp;amp; Muscular How to develop cardio Steady state exercise - run at particular speed not too fast Cause: Heart stretches when you increase heart rate upto a certain point which increases stroke volume(means a bigger heart) Running at increased heart rate (90% +), heart is twitching and not effective Run at pace where you can have a sustained conversation Interval Training Based on Inertia Run at 80-90% and then start jogging or walking, heart is still beating hard, extra volume of blood is moving which stretches the heart Interval found usefull after period of steady state training Easy to go wrong Walk till you can talk How to Develop Muscular Need/Develop mitochondria in muscle cells Easy to do in slow fibers and harder to do in fast fibers Make muscle oxidative, enduring not polluting 3 main energy systems creatine phosphate</description>
+      <description>&lt;p&gt;Notes taken while listening to &lt;a href=&#34;https://www.youtube.com/watch?v=Ii845pDRC2c&#34;&gt;Building Endurance the Right Way&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Aspects to Endurance - Cardio &amp;amp; Muscular&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-2&#34;&gt;&#xA;How to develop cardio&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-3&#34;&gt;&#xA;Steady state exercise - run at particular speed not too fast&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cause: Heart stretches when you increase heart rate upto a certain point which increases stroke volume(means a bigger heart)&lt;/li&gt;&#xA;&lt;li&gt;Running at increased heart rate (90% +), heart is twitching and not effective&lt;/li&gt;&#xA;&lt;li&gt;Run at pace where you can have a sustained conversation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-4&#34;&gt;&#xA;Interval Training&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Based on Inertia&lt;/li&gt;&#xA;&lt;li&gt;Run at 80-90% and then start jogging or walking, heart is still beating hard, extra volume of blood is moving which stretches the heart&lt;/li&gt;&#xA;&lt;li&gt;Interval found usefull after period of steady state training&lt;/li&gt;&#xA;&lt;li&gt;Easy to go wrong&lt;/li&gt;&#xA;&lt;li&gt;Walk till you can talk&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-5&#34;&gt;&#xA;How to Develop Muscular&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-6&#34;&gt;&#xA;Need/Develop mitochondria in muscle cells&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Easy to do in slow fibers and harder to do in fast fibers&lt;/li&gt;&#xA;&lt;li&gt;Make muscle oxidative, enduring not polluting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-7&#34;&gt;&#xA;3 main energy systems&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;creatine phosphate&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Nightcrawler</title>
       <link>https://saahityaedams.github.io/posts/ancient/running-at-night/</link>
       <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/running-at-night/</guid>
-      <description>For the first time ever, I ran a 4k in the night at 11:30 PM around my apartment after a late night software release. People talk about starting your day fresh after a run inconveniently missing out the part about waking up early in the morning, and hustling after the run to get to work on time. In contrast when you run at night, you really don&amp;#39;t have anything to get back to except your comfy bed and when you do get back you obviously will sleep like a log cause you are exhausted after running.</description>
+      <description>&lt;p&gt;For the first time ever, I ran a 4k in the night at 11:30 PM around my apartment after a late night software release.&#xA;People talk about starting your day fresh after a run inconveniently missing out the part about waking up early in the morning, and hustling after the run to get to work on time.&#xA;In contrast when you run at night, you really don&amp;#39;t have anything to get back to except your comfy bed and when you do get back you obviously will sleep like a log cause you are exhausted after running.&#xA;There are still some parts I don&amp;#39;t like about running at night, like being constrained to the apartment hence doing the same loop multiple times plus you can&amp;#39;t exactly look at where you step.&#xA;I am definitely going on night runs much more often.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Data Analytics Report</title>
       <link>https://saahityaedams.github.io/posts/ancient/data-analytics-report/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/data-analytics-report/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;embed src=&#34;https://saahityaedams.github.io/pdfs/DA_Report.pdf&#34; width=&#34;100%&#34; height=&#34;600&#34;&#xA;type=&#34;application/pdf&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Final Year Dissertation  Report &#43; Presentation</title>
       <link>https://saahityaedams.github.io/posts/ancient/finalyear-report/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/finalyear-report/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;embed src=&#34;https://saahityaedams.github.io/pdfs/Report-final.pdf&#34; width=&#34;100%&#34; height=&#34;600&#34;&#xA;type=&#34;application/pdf&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;embed src=&#34;https://saahityaedams.github.io/pdfs/Final Presentation.pptx.pdf&#34; width=&#34;100%&#34; height=&#34;600&#34;&#xA;type=&#34;application/pdf&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Summer 2018 Internship Report</title>
       <link>https://saahityaedams.github.io/posts/ancient/summer-2018-internship-report/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/summer-2018-internship-report/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;embed src=&#34;https://saahityaedams.github.io/pdfs/Summer-Project-Report-CCBD.pdf&#34; width=&#34;100%&#34; height=&#34;600&#34;&#xA;type=&#34;application/pdf&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Word Error Correction Paper</title>
       <link>https://saahityaedams.github.io/posts/ancient/shrodinger/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/shrodinger/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;embed src=&#34;https://saahityaedams.github.io/pdfs/Knowledge_Enhanced_Real_Word_Error_Correction.pdf&#34; width=&#34;100%&#34; height=&#34;600&#34;&#xA;type=&#34;application/pdf&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Bangalore Half Marathon 2019 Race Report</title>
       <link>https://saahityaedams.github.io/posts/ancient/bm-race-report/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/bm-race-report/</guid>
-      <description>Overall my memory of the race is very hazy and I only remember very specific parts of the race. The beginning part(5-6 kms) of the race involved a lot of shuffling and moving around slow runners.
-The course through Cubbon park had a chilly weather and the air was very fresh. I remember while running through Cubbon park at a later part of the race I saw this one park filled with tons of dogs running around playfully and some even cheering for me :)</description>
+      <description>&lt;p&gt;Overall my memory of the race is very hazy and I only remember very specific parts of the race. The beginning part(5-6 kms) of the race involved a lot of shuffling and moving around slow runners.&lt;/p&gt;&#xA;&lt;p&gt;The course through Cubbon park had a chilly weather and the air was very fresh. I remember while running through Cubbon park at a later part of the race I saw this one park filled with tons of dogs running around playfully and some even cheering for me :)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

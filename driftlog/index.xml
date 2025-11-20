@@ -4,7 +4,8 @@
     <title>Driftlog on saahityaedams</title>
     <link>https://saahityaedams.github.io/driftlog/</link>
     <description>Recent content in Driftlog on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://saahityaedams.github.io/driftlog/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://saahityaedams.github.io/driftlog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -3,26 +3,33 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>DuckDB unknown unknowns - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="DuckDB unknown unknowns">
-<meta itemprop="description" content="Some software is very lovable (see zed_is_good_software.md). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues1, I have a more nuanced opinion about duckdb.
+	
+  <meta itemprop="name" content="DuckDB unknown unknowns">
+  <meta itemprop="description" content="Some software is very lovable (see zed_is_good_software.md). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues1, I have a more nuanced opinion about duckdb.
 This scenario brings to mind a certain favourite quote There are unkown unkowns and this great article . In this context, I wrangled with two issues
-Duckdb does not support query timeout: This seems so crazy to me."><meta itemprop="datePublished" content="2025-07-22T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2025-07-22T00:00:00+00:00" />
-<meta itemprop="wordCount" content="282">
-<meta itemprop="keywords" content="duckdb,aws," /><meta property="og:title" content="DuckDB unknown unknowns" />
-<meta property="og:description" content="Some software is very lovable (see zed_is_good_software.md). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues1, I have a more nuanced opinion about duckdb.
+Duckdb does not support query timeout: This seems so crazy to me. How does someone consider this for a production usecase without a fundamental feature like this. All the workaround for this talk about a multi processing (a mult-thread doesn’t work) with a timeout (and consequently move away from in-memory usage to the FS usage of duckdb to avoid penalty of running queries against uncached tables each time).">
+  <meta itemprop="datePublished" content="2025-07-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-07-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="282">
+  <meta itemprop="keywords" content="Duckdb,Aws"><meta property="og:url" content="https://saahityaedams.github.io/posts/duckdb_unknowns_unknowns/">
+  <meta property="og:site_name" content="saahityaedams">
+  <meta property="og:title" content="DuckDB unknown unknowns">
+  <meta property="og:description" content="Some software is very lovable (see zed_is_good_software.md). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues1, I have a more nuanced opinion about duckdb.
 This scenario brings to mind a certain favourite quote There are unkown unkowns and this great article . In this context, I wrangled with two issues
-Duckdb does not support query timeout: This seems so crazy to me." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://saahityaedams.github.io/posts/duckdb_unknowns_unknowns/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-07-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-07-22T00:00:00+00:00" />
+Duckdb does not support query timeout: This seems so crazy to me. How does someone consider this for a production usecase without a fundamental feature like this. All the workaround for this talk about a multi processing (a mult-thread doesn’t work) with a timeout (and consequently move away from in-memory usage to the FS usage of duckdb to avoid penalty of running queries against uncached tables each time).">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-22T00:00:00+00:00">
+    <meta property="article:tag" content="Duckdb">
+    <meta property="article:tag" content="Aws">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="DuckDB unknown unknowns"/>
-<meta name="twitter:description" content="Some software is very lovable (see zed_is_good_software.md). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues1, I have a more nuanced opinion about duckdb.
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DuckDB unknown unknowns">
+  <meta name="twitter:description" content="Some software is very lovable (see zed_is_good_software.md). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues1, I have a more nuanced opinion about duckdb.
 This scenario brings to mind a certain favourite quote There are unkown unkowns and this great article . In this context, I wrangled with two issues
-Duckdb does not support query timeout: This seems so crazy to me."/>
+Duckdb does not support query timeout: This seems so crazy to me. How does someone consider this for a production usecase without a fundamental feature like this. All the workaround for this talk about a multi processing (a mult-thread doesn’t work) with a timeout (and consequently move away from in-memory usage to the FS usage of duckdb to avoid penalty of running queries against uncached tables each time).">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
@@ -127,16 +134,19 @@ Duckdb does not support query timeout: This seems so crazy to me."/>
 </div>
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-ZY0T40ZV0H', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY0T40ZV0H"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZY0T40ZV0H');
+        }
+      </script><script>feather.replace()</script>
 </body>
 </html>

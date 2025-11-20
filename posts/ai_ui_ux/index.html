@@ -3,20 +3,28 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>My LLM usage pattern - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="My LLM usage pattern">
-<meta itemprop="description" content="So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&rsquo;ve been using is Zed (absolutely love this code editor who &rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided."><meta itemprop="datePublished" content="2025-02-17T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2025-02-17T00:00:00+00:00" />
-<meta itemprop="wordCount" content="423">
-<meta itemprop="keywords" content="llm,zed,claude," /><meta property="og:title" content="My LLM usage pattern" />
-<meta property="og:description" content="So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&rsquo;ve been using is Zed (absolutely love this code editor who &rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://saahityaedams.github.io/posts/ai_ui_ux/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-02-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-02-17T00:00:00+00:00" />
+	
+  <meta itemprop="name" content="My LLM usage pattern">
+  <meta itemprop="description" content="So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I’ve been using is Zed (absolutely love this code editor who ’ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided. I am a fan of Anthropic’s Claude 3.5 Sonnet model which I trust to write great code for me. In terms of cost, looking at the API cost in the Anthropic console tells me I have used approx $10 worth of tokens over the past month.">
+  <meta itemprop="datePublished" content="2025-02-17T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-17T00:00:00+00:00">
+  <meta itemprop="wordCount" content="423">
+  <meta itemprop="keywords" content="Llm,Zed,Claude"><meta property="og:url" content="https://saahityaedams.github.io/posts/ai_ui_ux/">
+  <meta property="og:site_name" content="saahityaedams">
+  <meta property="og:title" content="My LLM usage pattern">
+  <meta property="og:description" content="So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I’ve been using is Zed (absolutely love this code editor who ’ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided. I am a fan of Anthropic’s Claude 3.5 Sonnet model which I trust to write great code for me. In terms of cost, looking at the API cost in the Anthropic console tells me I have used approx $10 worth of tokens over the past month.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-17T00:00:00+00:00">
+    <meta property="article:tag" content="Llm">
+    <meta property="article:tag" content="Zed">
+    <meta property="article:tag" content="Claude">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My LLM usage pattern"/>
-<meta name="twitter:description" content="So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&rsquo;ve been using is Zed (absolutely love this code editor who &rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My LLM usage pattern">
+  <meta name="twitter:description" content="So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I’ve been using is Zed (absolutely love this code editor who ’ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided. I am a fan of Anthropic’s Claude 3.5 Sonnet model which I trust to write great code for me. In terms of cost, looking at the API cost in the Anthropic console tells me I have used approx $10 worth of tokens over the past month.">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
@@ -111,16 +119,19 @@
 </div>
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-ZY0T40ZV0H', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY0T40ZV0H"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZY0T40ZV0H');
+        }
+      </script><script>feather.replace()</script>
 </body>
 </html>

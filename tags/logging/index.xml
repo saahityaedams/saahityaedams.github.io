@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>logging on saahityaedams</title>
+    <title>Logging on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/logging/</link>
-    <description>Recent content in logging on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Logging on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Logging in Drupal</title>
       <link>https://saahityaedams.github.io/posts/ancient/drupal-logging/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/drupal-logging/</guid>
-      <description>Setting up proper logging today prevents the big headache tommorow
-Components syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space. Steps We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
+      <description>&lt;p&gt;Setting up proper logging today prevents the big headache tommorow&lt;/p&gt;&#xA;&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog)&lt;/li&gt;&#xA;&lt;li&gt;logrotate - to archive the old logs to help classify by data and save space.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;We enable syslog in the modules in drupal and save with the default config&lt;/li&gt;&#xA;&lt;li&gt;add a file in /etc/rsyslog.d directory called 45-drupal.conf for drupal log specific configuration&lt;/li&gt;&#xA;&lt;li&gt;add this to file&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local0.* /var/log/drupal.log&#xA;&amp;amp; ~&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;restart rsyslog by running sudo service rsyslog restart&lt;/li&gt;&#xA;&lt;li&gt;Write a configuration file in /etc/logrotate.d/&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/var/log/drupal.log {&#xA;daily&#xA;missingok&#xA;rotate 31&#xA;compress&#xA;notifempty&#xA;copytruncate&#xA;sharedscripts&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
   </channel>
 </rss>

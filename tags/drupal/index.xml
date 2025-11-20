@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>drupal on saahityaedams</title>
+    <title>Drupal on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/drupal/</link>
-    <description>Recent content in drupal on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Drupal on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple Drupal 7 Shell</title>
       <link>https://saahityaedams.github.io/posts/ancient/drupal-shell/</link>
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/drupal-shell/</guid>
-      <description>Problem For debugging drupal 7 code, there is no packaged shell like django or ROR and we must start a normal PHP interactive shell and then initialize and bootstrap the DRUPAL installation in the shell. This involves searching and copying the 4 lines of drupal initialization and bootstrapping code from the project and pasting it in the PHP shell before doing any Drupal debugging work.
-Solution PHP CLI has an settings option auto_prepend_file which can be used to run some initialization code before running the PHP interactive shell with php -a.</description>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;For debugging drupal 7 code, there is no packaged shell like django or ROR and we must start a normal PHP interactive shell and then initialize and bootstrap the DRUPAL installation in the shell. This involves searching and copying the 4 lines of drupal initialization and bootstrapping code from the project and pasting it in the PHP shell before doing any Drupal debugging work.&lt;/p&gt;&#xA;&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;&#xA;&lt;p&gt;PHP CLI has an settings option &lt;code&gt;auto_prepend_file&lt;/code&gt; which can be used to run some initialization code before running the PHP interactive shell with &lt;code&gt;php -a&lt;/code&gt;. So running&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Logging in Drupal</title>
       <link>https://saahityaedams.github.io/posts/ancient/drupal-logging/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/drupal-logging/</guid>
-      <description>Setting up proper logging today prevents the big headache tommorow
-Components syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space. Steps We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.</description>
+      <description>&lt;p&gt;Setting up proper logging today prevents the big headache tommorow&lt;/p&gt;&#xA;&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog)&lt;/li&gt;&#xA;&lt;li&gt;logrotate - to archive the old logs to help classify by data and save space.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;We enable syslog in the modules in drupal and save with the default config&lt;/li&gt;&#xA;&lt;li&gt;add a file in /etc/rsyslog.d directory called 45-drupal.conf for drupal log specific configuration&lt;/li&gt;&#xA;&lt;li&gt;add this to file&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local0.* /var/log/drupal.log&#xA;&amp;amp; ~&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;restart rsyslog by running sudo service rsyslog restart&lt;/li&gt;&#xA;&lt;li&gt;Write a configuration file in /etc/logrotate.d/&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/var/log/drupal.log {&#xA;daily&#xA;missingok&#xA;rotate 31&#xA;compress&#xA;notifempty&#xA;copytruncate&#xA;sharedscripts&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
   </channel>
 </rss>

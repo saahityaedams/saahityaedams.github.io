@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>claude on saahityaedams</title>
+    <title>Claude on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/claude/</link>
-    <description>Recent content in claude on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Claude on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/claude/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/claude/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Claude Code Usage Cost</title>
       <link>https://saahityaedams.github.io/posts/claude_code_usage_cost/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/claude_code_usage_cost/</guid>
-      <description>Poking around in the ~/.claude folder and looking at the files that claude code is saving to the local machine.
-➜ .claude pwd /Users/saahityae/.claude ➜ .claude ls config projects statsig local shell-snapshots todos There&amp;rsquo;s
-config -&amp;gt; holds the config related file (eg. which tools are allowed, mcps configured, etc) local -&amp;gt; the actual node CLI app. shell-snapshots -&amp;gt; ? statsig -&amp;gt; something related to https://statsig.com/ . I&amp;rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality) todos - Basically a bunch of files with the structured text of TODOs that the claude code uses when you&amp;rsquo;re using it like { &amp;#34;content&amp;#34;: &amp;#34;Modify Dockerfile to use UV instead of Poetry&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;in_progress&amp;#34;, &amp;#34;priority&amp;#34;: &amp;#34;high&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;1&amp;#34; }, { &amp;#34;content&amp;#34;: &amp;#34;Update file copy instructions to handle uv.</description>
+      <description>&lt;p&gt;Poking around in the &lt;code&gt;~/.claude&lt;/code&gt; folder and looking at the files that claude code is saving to the local machine.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;➜  .claude pwd&#xA;/Users/saahityae/.claude&#xA;➜  .claude ls&#xA;config          projects        statsig&#xA;local           shell-snapshots todos&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There&amp;rsquo;s&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;config&lt;/code&gt; -&amp;gt; holds the config related file (eg. which tools are allowed, mcps configured, etc)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;local&lt;/code&gt; -&amp;gt; the actual node CLI app.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;shell-snapshots&lt;/code&gt; -&amp;gt; ?&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;statsig&lt;/code&gt; -&amp;gt; something related to &lt;a href=&#34;https://statsig.com/&#34;&gt;https://statsig.com/&lt;/a&gt; . I&amp;rsquo;m guessing its used for feature gating, A/B testing, product analytics etc (basically some statsig functionality)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;todos&lt;/code&gt; - Basically a bunch of files with the structured text of TODOs that the claude code  uses when you&amp;rsquo;re using it like&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Modify Dockerfile to use UV instead of Poetry&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;status&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;in_progress&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;priority&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;high&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;,&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Update file copy instructions to handle uv.lock instead of poetry.lock&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;status&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pending&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;priority&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;medium&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;projects&lt;/code&gt; -&amp;gt; the most important of these that holds the sessions and interactions with claude code. There&amp;rsquo;s a bunch of &lt;code&gt;.jsonl&lt;/code&gt; each with a session (I think).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;In the &lt;code&gt;projects&lt;/code&gt; folder, there&amp;rsquo;s a folder for each project (repo ?) you&amp;rsquo;re using claude code . There&amp;rsquo;s a bunch of &lt;code&gt;.jsonl&lt;/code&gt; each with a session (I think) in each of these folder. Each line of these &lt;code&gt;.jsonl&lt;/code&gt; is something like the below&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My LLM usage pattern</title>
       <link>https://saahityaedams.github.io/posts/ai_ui_ux/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ai_ui_ux/</guid>
-      <description>So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&amp;rsquo;ve been using is Zed (absolutely love this code editor who &amp;rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided.</description>
+      <description>&lt;p&gt;So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&amp;rsquo;ve been using is Zed (absolutely love this code editor who &amp;rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided. I am a fan of Anthropic&amp;rsquo;s Claude 3.5 Sonnet model which I trust to write great code for me. In terms of cost, looking at the API cost in the Anthropic console tells me I have used approx $10 worth of tokens over the past month.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Claude Pricing (Application vs API)</title>
       <link>https://saahityaedams.github.io/posts/2024/claude-pricing/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/claude-pricing/</guid>
-      <description>People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.
-Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage.</description>
+      <description>&lt;p&gt;People interact with Claude in 2 ways, end users interact with it via the application (chat interface) and developers build AI applications via the API. These two modes of interaction are priced wildly differently.&lt;/p&gt;&#xA;&lt;p&gt;Although the application is free, it quickly imposes message limits, and you have to wait for a few hours before your message limit resets. You can upgrade to Claude pro, which is a subscription at $20 per month and gets you 5x more usage.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

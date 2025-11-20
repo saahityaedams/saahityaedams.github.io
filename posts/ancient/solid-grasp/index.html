@@ -3,20 +3,26 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The Most Important Design Guideline - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="The Most Important Design Guideline">
-<meta itemprop="description" content="In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&#39;t know whether applying them helps as I never could remember it and I definitely wasn&#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C&#43;&#43; with the interface being written in the header file and the implementation being written in the library source file."><meta itemprop="datePublished" content="2021-06-23T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-06-23T00:00:00+00:00" />
-<meta itemprop="wordCount" content="208">
-<meta itemprop="keywords" content="system-design," /><meta property="og:title" content="The Most Important Design Guideline" />
-<meta property="og:description" content="In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&#39;t know whether applying them helps as I never could remember it and I definitely wasn&#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C&#43;&#43; with the interface being written in the header file and the implementation being written in the library source file." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://saahityaedams.github.io/posts/ancient/solid-grasp/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-06-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-06-23T00:00:00+00:00" />
+	
+  <meta itemprop="name" content="The Most Important Design Guideline">
+  <meta itemprop="description" content="In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&#39;t know whether applying them helps as I never could remember it and I definitely wasn&#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C&#43;&#43; with the interface being written in the header file and the implementation being written in the library source file. His point being interfaces are static and hard to change and must be designed well and carefully, in contast with implementation being abstracted away from user and hence easy to change. A video he had asked us to look at that I recently rewatched after a year of being paid to write software makes a lot more sense now. The video expands on the above point &#43; metions some other very usefull guidelines and is a must watch.">
+  <meta itemprop="datePublished" content="2021-06-23T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-06-23T00:00:00+00:00">
+  <meta itemprop="wordCount" content="208">
+  <meta itemprop="keywords" content="System-Design"><meta property="og:url" content="https://saahityaedams.github.io/posts/ancient/solid-grasp/">
+  <meta property="og:site_name" content="saahityaedams">
+  <meta property="og:title" content="The Most Important Design Guideline">
+  <meta property="og:description" content="In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&#39;t know whether applying them helps as I never could remember it and I definitely wasn&#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C&#43;&#43; with the interface being written in the header file and the implementation being written in the library source file. His point being interfaces are static and hard to change and must be designed well and carefully, in contast with implementation being abstracted away from user and hence easy to change. A video he had asked us to look at that I recently rewatched after a year of being paid to write software makes a lot more sense now. The video expands on the above point &#43; metions some other very usefull guidelines and is a must watch.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-06-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-06-23T00:00:00+00:00">
+    <meta property="article:tag" content="System-Design">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The Most Important Design Guideline"/>
-<meta name="twitter:description" content="In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&#39;t know whether applying them helps as I never could remember it and I definitely wasn&#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C&#43;&#43; with the interface being written in the header file and the implementation being written in the library source file."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Most Important Design Guideline">
+  <meta name="twitter:description" content="In college we were taught SOLID and GRASP principles which was more heuristics than principles1 that was supposed to make our code better. I honestly don&#39;t know whether applying them helps as I never could remember it and I definitely wasn&#39;t thinking about applying it when I was writing code. But one thing that did stay with me from college that was taught and repeated dozens of times by a great professor was the idea of interface and implementation, which was beautifully taught in C&#43;&#43; with the interface being written in the header file and the implementation being written in the library source file. His point being interfaces are static and hard to change and must be designed well and carefully, in contast with implementation being abstracted away from user and hence easy to change. A video he had asked us to look at that I recently rewatched after a year of being paid to write software makes a lot more sense now. The video expands on the above point &#43; metions some other very usefull guidelines and is a must watch.">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
@@ -91,7 +97,7 @@ Footnotes
 </h2>
 </div>
 <div class="footnotes">
-<hr class="footnotes-separatator">
+<hr class="footnotes-separatator"/>
 <div class="footnote-definitions">
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
@@ -107,12 +113,6 @@ Footnotes
 			<div class="tags">
 				
 					
-						<ul class="flat">
-							
-							<li><a href="/tags/system-design">system-design</a></li>
-							
-						</ul>
-					
 				
 			</div></div>
 	</div>
@@ -123,16 +123,19 @@ Footnotes
 </div>
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-ZY0T40ZV0H', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY0T40ZV0H"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZY0T40ZV0H');
+        }
+      </script><script>feather.replace()</script>
 </body>
 </html>

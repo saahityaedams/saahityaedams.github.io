@@ -1,50 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>running on saahityaedams</title>
+    <title>Running on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/running/</link>
-    <description>Recent content in running on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Running on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/running/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/running/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Driving 30 min to run in the woods</title>
       <link>https://saahityaedams.github.io/posts/2024/running-in-the-woods/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/running-in-the-woods/</guid>
-      <description>People look at me strangely when I mention that I drive like 30 mins one way just to jog awkwardly on a stretch of road in the middle-of-nowhere on weekends.
-The first time I encountered this place was in February 2020. I was training for a half marathon (I am older and tireder now) and set off early in the morning for a slow long run. Feeling adventurous, I ran further than usual.</description>
+      <description>&lt;p&gt;People look at me strangely when I mention that I drive like 30 mins one way just to jog awkwardly on a stretch of road in the middle-of-nowhere on weekends.&lt;/p&gt;&#xA;&lt;p&gt;The first time I encountered this place was in February 2020. I was training for a half marathon (I am older and tireder now) and set off early in the morning for a slow long run. Feeling adventurous, I ran further than usual. As I progressed, Bangalore&amp;rsquo;s outskirts changed from empty BDA plots and occasional houses to deserted access roads partially reclaimed by plants. This gave way to a stretch of empty highway, which then became a small road winding through the woods leading to a lake. I returned home after noon, feeling like an explorer who had reached some foreign land.&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>Building Endurance the Right Way</title>
-      <link>https://saahityaedams.github.io/posts/ancient/endurance-notes/</link>
-      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://saahityaedams.github.io/posts/ancient/endurance-notes/</guid>
-      <description>Notes taken while listening to Building Endurance the Right Way
-Aspects to Endurance - Cardio &amp;amp; Muscular How to develop cardio Steady state exercise - run at particular speed not too fast Cause: Heart stretches when you increase heart rate upto a certain point which increases stroke volume(means a bigger heart) Running at increased heart rate (90% +), heart is twitching and not effective Run at pace where you can have a sustained conversation Interval Training Based on Inertia Run at 80-90% and then start jogging or walking, heart is still beating hard, extra volume of blood is moving which stretches the heart Interval found usefull after period of steady state training Easy to go wrong Walk till you can talk How to Develop Muscular Need/Develop mitochondria in muscle cells Easy to do in slow fibers and harder to do in fast fibers Make muscle oxidative, enduring not polluting 3 main energy systems creatine phosphate</description>
-    </item>
-    
     <item>
       <title>Nightcrawler</title>
       <link>https://saahityaedams.github.io/posts/ancient/running-at-night/</link>
       <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/running-at-night/</guid>
-      <description>For the first time ever, I ran a 4k in the night at 11:30 PM around my apartment after a late night software release. People talk about starting your day fresh after a run inconveniently missing out the part about waking up early in the morning, and hustling after the run to get to work on time. In contrast when you run at night, you really don&amp;#39;t have anything to get back to except your comfy bed and when you do get back you obviously will sleep like a log cause you are exhausted after running.</description>
+      <description>&lt;p&gt;For the first time ever, I ran a 4k in the night at 11:30 PM around my apartment after a late night software release.&#xA;People talk about starting your day fresh after a run inconveniently missing out the part about waking up early in the morning, and hustling after the run to get to work on time.&#xA;In contrast when you run at night, you really don&amp;#39;t have anything to get back to except your comfy bed and when you do get back you obviously will sleep like a log cause you are exhausted after running.&#xA;There are still some parts I don&amp;#39;t like about running at night, like being constrained to the apartment hence doing the same loop multiple times plus you can&amp;#39;t exactly look at where you step.&#xA;I am definitely going on night runs much more often.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Bangalore Half Marathon 2019 Race Report</title>
       <link>https://saahityaedams.github.io/posts/ancient/bm-race-report/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/bm-race-report/</guid>
-      <description>Overall my memory of the race is very hazy and I only remember very specific parts of the race. The beginning part(5-6 kms) of the race involved a lot of shuffling and moving around slow runners.
-The course through Cubbon park had a chilly weather and the air was very fresh. I remember while running through Cubbon park at a later part of the race I saw this one park filled with tons of dogs running around playfully and some even cheering for me :)</description>
+      <description>&lt;p&gt;Overall my memory of the race is very hazy and I only remember very specific parts of the race. The beginning part(5-6 kms) of the race involved a lot of shuffling and moving around slow runners.&lt;/p&gt;&#xA;&lt;p&gt;The course through Cubbon park had a chilly weather and the air was very fresh. I remember while running through Cubbon park at a later part of the race I saw this one park filled with tons of dogs running around playfully and some even cheering for me :)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

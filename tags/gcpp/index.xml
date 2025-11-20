@@ -1,53 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gcpp on saahityaedams</title>
+    <title>Gcpp on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/gcpp/</link>
-    <description>Recent content in gcpp on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Gcpp on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/gcpp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/gcpp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Sovereignity</title>
       <link>https://saahityaedams.github.io/posts/gcpp_artifacts/thoughts_about_ai_sovereignity-1/</link>
       <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/thoughts_about_ai_sovereignity-1/</guid>
-      <description>**These post build upon my thoughts about AI sovereignity following the workshop last week. Its mainly an exploration of two ideas. One is the idea of thinking of soverignity from an societal use-case perspective. The other is an AI diffusion framework. **
-Fleshing out the Industry-Academia Idea A good and simple framework for diffusing any new radical idea is &amp;ldquo;Connecting good people to good ideas and good networks&amp;rdquo; (from Takshashila&amp;rsquo;s mission).</description>
+      <description>&lt;p&gt;**These post build upon my thoughts about AI sovereignity following the workshop last week. Its mainly an exploration of two ideas. One is the idea of thinking of soverignity from an societal use-case perspective. The other is an AI diffusion framework. **&lt;/p&gt;&#xA;&lt;h2 id=&#34;fleshing-out-the-industry-academia-idea&#34;&gt;Fleshing out the Industry-Academia Idea&lt;/h2&gt;&#xA;&lt;p&gt;A good and simple framework for diffusing any new radical idea is &amp;ldquo;Connecting good people to good ideas and good networks&amp;rdquo; (from Takshashila&amp;rsquo;s mission). By connecting key actors in the ecosystem - industries, academia, researchers, and large tech companies - we can create a self-reinforcing virtuous cycle that benefits everyone. The government is ideally positioned to orchestrate and accelerate this process.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Scaling Era Book Review</title>
       <link>https://saahityaedams.github.io/posts/gcpp_artifacts/the_scaling_era_book_review/</link>
       <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/the_scaling_era_book_review/</guid>
-      <description>Dwarkesh&amp;rsquo;s book - &amp;ldquo;The Scaling Era&amp;rdquo; (25th March 2025, Stripe Press) is a delightful oddity. It&amp;rsquo;s uniquely formatted - mostly as snippets of his podcast episodes related to AI categorized across crucial aspects of LLMs like Safety and Scaling. The book is a superb highlight reel of Dwarkesh&amp;rsquo;s podcast, reflecting the excellent quality of his show (superb guest quality, discourse quality, intellectual topics, etc.).
-The book excels at discussing the not-strictly technical &amp;amp; under-discussed aspects of LLMs like inference scaling, cluster sizes, and impacts of AGI.</description>
+      <description>&lt;p&gt;Dwarkesh&amp;rsquo;s book - &amp;ldquo;The Scaling Era&amp;rdquo; (25th March 2025, Stripe Press) is a delightful oddity. It&amp;rsquo;s uniquely formatted - mostly as snippets of his podcast episodes related to AI categorized across crucial aspects of LLMs like Safety and Scaling. The book is a superb highlight reel of Dwarkesh&amp;rsquo;s podcast, reflecting the excellent quality of his show (superb guest quality, discourse quality, intellectual topics, etc.).&lt;/p&gt;&#xA;&lt;p&gt;The book excels at discussing the not-strictly technical &amp;amp; under-discussed aspects of LLMs like inference scaling, cluster sizes, and impacts of AGI. Dwarkesh has meticulously edited/curated the interviews and referenced important material discussed in his podcasts (references and glossary made up about 50% of the book on my Kindle). The format also excels in bringing readers perspectives from diverse experts in a relaxed conversation format - both AI doomers (like Yudkowsky) and folks with more nuanced opinions (like Gwern).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>DPI Enshittification?</title>
       <link>https://saahityaedams.github.io/posts/gcpp_artifacts/dpi_enshittification/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/dpi_enshittification/</guid>
-      <description>Recently came across the term ‘enshittification’ (or politically correct version: platform decay) coined by Cory Doctrow: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
-Are we likely to see similar trends in some of the DPI platforms: Aadhaar, UPI, Digiyatra, etc.? True, the controlling shareholder isn&amp;rsquo;t maximizing for profits but may want to extract a different kind of &amp;lsquo;value&amp;rsquo;.
-https://opentakshashila.net/posts/80874543
-OP asks an interesting question, are DPIs likely to enshittify in the future ? Your&amp;rsquo;s truly noted down his meandering &amp;amp; biased thoughts below.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Recently came across the term ‘enshittification’ (or politically correct version: platform decay) coined by Cory Doctrow: &lt;a href=&#34;https://www.wired.com/story/tiktok-platforms-cory-doctorow/&#34;&gt;https://www.wired.com/story/tiktok-platforms-cory-doctorow/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Are we likely to see similar trends in some of the DPI platforms: Aadhaar, UPI, Digiyatra, etc.? True, the controlling shareholder isn&amp;rsquo;t maximizing for profits but may want to extract a different kind of &amp;lsquo;value&amp;rsquo;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://opentakshashila.net/posts/80874543&#34;&gt;https://opentakshashila.net/posts/80874543&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;OP asks an interesting question, are DPIs likely to enshittify in the future ? Your&amp;rsquo;s truly noted down his meandering &amp;amp; biased thoughts below.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Government&#39;s Role in the Market?</title>
       <link>https://saahityaedams.github.io/posts/gcpp_artifacts/gov-market-role/</link>
       <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/gcpp_artifacts/gov-market-role/</guid>
-      <description>Market economics: role of gov offering goods and services
-For many essential goods and services, the government becomes a player in the market and offers these goods and services at a controlled price e.g., transport, hospitals etc. Alternative is that the government lets the market provide these goods and services but incentivises them in different ways. How do you assess the two different approaches keeping in mind that any government intervention in general leads to inefficiencies in the market.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Market economics: role of gov offering goods and services&lt;/p&gt;&#xA;&lt;p&gt;For many essential goods and services, the government becomes a player in the market and offers these goods and services at a controlled price e.g., transport, hospitals etc. Alternative is that the government lets the market provide these goods and services but incentivises them in different ways. How do you assess the two different approaches keeping in mind that any government intervention in general leads to inefficiencies in the market.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

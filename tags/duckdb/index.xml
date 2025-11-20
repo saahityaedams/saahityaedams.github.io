@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>duckdb on saahityaedams</title>
+    <title>Duckdb on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/duckdb/</link>
-    <description>Recent content in duckdb on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Duckdb on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/duckdb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/duckdb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DuckDB unknown unknowns</title>
       <link>https://saahityaedams.github.io/posts/duckdb_unknowns_unknowns/</link>
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/duckdb_unknowns_unknowns/</guid>
-      <description>Some software is very lovable (see zed_is_good_software.md). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues1, I have a more nuanced opinion about duckdb.
-This scenario brings to mind a certain favourite quote There are unkown unkowns and this great article . In this context, I wrangled with two issues
-Duckdb does not support query timeout: This seems so crazy to me.</description>
+      <description>&lt;p&gt;Some software is very lovable (see &lt;code&gt;zed_is_good_software.md&lt;/code&gt;). For the past couple of months, duckdb was one such software I held in high praise. But a single hair-ripping-ly frustrating day later after debugging certain issues&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, I have a more nuanced opinion about duckdb.&lt;/p&gt;&#xA;&lt;p&gt;This scenario brings to mind a certain favourite quote &lt;a href=&#34;https://en.wikipedia.org/wiki/There_are_unknown_unknowns&#34;&gt;There are unkown unkowns&lt;/a&gt; and this &lt;a href=&#34;https://mcfunley.com/choose-boring-technology&#34;&gt;great article&lt;/a&gt; . In this context, I wrangled with two issues&lt;/p&gt;&#xA;&lt;h3 id=&#34;duckdb-does-not-support-query-timeout&#34;&gt;Duckdb does not support query timeout:&lt;/h3&gt;&#xA;&lt;p&gt;This seems so crazy to me. How does someone consider this for a production usecase without a fundamental feature like this. All the workaround for this talk about a multi processing (a mult-thread doesn&amp;rsquo;t work) with a timeout (and consequently move away from in-memory usage to the FS usage of duckdb to avoid penalty of running queries against uncached tables each time).&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

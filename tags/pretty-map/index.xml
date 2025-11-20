@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pretty-map on saahityaedams</title>
+    <title>Pretty-Map on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/pretty-map/</link>
-    <description>Recent content in pretty-map on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Pretty-Map on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/pretty-map/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/pretty-map/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lalbagh and Cubbon Park Pretty Maps</title>
       <link>https://saahityaedams.github.io/posts/ancient/lalbagh-and-cubbon-park/</link>
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/lalbagh-and-cubbon-park/</guid>
-      <description>Cubbon Park Lalbagh Made with Pretty maps</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://saahityaedams.github.io/photos/cubbon.png&#34; alt=&#34;Lalbagh&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 align=&#34;center&#34;&gt;Cubbon Park&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://saahityaedams.github.io/photos/lalbagh.png&#34; alt=&#34;Lalbagh&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 align=&#34;center&#34;&gt;Lalbagh&lt;/h3&gt;&#xA;&lt;p&gt;Made with &lt;a href=&#34;https://github.com/marceloprates/prettymaps&#34;&gt;Pretty maps&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

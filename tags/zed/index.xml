@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>zed on saahityaedams</title>
+    <title>Zed on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/zed/</link>
-    <description>Recent content in zed on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Zed on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/zed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/zed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Good software: re:Zed</title>
       <link>https://saahityaedams.github.io/posts/zed_is_good_software/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/zed_is_good_software/</guid>
-      <description>I&amp;rsquo;ve travelled all across the editor-lands from vim to emacs to vscode and then intellij. Now I think I&amp;rsquo;ve settled for Zed (My screen time says I&amp;rsquo;ve used Zed an average of approx. 3 hours over the past work week plus I wrote this post in Zed).
-You intuitively get a sense for good software. Over the last few years I&amp;rsquo;ve had the pleasure of using some good software. Some notable entries in this list are uv (yes, the package manager), Tailscale &amp;amp; Zed.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve travelled all across the editor-lands from vim to emacs to vscode and then intellij. Now I think I&amp;rsquo;ve settled for Zed (My screen time says I&amp;rsquo;ve used Zed an average of approx. 3 hours over the past work week plus I wrote this post in Zed).&lt;/p&gt;&#xA;&lt;p&gt;You intuitively get a sense for good software. Over the last few years I&amp;rsquo;ve had the pleasure of using some good software. Some notable entries in this list are uv (yes, the package manager), Tailscale &amp;amp; Zed. All of these software share some characteristics. 1) They work fast and effortlessly for me and never hog CPU and memory (No random resource spikes either) - in other words great performance. 2) They have a clean interface and API that hides complexity. What they do seems easy, but isn&amp;rsquo;t just going by the fact that they stand out like diamonds in a coal mine. They inspire me to make good software and are a gold standard we should aspire to.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My LLM usage pattern</title>
       <link>https://saahityaedams.github.io/posts/ai_ui_ux/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ai_ui_ux/</guid>
-      <description>So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&amp;rsquo;ve been using is Zed (absolutely love this code editor who &amp;rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided.</description>
+      <description>&lt;p&gt;So, this post is mainly for detailing my experience using LLMs (hate the broad usage of the term, but heh) over the last week for writing a ton of code. The main tools I&amp;rsquo;ve been using is Zed (absolutely love this code editor who &amp;rsquo;ve done a great job with their AI integrations) plus Aider (CLI tool for pair programing with an LLM), both free tools. Both configurable to use a variety of LLM models based on the API key provided. I am a fan of Anthropic&amp;rsquo;s Claude 3.5 Sonnet model which I trust to write great code for me. In terms of cost, looking at the API cost in the Anthropic console tells me I have used approx $10 worth of tokens over the past month.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

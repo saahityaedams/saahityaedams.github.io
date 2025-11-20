@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bangalore on saahityaedams</title>
+    <title>Bangalore on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/bangalore/</link>
-    <description>Recent content in bangalore on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Bangalore on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/bangalore/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/bangalore/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Cycle</title>
       <link>https://saahityaedams.github.io/posts/2024/cycling-across-bangalore/</link>
       <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/cycling-across-bangalore/</guid>
-      <description>Late at night a week ago, Feeling drowsy, I decided to treat myself to a used cycle for Diwali. There wasn&amp;rsquo;t any specific reason, I just always wanted a cycle from a long time plus I liked running and made the reasonable assumption I would like cycling. I initially made a list of some discounted items on Amazon like Noise Cancellation Headphones or an Air Fryer, but none of them felt right.</description>
+      <description>&lt;p&gt;Late at night a week ago, Feeling drowsy, I decided to treat myself to a used cycle for Diwali. There wasn&amp;rsquo;t any specific reason, I just always wanted a cycle from a long time plus I liked running and made the reasonable assumption I would like cycling. I initially made a list of some discounted items on Amazon like Noise Cancellation Headphones or an Air Fryer, but none of them felt right. I chose a &amp;ldquo;sparingly used&amp;rdquo; Firefox Rapide (for some reason all items on OLX are &amp;ldquo;sparing used&amp;rdquo;).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Indiranagar vs Subramanyapura</title>
       <link>https://saahityaedams.github.io/posts/2024/indiranagar-subramanyapura/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/2024/indiranagar-subramanyapura/</guid>
-      <description>There&amp;rsquo;s a lot to unpack just from saying &amp;lsquo;Indira-nagar&amp;rsquo; versus &amp;lsquo;Subramanya-pura&amp;rsquo;— one gives off a cool-and-hip vibe, while the other feels more like traditional Indian family vibe. I rented a room in the first for the past year to be closer to work, while the latter has been my home (technically my parents&amp;rsquo;) for more than 10 years through school and college before that.
-Indiranagar seems like an unusual island isolated from the rest of India - in demeanor and culturally.</description>
+      <description>&lt;p&gt;There&amp;rsquo;s a lot to unpack just from saying &amp;lsquo;Indira-nagar&amp;rsquo; versus &amp;lsquo;Subramanya-pura&amp;rsquo;— one gives off a cool-and-hip vibe, while the other feels more like traditional Indian family vibe. I rented a room in the first for the past year to be closer to work, while the latter has been my home (technically my parents&amp;rsquo;) for more than 10 years through school and college before that.&lt;/p&gt;&#xA;&lt;p&gt;Indiranagar seems like an unusual island isolated from the rest of India - in demeanor and culturally. I remember reading that it was originally an old Bangalore suburb where army officers lived; now it&amp;rsquo;s the happening and desired place in Bangalore. Most streets are pretty clean, lined with large trees( which form a canopy above you). There are no high-rises to be seen anywhere. It&amp;rsquo;s a melting pot &amp;ldquo;posh&amp;rdquo; area with well-to-do people from across the country.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lalbagh and Cubbon Park Pretty Maps</title>
       <link>https://saahityaedams.github.io/posts/ancient/lalbagh-and-cubbon-park/</link>
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/ancient/lalbagh-and-cubbon-park/</guid>
-      <description>Cubbon Park Lalbagh Made with Pretty maps</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://saahityaedams.github.io/photos/cubbon.png&#34; alt=&#34;Lalbagh&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 align=&#34;center&#34;&gt;Cubbon Park&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://saahityaedams.github.io/photos/lalbagh.png&#34; alt=&#34;Lalbagh&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 align=&#34;center&#34;&gt;Lalbagh&lt;/h3&gt;&#xA;&lt;p&gt;Made with &lt;a href=&#34;https://github.com/marceloprates/prettymaps&#34;&gt;Pretty maps&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -3,23 +3,27 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Thoughts on Infra Automation, Test Automation - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="Thoughts on Infra Automation, Test Automation">
-<meta itemprop="description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
-This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance)."><meta itemprop="datePublished" content="2025-09-03T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2025-09-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="437">
-<meta itemprop="keywords" content="" /><meta property="og:title" content="Thoughts on Infra Automation, Test Automation" />
-<meta property="og:description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
-This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance)." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-09-03T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-09-03T00:00:00+00:00" />
+	
+  <meta itemprop="name" content="Thoughts on Infra Automation, Test Automation">
+  <meta itemprop="description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
+This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).">
+  <meta itemprop="datePublished" content="2025-09-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-09-03T00:00:00+00:00">
+  <meta itemprop="wordCount" content="437"><meta property="og:url" content="https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/">
+  <meta property="og:site_name" content="saahityaedams">
+  <meta property="og:title" content="Thoughts on Infra Automation, Test Automation">
+  <meta property="og:description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
+This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-03T00:00:00+00:00">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Thoughts on Infra Automation, Test Automation"/>
-<meta name="twitter:description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
-This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance)."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Thoughts on Infra Automation, Test Automation">
+  <meta name="twitter:description" content="I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.
+This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
@@ -113,16 +117,19 @@ This gig was mostly managing AWS infra with Terraform (stuff like alarms and log
 </div>
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-ZY0T40ZV0H', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY0T40ZV0H"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZY0T40ZV0H');
+        }
+      </script><script>feather.replace()</script>
 </body>
 </html>

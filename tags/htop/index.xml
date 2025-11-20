@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>htop on saahityaedams</title>
+    <title>Htop on saahityaedams</title>
     <link>https://saahityaedams.github.io/tags/htop/</link>
-    <description>Recent content in htop on saahityaedams</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Htop on saahityaedams</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://saahityaedams.github.io/tags/htop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saahityaedams.github.io/tags/htop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Troubleshooting Linux Notes</title>
       <link>https://saahityaedams.github.io/posts/htop_linux/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://saahityaedams.github.io/posts/htop_linux/</guid>
-      <description>One thing I&amp;rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting.</description>
+      <description>&lt;p&gt;One thing I&amp;rsquo;ve noticed over the last couple of years working is that folks generally struggle about how to approach troubleshooting issues on their linux boxes. Generally you have obvious signals about what went wrong, like for instance someone mentioning on slack that they are running some software with new config. Some times you need to gather signals with certain linux tools. This post describes certain tools (htop (mostly), df, du, journalctl) I use at a high level to do basic troubleshooting.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
