@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Omscs on saahityaedams</title>
+    <link>http://localhost:1313/tags/omscs/</link>
+    <description>Recent content in Omscs on saahityaedams</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/omscs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OMSCS Sem 1 Retro</title>
+      <link>http://localhost:1313/posts/drafts/omscs_sem1/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/drafts/omscs_sem1/</guid>
+      <description>&lt;!--&#xA;this was my first sem&#xA;i took hpc and llm inference systems&#xA;hpc&#xA;    - good labs&#xA;    - good lectures&#xA;    - helpful TAs&#xA;&#xA;LLM infernece systems&#xA;    - &#xA;unable to attend office hours because it was in the early morning&#xA;till the midterm things were going good&#xA;&#xA;i didn&#39;t finish strong, especially in hpc. I majorly screwed up the finals, especially because work was hectic, plus some other family priorities came up&#xA;i knew it was hard, but still struggled because i was unable to prioritize finals study till the last minute&#xA;--&gt;</description>
+    </item>
+  </channel>
+</rss>
