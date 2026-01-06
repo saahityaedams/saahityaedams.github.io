@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/drafts/aging_well_as_a_java_service/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/drafts/aging_well_as_a_java_service/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;strong&gt;Field Notes&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Recently I got to work with this not very old (4 years codebase to be precise) java service and found it not to be in a great shape. My perspective (even though I&amp;rsquo;ve contributed some shitty code + not been a great steward of a codebase) has been that keeping a codebase readable (and structured well) is an obvious advantage because its better serves functionality since its a closer better to the actual domain and is the easier thing to do if you are owning the service in the medium to long term. Its also pretty evident when you use LLM agents that they just work much better on well structured codebases.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
