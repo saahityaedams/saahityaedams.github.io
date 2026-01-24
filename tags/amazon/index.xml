@@ -6,8 +6,15 @@
     <description>Recent content in Amazon on saahityaedams</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://saahityaedams.github.io/tags/amazon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon Lessons</title>
+      <link>https://saahityaedams.github.io/posts/drafts/amazon_re/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://saahityaedams.github.io/posts/drafts/amazon_re/</guid>
+      <description>&lt;!--&#xA;Notes:&#xA;- perspective of an engineering employee.&#xA;- mainly about operations &amp; writing&#xA;- how skilled the veteran engineers in the US.&#xA;- &#xA;--&gt;&#xA;&lt;p&gt;This is a gratitude post to all the stuff I loved about Amazon (and its culture) and some lessons I took away from it.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll start with the small, under-appreciated, but still important stuff. One, as much as I&amp;rsquo;ve poo-pooed some internal tools for being bad quality, the important ones to my job were often great quality and incredibly useful. Having a company-wide system that just work (without any onboarding) and requires a single line changes to record &amp;amp; measure metrics means you get to test hypothesis real quick and only changes that you think are impactful. Using Weblab (A/B test &amp;amp; feature gates) is another great practise that let you release changes methodically to small percentage of users and measure statistical impact to top level metrics across the org (so you don&amp;rsquo;t screw up something and get more signals). Another aspect is the great resources in the form of great wikis and videos on all sorts of topics like writing, engineering, etc.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>re:kindle</title>
       <link>https://saahityaedams.github.io/posts/2024/re-kindle/</link>
