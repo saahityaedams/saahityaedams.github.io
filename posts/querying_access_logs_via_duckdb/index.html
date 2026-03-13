@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Querying ALB Access Logs Via Duckdb - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="Querying ALB Access Logs Via Duckdb">
+  <meta itemprop="description" content="Ensure that you have duckdb installed on your local machine. Ensure you have the enabled appropriate settings to ensure that access logs are logged to a s3 bucket In your duckdb console run the following to let duckdb know how to pickup the AWS creds. (ensure you have aws creds that let you access this bucket and its contents) INSTALL aws; LOAD aws; CALL load_aws_credentials(); SET s3_region=&#39;ap-south-1&#39;; The following points alb_logs table in local to the folder at s3 path and indicates the rows. CREATE VIEW alb_logs AS SELECT * FROM read_csv( &#39;s3://abc-ace-alb-new-access-logs-prod/access-logs/AWSLogs/ABC/elasticloadbalancing/ap-south-1/2026/03/11/*.log.gz&#39;, delim=&#39; &#39;, quote=&#39;&#34;&#39;, header=false, columns={ &#39;type&#39;: &#39;VARCHAR&#39;, &#39;time&#39;: &#39;TIMESTAMP&#39;, &#39;elb&#39;: &#39;VARCHAR&#39;, &#39;client&#39;: &#39;VARCHAR&#39;, &#39;target&#39;: &#39;VARCHAR&#39;, &#39;request_processing_time&#39;: &#39;DOUBLE&#39;, &#39;target_processing_time&#39;: &#39;DOUBLE&#39;, &#39;response_processing_time&#39;: &#39;DOUBLE&#39;, &#39;elb_status_code&#39;: &#39;INTEGER&#39;, &#39;target_status_code&#39;: &#39;VARCHAR&#39;, &#39;received_bytes&#39;: &#39;BIGINT&#39;, &#39;sent_bytes&#39;: &#39;BIGINT&#39;, &#39;request&#39;: &#39;VARCHAR&#39;, &#39;user_agent&#39;: &#39;VARCHAR&#39;, &#39;ssl_cipher&#39;: &#39;VARCHAR&#39;, &#39;ssl_protocol&#39;: &#39;VARCHAR&#39;, &#39;target_group_arn&#39;: &#39;VARCHAR&#39;, &#39;trace_id&#39;: &#39;VARCHAR&#39;, &#39;domain_name&#39;: &#39;VARCHAR&#39;, &#39;chosen_cert_arn&#39;: &#39;VARCHAR&#39;, &#39;matched_rule_priority&#39;: &#39;VARCHAR&#39;, &#39;request_creation_time&#39;: &#39;VARCHAR&#39;, &#39;actions_executed&#39;: &#39;VARCHAR&#39;, &#39;redirect_url&#39;: &#39;VARCHAR&#39;, &#39;error_reason&#39;: &#39;VARCHAR&#39;, &#39;target_port_list&#39;: &#39;VARCHAR&#39;, &#39;target_status_code_list&#39;: &#39;VARCHAR&#39;, &#39;classification&#39;: &#39;VARCHAR&#39;, &#39;classification_reason&#39;: &#39;VARCHAR&#39;, &#39;conn_trace_id&#39;: &#39;VARCHAR&#39;, &#39;alpn_fe_protocol&#39;: &#39;VARCHAR&#39;, &#39;alpn_be_protocol&#39;: &#39;VARCHAR&#39;, &#39;alpn_client_preference_list&#39;: &#39;VARCHAR&#39; } ); You can run queries in the duckdb console like this SELECT time, request, target_processing_time, elb_status_code FROM alb_logs WHERE target_processing_time &gt; 5 AND request LIKE &#39;%/payment/%&#39; ORDER BY target_processing_time DESC LIMIT 5; 100% ▕████████████████████████████████████████████████████████████▏ ┌────────────────────────────┬───────────────────────────────────────────────────────────────────────────────┬────────────────────────┬─────────────────┐ │ time │ request │ target_processing_time │ elb_status_code │ │ timestamp │ varchar │ double │ int32 │ ├────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────────┤ │ 2026-03-11 09:50:42.346488 │ POST https://api.abc.com:443/payment/v2/authenticate HTTP/2.0 │ 39.629 │ 200 │ │ 2026-03-11 04:20:04.4695 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 12.489 │ 200 │ │ 2026-03-11 09:42:41.942846 │ POST https://api.abc.com:443/payment/v4/secure/authenticate HTTP/2.0 │ 11.219 │ 200 │ │ 2026-03-11 04:20:04.804197 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 10.906 │ 200 │ │ 2026-03-11 04:20:03.692783 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 10.895 │ 200 │ └────────────────────────────┴───────────────────────────────────────────────────────────────────────────────┴────────────────────────┴─────────────────┘ AND the greatest thing is copying this into claude code, asking it to make a skill and then asking that skill to get answers to high level questions (source ip for spikes in traffic, suspicious user agents, etc, weird apis being hit)">
+  <meta itemprop="datePublished" content="2026-03-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-03-13T00:00:00+00:00">
+  <meta itemprop="wordCount" content="322">
+  <meta itemprop="keywords" content="Duckdb"><meta property="og:url" content="https://saahityaedams.github.io/posts/querying_access_logs_via_duckdb/">
+  <meta property="og:site_name" content="saahityaedams">
+  <meta property="og:title" content="Querying ALB Access Logs Via Duckdb">
+  <meta property="og:description" content="Ensure that you have duckdb installed on your local machine. Ensure you have the enabled appropriate settings to ensure that access logs are logged to a s3 bucket In your duckdb console run the following to let duckdb know how to pickup the AWS creds. (ensure you have aws creds that let you access this bucket and its contents) INSTALL aws; LOAD aws; CALL load_aws_credentials(); SET s3_region=&#39;ap-south-1&#39;; The following points alb_logs table in local to the folder at s3 path and indicates the rows. CREATE VIEW alb_logs AS SELECT * FROM read_csv( &#39;s3://abc-ace-alb-new-access-logs-prod/access-logs/AWSLogs/ABC/elasticloadbalancing/ap-south-1/2026/03/11/*.log.gz&#39;, delim=&#39; &#39;, quote=&#39;&#34;&#39;, header=false, columns={ &#39;type&#39;: &#39;VARCHAR&#39;, &#39;time&#39;: &#39;TIMESTAMP&#39;, &#39;elb&#39;: &#39;VARCHAR&#39;, &#39;client&#39;: &#39;VARCHAR&#39;, &#39;target&#39;: &#39;VARCHAR&#39;, &#39;request_processing_time&#39;: &#39;DOUBLE&#39;, &#39;target_processing_time&#39;: &#39;DOUBLE&#39;, &#39;response_processing_time&#39;: &#39;DOUBLE&#39;, &#39;elb_status_code&#39;: &#39;INTEGER&#39;, &#39;target_status_code&#39;: &#39;VARCHAR&#39;, &#39;received_bytes&#39;: &#39;BIGINT&#39;, &#39;sent_bytes&#39;: &#39;BIGINT&#39;, &#39;request&#39;: &#39;VARCHAR&#39;, &#39;user_agent&#39;: &#39;VARCHAR&#39;, &#39;ssl_cipher&#39;: &#39;VARCHAR&#39;, &#39;ssl_protocol&#39;: &#39;VARCHAR&#39;, &#39;target_group_arn&#39;: &#39;VARCHAR&#39;, &#39;trace_id&#39;: &#39;VARCHAR&#39;, &#39;domain_name&#39;: &#39;VARCHAR&#39;, &#39;chosen_cert_arn&#39;: &#39;VARCHAR&#39;, &#39;matched_rule_priority&#39;: &#39;VARCHAR&#39;, &#39;request_creation_time&#39;: &#39;VARCHAR&#39;, &#39;actions_executed&#39;: &#39;VARCHAR&#39;, &#39;redirect_url&#39;: &#39;VARCHAR&#39;, &#39;error_reason&#39;: &#39;VARCHAR&#39;, &#39;target_port_list&#39;: &#39;VARCHAR&#39;, &#39;target_status_code_list&#39;: &#39;VARCHAR&#39;, &#39;classification&#39;: &#39;VARCHAR&#39;, &#39;classification_reason&#39;: &#39;VARCHAR&#39;, &#39;conn_trace_id&#39;: &#39;VARCHAR&#39;, &#39;alpn_fe_protocol&#39;: &#39;VARCHAR&#39;, &#39;alpn_be_protocol&#39;: &#39;VARCHAR&#39;, &#39;alpn_client_preference_list&#39;: &#39;VARCHAR&#39; } ); You can run queries in the duckdb console like this SELECT time, request, target_processing_time, elb_status_code FROM alb_logs WHERE target_processing_time &gt; 5 AND request LIKE &#39;%/payment/%&#39; ORDER BY target_processing_time DESC LIMIT 5; 100% ▕████████████████████████████████████████████████████████████▏ ┌────────────────────────────┬───────────────────────────────────────────────────────────────────────────────┬────────────────────────┬─────────────────┐ │ time │ request │ target_processing_time │ elb_status_code │ │ timestamp │ varchar │ double │ int32 │ ├────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────────┤ │ 2026-03-11 09:50:42.346488 │ POST https://api.abc.com:443/payment/v2/authenticate HTTP/2.0 │ 39.629 │ 200 │ │ 2026-03-11 04:20:04.4695 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 12.489 │ 200 │ │ 2026-03-11 09:42:41.942846 │ POST https://api.abc.com:443/payment/v4/secure/authenticate HTTP/2.0 │ 11.219 │ 200 │ │ 2026-03-11 04:20:04.804197 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 10.906 │ 200 │ │ 2026-03-11 04:20:03.692783 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 10.895 │ 200 │ └────────────────────────────┴───────────────────────────────────────────────────────────────────────────────┴────────────────────────┴─────────────────┘ AND the greatest thing is copying this into claude code, asking it to make a skill and then asking that skill to get answers to high level questions (source ip for spikes in traffic, suspicious user agents, etc, weird apis being hit)">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-13T00:00:00+00:00">
+    <meta property="article:tag" content="Duckdb">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Querying ALB Access Logs Via Duckdb">
+  <meta name="twitter:description" content="Ensure that you have duckdb installed on your local machine. Ensure you have the enabled appropriate settings to ensure that access logs are logged to a s3 bucket In your duckdb console run the following to let duckdb know how to pickup the AWS creds. (ensure you have aws creds that let you access this bucket and its contents) INSTALL aws; LOAD aws; CALL load_aws_credentials(); SET s3_region=&#39;ap-south-1&#39;; The following points alb_logs table in local to the folder at s3 path and indicates the rows. CREATE VIEW alb_logs AS SELECT * FROM read_csv( &#39;s3://abc-ace-alb-new-access-logs-prod/access-logs/AWSLogs/ABC/elasticloadbalancing/ap-south-1/2026/03/11/*.log.gz&#39;, delim=&#39; &#39;, quote=&#39;&#34;&#39;, header=false, columns={ &#39;type&#39;: &#39;VARCHAR&#39;, &#39;time&#39;: &#39;TIMESTAMP&#39;, &#39;elb&#39;: &#39;VARCHAR&#39;, &#39;client&#39;: &#39;VARCHAR&#39;, &#39;target&#39;: &#39;VARCHAR&#39;, &#39;request_processing_time&#39;: &#39;DOUBLE&#39;, &#39;target_processing_time&#39;: &#39;DOUBLE&#39;, &#39;response_processing_time&#39;: &#39;DOUBLE&#39;, &#39;elb_status_code&#39;: &#39;INTEGER&#39;, &#39;target_status_code&#39;: &#39;VARCHAR&#39;, &#39;received_bytes&#39;: &#39;BIGINT&#39;, &#39;sent_bytes&#39;: &#39;BIGINT&#39;, &#39;request&#39;: &#39;VARCHAR&#39;, &#39;user_agent&#39;: &#39;VARCHAR&#39;, &#39;ssl_cipher&#39;: &#39;VARCHAR&#39;, &#39;ssl_protocol&#39;: &#39;VARCHAR&#39;, &#39;target_group_arn&#39;: &#39;VARCHAR&#39;, &#39;trace_id&#39;: &#39;VARCHAR&#39;, &#39;domain_name&#39;: &#39;VARCHAR&#39;, &#39;chosen_cert_arn&#39;: &#39;VARCHAR&#39;, &#39;matched_rule_priority&#39;: &#39;VARCHAR&#39;, &#39;request_creation_time&#39;: &#39;VARCHAR&#39;, &#39;actions_executed&#39;: &#39;VARCHAR&#39;, &#39;redirect_url&#39;: &#39;VARCHAR&#39;, &#39;error_reason&#39;: &#39;VARCHAR&#39;, &#39;target_port_list&#39;: &#39;VARCHAR&#39;, &#39;target_status_code_list&#39;: &#39;VARCHAR&#39;, &#39;classification&#39;: &#39;VARCHAR&#39;, &#39;classification_reason&#39;: &#39;VARCHAR&#39;, &#39;conn_trace_id&#39;: &#39;VARCHAR&#39;, &#39;alpn_fe_protocol&#39;: &#39;VARCHAR&#39;, &#39;alpn_be_protocol&#39;: &#39;VARCHAR&#39;, &#39;alpn_client_preference_list&#39;: &#39;VARCHAR&#39; } ); You can run queries in the duckdb console like this SELECT time, request, target_processing_time, elb_status_code FROM alb_logs WHERE target_processing_time &gt; 5 AND request LIKE &#39;%/payment/%&#39; ORDER BY target_processing_time DESC LIMIT 5; 100% ▕████████████████████████████████████████████████████████████▏ ┌────────────────────────────┬───────────────────────────────────────────────────────────────────────────────┬────────────────────────┬─────────────────┐ │ time │ request │ target_processing_time │ elb_status_code │ │ timestamp │ varchar │ double │ int32 │ ├────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────────┤ │ 2026-03-11 09:50:42.346488 │ POST https://api.abc.com:443/payment/v2/authenticate HTTP/2.0 │ 39.629 │ 200 │ │ 2026-03-11 04:20:04.4695 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 12.489 │ 200 │ │ 2026-03-11 09:42:41.942846 │ POST https://api.abc.com:443/payment/v4/secure/authenticate HTTP/2.0 │ 11.219 │ 200 │ │ 2026-03-11 04:20:04.804197 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 10.906 │ 200 │ │ 2026-03-11 04:20:03.692783 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │ 10.895 │ 200 │ └────────────────────────────┴───────────────────────────────────────────────────────────────────────────────┴────────────────────────┴─────────────────┘ AND the greatest thing is copying this into claude code, asking it to make a skill and then asking that skill to get answers to high level questions (source ip for spikes in traffic, suspicious user agents, etc, weird apis being hit)">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://saahityaedams.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://saahityaedams.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://saahityaedams.github.io/">saahityaedams</a></h1>
+	<div class="site-description"><p></p><nav class="nav social">
+			<ul class="flat"><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/driftlog">Driftlog</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">13</span>
+							<span class="rest">Mar 2026</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Querying ALB Access Logs Via Duckdb</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<ul>
+<li>Ensure that you have duckdb installed on your local machine.</li>
+<li>Ensure you have the enabled appropriate settings to ensure that access logs are logged to a s3 bucket</li>
+<li>In your duckdb console run the following to let duckdb know how to pickup the AWS creds. (ensure you have aws creds that let you access this bucket and its contents)</li>
+</ul>
+<pre tabindex="0"><code>INSTALL aws;
+LOAD aws;
+CALL load_aws_credentials();
+SET s3_region=&#39;ap-south-1&#39;;
+</code></pre><ul>
+<li>The following points <code>alb_logs</code> table in local to the folder at s3 path and indicates the rows.</li>
+</ul>
+<pre tabindex="0"><code>CREATE VIEW alb_logs AS
+    SELECT * FROM read_csv(
+        &#39;s3://abc-ace-alb-new-access-logs-prod/access-logs/AWSLogs/ABC/elasticloadbalancing/ap-south-1/2026/03/11/*.log.gz&#39;,
+    delim=&#39; &#39;,
+    quote=&#39;&#34;&#39;,
+    header=false,
+    columns={
+        &#39;type&#39;: &#39;VARCHAR&#39;,
+        &#39;time&#39;: &#39;TIMESTAMP&#39;,
+        &#39;elb&#39;: &#39;VARCHAR&#39;,
+        &#39;client&#39;: &#39;VARCHAR&#39;,
+        &#39;target&#39;: &#39;VARCHAR&#39;,
+        &#39;request_processing_time&#39;: &#39;DOUBLE&#39;,
+        &#39;target_processing_time&#39;: &#39;DOUBLE&#39;,
+        &#39;response_processing_time&#39;: &#39;DOUBLE&#39;,
+        &#39;elb_status_code&#39;: &#39;INTEGER&#39;,
+        &#39;target_status_code&#39;: &#39;VARCHAR&#39;,
+        &#39;received_bytes&#39;: &#39;BIGINT&#39;,
+        &#39;sent_bytes&#39;: &#39;BIGINT&#39;,
+        &#39;request&#39;: &#39;VARCHAR&#39;,
+        &#39;user_agent&#39;: &#39;VARCHAR&#39;,
+        &#39;ssl_cipher&#39;: &#39;VARCHAR&#39;,
+        &#39;ssl_protocol&#39;: &#39;VARCHAR&#39;,
+        &#39;target_group_arn&#39;: &#39;VARCHAR&#39;,
+        &#39;trace_id&#39;: &#39;VARCHAR&#39;,
+        &#39;domain_name&#39;: &#39;VARCHAR&#39;,
+        &#39;chosen_cert_arn&#39;: &#39;VARCHAR&#39;,
+        &#39;matched_rule_priority&#39;: &#39;VARCHAR&#39;,
+        &#39;request_creation_time&#39;: &#39;VARCHAR&#39;,
+        &#39;actions_executed&#39;: &#39;VARCHAR&#39;,
+        &#39;redirect_url&#39;: &#39;VARCHAR&#39;,
+        &#39;error_reason&#39;: &#39;VARCHAR&#39;,
+        &#39;target_port_list&#39;: &#39;VARCHAR&#39;,
+        &#39;target_status_code_list&#39;: &#39;VARCHAR&#39;,
+        &#39;classification&#39;: &#39;VARCHAR&#39;,
+        &#39;classification_reason&#39;: &#39;VARCHAR&#39;,
+        &#39;conn_trace_id&#39;: &#39;VARCHAR&#39;,
+        &#39;alpn_fe_protocol&#39;: &#39;VARCHAR&#39;,
+        &#39;alpn_be_protocol&#39;: &#39;VARCHAR&#39;,
+        &#39;alpn_client_preference_list&#39;: &#39;VARCHAR&#39;
+    }
+);
+</code></pre><ul>
+<li>You can run queries in the duckdb console like this</li>
+</ul>
+<pre tabindex="0"><code>SELECT time, request, target_processing_time, elb_status_code
+    FROM alb_logs
+    WHERE target_processing_time &gt; 5
+        AND request LIKE &#39;%/payment/%&#39;
+    ORDER BY target_processing_time DESC LIMIT 5;
+    
+100% ▕████████████████████████████████████████████████████████████▏
+┌────────────────────────────┬───────────────────────────────────────────────────────────────────────────────┬────────────────────────┬─────────────────┐
+│            time            │                                    request                                    │ target_processing_time │ elb_status_code │
+│         timestamp          │                                    varchar                                    │         double         │      int32      │
+├────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────────┤
+│ 2026-03-11 09:50:42.346488 │ POST https://api.abc.com:443/payment/v2/authenticate HTTP/2.0             │                 39.629 │             200 │
+│ 2026-03-11 04:20:04.4695   │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │                 12.489 │             200 │
+│ 2026-03-11 09:42:41.942846 │ POST https://api.abc.com:443/payment/v4/secure/authenticate HTTP/2.0      │                 11.219 │             200 │
+│ 2026-03-11 04:20:04.804197 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │                 10.906 │             200 │
+│ 2026-03-11 04:20:03.692783 │ GET https://api.abc.com:443/payment/v3/getPendingCollectRequests HTTP/2.0 │                 10.895 │             200 │
+└────────────────────────────┴───────────────────────────────────────────────────────────────────────────────┴────────────────────────┴─────────────────┘
+</code></pre><ul>
+<li><strong>AND the greatest thing is copying this into claude code, asking it to make a skill and then asking that skill to get answers to high level questions (source ip for spikes in traffic, suspicious user agents, etc, weird apis being hit)</strong></li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/duckdb">duckdb</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2026  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY0T40ZV0H"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZY0T40ZV0H');
+        }
+      </script><script>feather.replace()</script>
+</body>
+</html>
