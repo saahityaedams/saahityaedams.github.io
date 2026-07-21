@@ -4,28 +4,28 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Logging in Drupal - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	
-  <meta itemprop="name" content="Logging in Drupal">
-  <meta itemprop="description" content="Setting up proper logging today prevents the big headache tommorow
+	<meta itemprop="name" content="Logging in Drupal">
+	<meta itemprop="description" content="Setting up proper logging today prevents the big headache tommorow
 Components syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space. Steps We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.d directory called 45-drupal.conf for drupal log specific configuration add this to file local0.* /var/log/drupal.log &amp; ~ restart rsyslog by running sudo service rsyslog restart Write a configuration file in /etc/logrotate.d/ /var/log/drupal.log { daily missingok rotate 31 compress notifempty copytruncate sharedscripts }">
-  <meta itemprop="datePublished" content="2021-08-06T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2021-08-06T00:00:00+00:00">
-  <meta itemprop="wordCount" content="118">
-  <meta itemprop="keywords" content="Drupal,Logging"><meta property="og:url" content="https://saahityaedams.github.io/posts/ancient/drupal-logging/">
-  <meta property="og:site_name" content="saahityaedams">
-  <meta property="og:title" content="Logging in Drupal">
-  <meta property="og:description" content="Setting up proper logging today prevents the big headache tommorow
+	<meta itemprop="datePublished" content="2021-08-06T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2021-08-06T00:00:00+00:00">
+	<meta itemprop="wordCount" content="118">
+	<meta itemprop="keywords" content="Drupal,Logging"><meta property="og:url" content="https://saahityaedams.github.io/posts/ancient/drupal-logging/">
+	<meta property="og:site_name" content="saahityaedams">
+	<meta property="og:title" content="Logging in Drupal">
+	<meta property="og:description" content="Setting up proper logging today prevents the big headache tommorow
 Components syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space. Steps We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.d directory called 45-drupal.conf for drupal log specific configuration add this to file local0.* /var/log/drupal.log &amp; ~ restart rsyslog by running sudo service rsyslog restart Write a configuration file in /etc/logrotate.d/ /var/log/drupal.log { daily missingok rotate 31 compress notifempty copytruncate sharedscripts }">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2021-08-06T00:00:00+00:00">
-    <meta property="article:modified_time" content="2021-08-06T00:00:00+00:00">
-    <meta property="article:tag" content="Drupal">
-    <meta property="article:tag" content="Logging">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2021-08-06T00:00:00+00:00">
+		<meta property="article:modified_time" content="2021-08-06T00:00:00+00:00">
+		<meta property="article:tag" content="Drupal">
+		<meta property="article:tag" content="Logging">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Logging in Drupal">
-  <meta name="twitter:description" content="Setting up proper logging today prevents the big headache tommorow
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Logging in Drupal">
+	<meta name="twitter:description" content="Setting up proper logging today prevents the big headache tommorow
 Components syslog - inbuilt drupal module to log drupal errors(no particular reason for choosing this module, can use any appropriate module that logs to file or write a module that implements hook_watchdog) logrotate - to archive the old logs to help classify by data and save space. Steps We enable syslog in the modules in drupal and save with the default config add a file in /etc/rsyslog.d directory called 45-drupal.conf for drupal log specific configuration add this to file local0.* /var/log/drupal.log &amp; ~ restart rsyslog by running sudo service rsyslog restart Write a configuration file in /etc/logrotate.d/ /var/log/drupal.log { daily missingok rotate 31 compress notifempty copytruncate sharedscripts }">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
@@ -142,10 +142,11 @@ sharedscripts
 </div>
 
 
+
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY0T40ZV0H"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -155,6 +156,7 @@ sharedscripts
           gtag('js', new Date());
           gtag('config', 'G-ZY0T40ZV0H');
         }
-      </script><script>feather.replace()</script>
+      </script>
+<script>feather.replace()</script>
 </body>
 </html>
