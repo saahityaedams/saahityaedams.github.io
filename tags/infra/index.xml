@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Infra on saahityaedams</title>
+		<link>https://saahityaedams.github.io/tags/infra/</link>
+		<description>Recent content in Infra on saahityaedams</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://saahityaedams.github.io/tags/infra/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Exe.dev review (or more like a rant on current compute infra)</title>
+				<link>https://saahityaedams.github.io/posts/exe_dev/</link>
+				<pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/posts/exe_dev/</guid>
+				<description>&lt;p&gt;There&amp;rsquo;s two thing that&amp;rsquo;s been bugging me for a while, one is how one builds an prototype / low usage internal tooling or even self-hosts some opensource software in a small enterprise. The standard way I learnt in my first job was you used your company&amp;rsquo;s AWS account and ran an small EC2 instance. Sure it was weird and time consuming in that you had to do a couple of things to get stuff working, like running Caddy or Nginx to do TLS termination and running Lets Encrypt to ensure that certs didn&amp;rsquo;t expire. But it worked, and the thing i appreciated the most was that you once you had it setup you had so much flexibility. You could run a cron job on there easily, run a one-off script to fix some production data, or run something overnight to crunch some data. The default way in 2026 seems to be that you run your project on vercel + use supabase for auth / database. I&amp;rsquo;m admitedly not a fan of this, it just seems so convoluted and opionated.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Thoughts on Infra Automation, Test Automation</title>
+				<link>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</link>
+				<pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</guid>
+				<description>&lt;p&gt;I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.&lt;/p&gt;&#xA;&lt;p&gt;This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

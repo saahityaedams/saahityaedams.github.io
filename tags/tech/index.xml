@@ -10,15 +10,36 @@
 		
 		
 		
-			<lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://saahityaedams.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Exe.dev review (or more like a rant on current compute infra)</title>
+				<link>https://saahityaedams.github.io/posts/exe_dev/</link>
+				<pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/posts/exe_dev/</guid>
+				<description>&lt;p&gt;There&amp;rsquo;s two thing that&amp;rsquo;s been bugging me for a while, one is how one builds an prototype / low usage internal tooling or even self-hosts some opensource software in a small enterprise. The standard way I learnt in my first job was you used your company&amp;rsquo;s AWS account and ran an small EC2 instance. Sure it was weird and time consuming in that you had to do a couple of things to get stuff working, like running Caddy or Nginx to do TLS termination and running Lets Encrypt to ensure that certs didn&amp;rsquo;t expire. But it worked, and the thing i appreciated the most was that you once you had it setup you had so much flexibility. You could run a cron job on there easily, run a one-off script to fix some production data, or run something overnight to crunch some data. The default way in 2026 seems to be that you run your project on vercel + use supabase for auth / database. I&amp;rsquo;m admitedly not a fan of this, it just seems so convoluted and opionated.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>S3 is good software</title>
 				<link>https://saahityaedams.github.io/posts/s3_is_so_good/</link>
 				<pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
 				<guid>https://saahityaedams.github.io/posts/s3_is_so_good/</guid>
 				<description>&lt;p&gt;Continuing from this previous post (see &lt;code&gt;zed_is_good_software.md&lt;/code&gt;), I wanted to riff/write/think about why I like S3 so much.&lt;/p&gt;&#xA;&lt;p&gt;Similar to the previous post, I&amp;rsquo;ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.&lt;/p&gt;&#xA;&lt;p&gt;What is &amp;ldquo;performance&amp;rdquo; in this context ? I would say that &amp;ldquo;operational quality&amp;rdquo; is a more accurate word that I&amp;rsquo;m looking for. S3 for me is the fundamental service for storing/querying files &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; when building distributed systems, so the primary expectation is durability (property that data doesn&amp;rsquo;t get lost or corrupted) and then availability (property that you can access your data when you need it). In terms of these parameters S3 is boringly stable and reliable, your data is never getting lost and you&amp;rsquo;ll almost always be able to access you data (unless there&amp;rsquo;s an AWS outage, then most of the internet is down anyway). There&amp;rsquo;s also consistency, where S3 is strongly read-after-write consistent &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; since Dec 2020.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Good software: re:Zed</title>
+				<link>https://saahityaedams.github.io/posts/zed_is_good_software/</link>
+				<pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/posts/zed_is_good_software/</guid>
+				<description>&lt;p&gt;I&amp;rsquo;ve travelled all across the editor-lands from vim to emacs to vscode and then intellij. Now I think I&amp;rsquo;ve settled for Zed (My screen time says I&amp;rsquo;ve used Zed an average of approx. 3 hours over the past work week plus I wrote this post in Zed).&lt;/p&gt;&#xA;&lt;p&gt;You intuitively get a sense for good software. Over the last few years I&amp;rsquo;ve had the pleasure of using some good software. Some notable entries in this list are uv (yes, the package manager), Tailscale &amp;amp; Zed. All of these software share some characteristics. 1) They work fast and effortlessly for me and never hog CPU and memory (No random resource spikes either) - in other words great performance. 2) They have a clean interface and API that hides complexity. What they do seems easy, but isn&amp;rsquo;t just going by the fact that they stand out like diamonds in a coal mine. They inspire me to make good software and are a gold standard we should aspire to.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Are Tech Stocks Overvalued ?</title>
+				<link>https://saahityaedams.github.io/posts/are-tech-stocks-overvalued/</link>
+				<pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/posts/are-tech-stocks-overvalued/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;WIP&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;My good friend Rishabh argues that US Tech stocks are overvalued (on account of AI hype) and specifically that the &amp;ldquo;Edelweiss US Technology Equity FoF is not a good investment option. He cites this very well written memo from Howard Marks&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; that suggests that the Tech Stocks and the S&amp;amp;P 500 shows signs of potential bubble behaviour.&lt;/p&gt;&#xA;&lt;p&gt;I want to document my thoughts about this and hopefully clarify my thinking (for myself primarily) about why I think some tech stocks are still so attractive to me. &lt;strong&gt;[DISCLAIMER: I COULD BE COMPLETELY WRONG AND I OWN A SMALL NUMBER OF AMZN STOCK]&lt;/strong&gt;&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

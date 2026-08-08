@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://saahityaedams.github.io/tags/aws/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://saahityaedams.github.io/posts/exe_dev/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/tags/infra/</loc>
     <lastmod>2026-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/</loc>
@@ -11,14 +17,20 @@
     <loc>https://saahityaedams.github.io/</loc>
     <lastmod>2026-04-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://saahityaedams.github.io/tags/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://saahityaedams.github.io/tags/tech/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://saahityaedams.github.io/tags/duckdb/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/querying_access_logs_via_duckdb/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://saahityaedams.github.io/tags/</loc>
-    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+    <loc>https://saahityaedams.github.io/tags/books/</loc>
+    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/reading/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
@@ -38,8 +50,8 @@
     <loc>https://saahityaedams.github.io/posts/s3_is_so_good/</loc>
     <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://saahityaedams.github.io/tags/tech/</loc>
-    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+    <loc>https://saahityaedams.github.io/tags/testing/</loc>
+    <lastmod>2025-09-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
@@ -55,9 +67,6 @@
   </url><url>
     <loc>https://saahityaedams.github.io/posts/coffee_delivery_mechanisms/</loc>
     <lastmod>2025-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://saahityaedams.github.io/tags/aws/</loc>
-    <lastmod>2025-07-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/duckdb_unknowns_unknowns/</loc>
     <lastmod>2025-07-22T00:00:00+00:00</lastmod>
@@ -134,6 +143,9 @@
     <loc>https://saahityaedams.github.io/posts/are-tech-stocks-overvalued/</loc>
     <lastmod>2025-01-08T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://saahityaedams.github.io/tags/finance/</loc>
+    <lastmod>2025-01-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://saahityaedams.github.io/posts/moneyball-review/</loc>
     <lastmod>2025-01-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -194,10 +206,10 @@
     <loc>https://saahityaedams.github.io/tags/kerala/</loc>
     <lastmod>2024-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://saahityaedams.github.io/posts/2024/vipassana-experience/</loc>
+    <loc>https://saahityaedams.github.io/tags/vipassana/</loc>
     <lastmod>2024-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://saahityaedams.github.io/tags/vipasssana/</loc>
+    <loc>https://saahityaedams.github.io/posts/2024/vipassana-experience/</loc>
     <lastmod>2024-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://saahityaedams.github.io/posts/ancient/crossing-bridges/</loc>

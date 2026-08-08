@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Testing on saahityaedams</title>
+		<link>https://saahityaedams.github.io/tags/testing/</link>
+		<description>Recent content in Testing on saahityaedams</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://saahityaedams.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Thoughts on Infra Automation, Test Automation</title>
+				<link>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</link>
+				<pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/posts/infra_automation_vs_test_automation/</guid>
+				<description>&lt;p&gt;I recently worked on some Infrastructure automation stuff and wanted to jot down my thoughts regarding it, and also compare it to Test automation.&lt;/p&gt;&#xA;&lt;p&gt;This gig was mostly managing AWS infra with Terraform (stuff like alarms and logging for compliance, setting up ECS services, setting up CI/CD pipelines, trying to make a module to automate setting up a client env). I had some prior experience writing AWS CDK to setup infra to run some a service on ECS Fargate (mostly straightforward migration work using amazon internal golden path docs as guidance).&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

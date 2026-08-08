@@ -10,14 +10,42 @@
 		
 		
 		
-			<lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://saahityaedams.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Aws</title>
+				<link>https://saahityaedams.github.io/tags/aws/</link>
+				<pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/tags/aws/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Infra</title>
+				<link>https://saahityaedams.github.io/tags/infra/</link>
+				<pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/tags/infra/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Tech</title>
+				<link>https://saahityaedams.github.io/tags/tech/</link>
+				<pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/tags/tech/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Duckdb</title>
 				<link>https://saahityaedams.github.io/tags/duckdb/</link>
 				<pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
 				<guid>https://saahityaedams.github.io/tags/duckdb/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Books</title>
+				<link>https://saahityaedams.github.io/tags/books/</link>
+				<pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/tags/books/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -42,10 +70,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Tech</title>
-				<link>https://saahityaedams.github.io/tags/tech/</link>
-				<pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
-				<guid>https://saahityaedams.github.io/tags/tech/</guid>
+				<title>Testing</title>
+				<link>https://saahityaedams.github.io/tags/testing/</link>
+				<pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/tags/testing/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -60,13 +88,6 @@
 				<link>https://saahityaedams.github.io/tags/coffee/</link>
 				<pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
 				<guid>https://saahityaedams.github.io/tags/coffee/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Aws</title>
-				<link>https://saahityaedams.github.io/tags/aws/</link>
-				<pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-				<guid>https://saahityaedams.github.io/tags/aws/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -140,6 +161,13 @@
 				<description></description>
 			</item>
 			<item>
+				<title>Finance</title>
+				<link>https://saahityaedams.github.io/tags/finance/</link>
+				<pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/tags/finance/</guid>
+				<description></description>
+			</item>
+			<item>
 				<title>Amazon</title>
 				<link>https://saahityaedams.github.io/tags/amazon/</link>
 				<pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
@@ -203,10 +231,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Vipasssana</title>
-				<link>https://saahityaedams.github.io/tags/vipasssana/</link>
+				<title>Vipassana</title>
+				<link>https://saahityaedams.github.io/tags/vipassana/</link>
 				<pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-				<guid>https://saahityaedams.github.io/tags/vipasssana/</guid>
+				<guid>https://saahityaedams.github.io/tags/vipassana/</guid>
 				<description></description>
 			</item>
 			<item>
