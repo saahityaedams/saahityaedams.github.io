@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://saahityaedams.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Just a lot of stuff about payments</title>
+				<link>https://saahityaedams.github.io/posts/payments_drawer/</link>
+				<pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://saahityaedams.github.io/posts/payments_drawer/</guid>
+				<description>&lt;h2 id=&#34;ledgers&#34;&gt;Ledgers&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be what will source of truth in your system. 10/10 IMHO.&lt;/li&gt;&#xA;&lt;li&gt;It&amp;rsquo;s a really a good way to get into thinking of how accounting and accountants work.&#xA;3.Good resources&#xA;a. &lt;a href=&#34;https://www.moderntreasury.com/journal/accounting-for-developers-part-i&#34;&gt;https://www.moderntreasury.com/journal/accounting-for-developers-part-i&lt;/a&gt;&#xA;b. &lt;a href=&#34;https://www.moderntreasury.com/journal/accounting-for-developers-part-ii&#34;&gt;https://www.moderntreasury.com/journal/accounting-for-developers-part-ii&lt;/a&gt;&#xA;c. &lt;a href=&#34;https://www.moderntreasury.com/journal/accounting-for-developers-part-iii&#34;&gt;https://www.moderntreasury.com/journal/accounting-for-developers-part-iii&lt;/a&gt;&#xA;d. &lt;a href=&#34;https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html&#34;&gt;https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;safety&#34;&gt;Safety&lt;/h2&gt;&#xA;&lt;h3 id=&#34;locking&#34;&gt;Locking&lt;/h3&gt;&#xA;&lt;p&gt;TODO&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;You have optimistic locking and pessimistic locking&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;operational-review&#34;&gt;Operational Review&lt;/h3&gt;&#xA;&lt;p&gt;TODO&lt;/p&gt;&#xA;&lt;h3 id=&#34;idempotency-keys&#34;&gt;Idempotency keys&lt;/h3&gt;&#xA;&lt;p&gt;TODO&lt;/p&gt;&#xA;&lt;h2 id=&#34;us-payment-rails&#34;&gt;US Payment Rails&lt;/h2&gt;&#xA;&lt;p&gt;TODO&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ACH&lt;/li&gt;&#xA;&lt;li&gt;RTP&lt;/li&gt;&#xA;&lt;li&gt;Cards&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;stablecoins&#34;&gt;Stablecoins&lt;/h2&gt;&#xA;&lt;p&gt;TODO&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Work Beliefs</title>
 				<link>https://saahityaedams.github.io/posts/2024/work-beliefs/</link>
