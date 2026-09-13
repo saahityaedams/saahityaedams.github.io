@@ -5,18 +5,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Just a lot of stuff about payments - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<meta itemprop="name" content="Just a lot of stuff about payments">
-	<meta itemprop="description" content="Ledgers For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be what will source of truth in your system. 10/10 IMHO. It’s a really a good way to get into thinking of how accounting and accountants work. Good resources https://www.moderntreasury.com/journal/accounting-for-developers-part-i https://www.moderntreasury.com/journal/accounting-for-developers-part-ii https://www.moderntreasury.com/journal/accounting-for-developers-part-iii https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html Safety Be very paranoid when building payments systems Locking TODO
+	<meta itemprop="description" content="Ledgers For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be source of truth in your system. 10/10 IMHO. It’s a really a good way to get into thinking of how accounting and accountants work. Good resources https://www.moderntreasury.com/journal/accounting-for-developers-part-i https://www.moderntreasury.com/journal/accounting-for-developers-part-ii https://www.moderntreasury.com/journal/accounting-for-developers-part-iii https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html Safety Be very paranoid when building payments systems Locking TODO
 You have optimistic locking and pessimistic locking Operational Review TODO
-Idempotency keys TODO">
+Idempotency keys TODO
+Reconciliation Reconciliation at a high level to me is verifying data (at aggregate or txn level) against other systems or reality you interact with. Especially important when settlement is not instant and feedback loop is delayed. Good philosophy is start from being paranoid and not believing transaction data in your database blindly. Reconciliations gives you confidence to trust your data. Inherently involves operational muscle in org. Needs someone to be responsible and reconcile every week. Ideally that person automates some parts of the recon but does spot checks as well interesting reads https://stripe.com/in/resources/more/accounting-reconciliation-101#types-of-accounting-reconciliation https://stripe.com/in/resources/more/payment-reconciliation-101 Payment Rails (or networks) TODO">
 	<meta itemprop="datePublished" content="2026-09-01T00:00:00+00:00">
 	<meta itemprop="dateModified" content="2026-09-01T00:00:00+00:00">
-	<meta itemprop="wordCount" content="201">
+	<meta itemprop="wordCount" content="205">
 	<meta itemprop="keywords" content="Work"><meta property="og:url" content="https://saahityaedams.github.io/posts/payments_drawer/">
 	<meta property="og:site_name" content="saahityaedams">
 	<meta property="og:title" content="Just a lot of stuff about payments">
-	<meta property="og:description" content="Ledgers For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be what will source of truth in your system. 10/10 IMHO. It’s a really a good way to get into thinking of how accounting and accountants work. Good resources https://www.moderntreasury.com/journal/accounting-for-developers-part-i https://www.moderntreasury.com/journal/accounting-for-developers-part-ii https://www.moderntreasury.com/journal/accounting-for-developers-part-iii https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html Safety Be very paranoid when building payments systems Locking TODO
+	<meta property="og:description" content="Ledgers For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be source of truth in your system. 10/10 IMHO. It’s a really a good way to get into thinking of how accounting and accountants work. Good resources https://www.moderntreasury.com/journal/accounting-for-developers-part-i https://www.moderntreasury.com/journal/accounting-for-developers-part-ii https://www.moderntreasury.com/journal/accounting-for-developers-part-iii https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html Safety Be very paranoid when building payments systems Locking TODO
 You have optimistic locking and pessimistic locking Operational Review TODO
-Idempotency keys TODO">
+Idempotency keys TODO
+Reconciliation Reconciliation at a high level to me is verifying data (at aggregate or txn level) against other systems or reality you interact with. Especially important when settlement is not instant and feedback loop is delayed. Good philosophy is start from being paranoid and not believing transaction data in your database blindly. Reconciliations gives you confidence to trust your data. Inherently involves operational muscle in org. Needs someone to be responsible and reconcile every week. Ideally that person automates some parts of the recon but does spot checks as well interesting reads https://stripe.com/in/resources/more/accounting-reconciliation-101#types-of-accounting-reconciliation https://stripe.com/in/resources/more/payment-reconciliation-101 Payment Rails (or networks) TODO">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="posts">
@@ -26,9 +28,10 @@ Idempotency keys TODO">
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Just a lot of stuff about payments">
-	<meta name="twitter:description" content="Ledgers For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be what will source of truth in your system. 10/10 IMHO. It’s a really a good way to get into thinking of how accounting and accountants work. Good resources https://www.moderntreasury.com/journal/accounting-for-developers-part-i https://www.moderntreasury.com/journal/accounting-for-developers-part-ii https://www.moderntreasury.com/journal/accounting-for-developers-part-iii https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html Safety Be very paranoid when building payments systems Locking TODO
+	<meta name="twitter:description" content="Ledgers For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be source of truth in your system. 10/10 IMHO. It’s a really a good way to get into thinking of how accounting and accountants work. Good resources https://www.moderntreasury.com/journal/accounting-for-developers-part-i https://www.moderntreasury.com/journal/accounting-for-developers-part-ii https://www.moderntreasury.com/journal/accounting-for-developers-part-iii https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html Safety Be very paranoid when building payments systems Locking TODO
 You have optimistic locking and pessimistic locking Operational Review TODO
-Idempotency keys TODO">
+Idempotency keys TODO
+Reconciliation Reconciliation at a high level to me is verifying data (at aggregate or txn level) against other systems or reality you interact with. Especially important when settlement is not instant and feedback loop is delayed. Good philosophy is start from being paranoid and not believing transaction data in your database blindly. Reconciliations gives you confidence to trust your data. Inherently involves operational muscle in org. Needs someone to be responsible and reconcile every week. Ideally that person automates some parts of the recon but does spot checks as well interesting reads https://stripe.com/in/resources/more/accounting-reconciliation-101#types-of-accounting-reconciliation https://stripe.com/in/resources/more/payment-reconciliation-101 Payment Rails (or networks) TODO">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
@@ -95,7 +98,7 @@ Idempotency keys TODO">
 			<div class="markdown">
 				<h2 id="ledgers">Ledgers</h2>
 <ul>
-<li>For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be what will source of truth in your system. 10/10 IMHO.</li>
+<li>For broadly scoped payments systems, ledgers (basically double entry book keeping) will often be source of truth in your system. 10/10 IMHO.</li>
 <li>It&rsquo;s a really a good way to get into thinking of how accounting and accountants work.</li>
 <li>Good resources
 <ul>
@@ -125,7 +128,7 @@ Idempotency keys TODO">
 <li>Especially important when settlement is not instant and feedback loop is delayed.</li>
 <li>Good philosophy is start from being paranoid and not believing transaction data in your database blindly. Reconciliations gives you confidence to trust your data.</li>
 <li>Inherently involves operational muscle in org. Needs someone to be responsible and reconcile every week. Ideally that person automates some parts of the recon but does spot checks as well</li>
-<li>Good resources
+<li>interesting reads
 <ul>
 <li><a href="https://stripe.com/in/resources/more/accounting-reconciliation-101#types-of-accounting-reconciliation">https://stripe.com/in/resources/more/accounting-reconciliation-101#types-of-accounting-reconciliation</a></li>
 <li><a href="https://stripe.com/in/resources/more/payment-reconciliation-101">https://stripe.com/in/resources/more/payment-reconciliation-101</a></li>
@@ -133,12 +136,13 @@ Idempotency keys TODO">
 </ul>
 </li>
 </ul>
-<h2 id="us-payment-rails">US Payment Rails</h2>
+<h2 id="payment-rails-or-networks">Payment Rails (or networks)</h2>
 <p>TODO</p>
 <ul>
 <li>ACH</li>
-<li>RTP</li>
+<li>UPI</li>
 <li>Cards</li>
+<li><a href="https://tautology.town/2026/06/01/card-networks.html">https://tautology.town/2026/06/01/card-networks.html</a></li>
 </ul>
 <h2 id="stablecoins">Stablecoins</h2>
 <p>TODO</p>
@@ -155,6 +159,14 @@ Idempotency keys TODO">
 <li>FEMA</li>
 </ul>
 <h2 id="gift-cards">Gift Cards</h2>
+<h2 id="misc">Misc</h2>
+<ul>
+<li>interesting reads
+<ul>
+<li><a href="https://newsletter.pragmaticengineer.com/p/designing-a-payment-system">https://newsletter.pragmaticengineer.com/p/designing-a-payment-system</a></li>
+</ul>
+</li>
+</ul>
 
 			</div>
 
