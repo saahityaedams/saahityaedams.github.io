@@ -5,18 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>S3 is good software - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<meta itemprop="name" content="S3 is good software">
-	<meta itemprop="description" content="Continuing from this previous post (see zed_is_good_software.md), I wanted to riff/write/think about why I like S3 so much.
-Similar to the previous post, I’ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.
-What is “performance” in this context ? I would say that “operational quality” is a more accurate word that I’m looking for. S3 for me is the fundamental service for storing/querying files 12 when building distributed systems, so the primary expectation is durability (property that data doesn’t get lost or corrupted) and then availability (property that you can access your data when you need it). In terms of these parameters S3 is boringly stable and reliable, your data is never getting lost and you’ll almost always be able to access you data (unless there’s an AWS outage, then most of the internet is down anyway). There’s also consistency, where S3 is strongly read-after-write consistent 3 since Dec 2020.">
+	<meta itemprop="description" content="Great operational quality plus a simple interface: why S3 became duct tape for the internet, and a model for building platforms.">
 	<meta itemprop="datePublished" content="2025-09-10T00:00:00+00:00">
 	<meta itemprop="dateModified" content="2025-09-10T00:00:00+00:00">
 	<meta itemprop="wordCount" content="788">
 	<meta itemprop="keywords" content="Tech,S3"><meta property="og:url" content="https://saahityaedams.github.io/posts/s3_is_so_good/">
 	<meta property="og:site_name" content="saahityaedams">
 	<meta property="og:title" content="S3 is good software">
-	<meta property="og:description" content="Continuing from this previous post (see zed_is_good_software.md), I wanted to riff/write/think about why I like S3 so much.
-Similar to the previous post, I’ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.
-What is “performance” in this context ? I would say that “operational quality” is a more accurate word that I’m looking for. S3 for me is the fundamental service for storing/querying files 12 when building distributed systems, so the primary expectation is durability (property that data doesn’t get lost or corrupted) and then availability (property that you can access your data when you need it). In terms of these parameters S3 is boringly stable and reliable, your data is never getting lost and you’ll almost always be able to access you data (unless there’s an AWS outage, then most of the internet is down anyway). There’s also consistency, where S3 is strongly read-after-write consistent 3 since Dec 2020.">
+	<meta property="og:description" content="Great operational quality plus a simple interface: why S3 became duct tape for the internet, and a model for building platforms.">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="posts">
@@ -27,9 +23,7 @@ What is “performance” in this context ? I would say that “operational qual
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="S3 is good software">
-	<meta name="twitter:description" content="Continuing from this previous post (see zed_is_good_software.md), I wanted to riff/write/think about why I like S3 so much.
-Similar to the previous post, I’ll start off talking generally in terms of 1. Performance (implementation) and 2. API (interface) and then build on top of that.
-What is “performance” in this context ? I would say that “operational quality” is a more accurate word that I’m looking for. S3 for me is the fundamental service for storing/querying files 12 when building distributed systems, so the primary expectation is durability (property that data doesn’t get lost or corrupted) and then availability (property that you can access your data when you need it). In terms of these parameters S3 is boringly stable and reliable, your data is never getting lost and you’ll almost always be able to access you data (unless there’s an AWS outage, then most of the internet is down anyway). There’s also consistency, where S3 is strongly read-after-write consistent 3 since Dec 2020.">
+	<meta name="twitter:description" content="Great operational quality plus a simple interface: why S3 became duct tape for the internet, and a model for building platforms.">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://saahityaedams.github.io/css/main.css" />
