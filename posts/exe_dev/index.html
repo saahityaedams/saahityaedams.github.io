@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Exe.dev review (or more like a rant on current compute infra) - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Saahitya Edamadaka">
+	<meta name="description" content="Saahitya Edamadaka&#39;s blog: notes on backend engineering, payments, AWS and AI tooling.">
 	
 	<meta itemprop="name" content="Exe.dev review (or more like a rant on current compute infra)">
 	<meta itemprop="description" content="There’s two thing that’s been bugging me for a while, one is how one builds an prototype / low usage internal tooling or even self-hosts some opensource software in a small enterprise. The standard way I learnt in my first job was you used your company’s AWS account and ran an small EC2 instance. Sure it was weird and time consuming in that you had to do a couple of things to get stuff working, like running Caddy or Nginx to do TLS termination and running Lets Encrypt to ensure that certs didn’t expire. But it worked, and the thing i appreciated the most was that you once you had it setup you had so much flexibility. You could run a cron job on there easily, run a one-off script to fix some production data, or run something overnight to crunch some data. The default way in 2026 seems to be that you run your project on vercel &#43; use supabase for auth / database. I’m admitedly not a fan of this, it just seems so convoluted and opionated.">

@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>A Metrics System with S3 Tables - saahityaedams</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Saahitya Edamadaka">
+	<meta name="description" content="Saahitya Edamadaka&#39;s blog: notes on backend engineering, payments, AWS and AI tooling.">
 	
 	<meta itemprop="name" content="A Metrics System with S3 Tables">
 	<meta itemprop="description" content="When working at a large tech company, one thing I really enjoyed and found useful was that if you had a question about some aspect of the system (like say the cache ratio), all you had to do to get an answer was emit a metric in the code with a library, deploy and see the live data flow into some internal embeddable version of cloudwatch. The developer experience was particularly good since from my POV all I had to do was use the library in my service and emit a metric and everything else worked out of the box. My sense is that this was an internal implementation of canonical log lines1 since I recollect seeing these metrics in the boxes where the logs were collected as well. Ideally someone should be able to add a single line like CanonicalLog.set(Metric.PAYMENT_SUCCEEDED, 1); in the control flow and everything should just work.">
